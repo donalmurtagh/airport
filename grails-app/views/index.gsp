@@ -1,122 +1,60 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta name="layout" content="main"/>
-		<title>Welcome to Grails</title>
-		<style type="text/css" media="screen">
-			#status {
-				background-color: #eee;
-				border: .2em solid #fff;
-				margin: 2em 2em 1em;
-				padding: 1em;
-				width: 12em;
-				float: left;
-				-moz-box-shadow: 0px 0px 1.25em #ccc;
-				-webkit-box-shadow: 0px 0px 1.25em #ccc;
-				box-shadow: 0px 0px 1.25em #ccc;
-				-moz-border-radius: 0.6em;
-				-webkit-border-radius: 0.6em;
-				border-radius: 0.6em;
-			}
+<head>
+    <meta name="layout" content="main"/>
+</head>
 
-			.ie6 #status {
-				display: inline; /* float double margin fix http://www.positioniseverything.net/explorer/doubled-margin.html */
-			}
+<body>
+<!-- MAIN CONTENT -->
+<div id="outermain">
+    <div class="container">
+        <section id="maincontent" class="twelve columns">
+            <h4 class="titleUppercase">Keep In Touch With Us</h4>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. Phasellus velit lectus, mattis vel accumsan et, semper in massa. Etiam aliquam ligula a nulla commodo tempus. Nunc et faucibus nunc. Phasellus congue consequat magna, et tincidunt ante ullamcorper in. </p>
 
-			#status ul {
-				font-size: 0.9em;
-				list-style-type: none;
-				margin-bottom: 0.6em;
-				padding: 0;
-			}
-            
-			#status li {
-				line-height: 1.3;
-			}
+            <div class="separator small"></div>
+            <div class="four columns alpha">
+                <img src="images/icons/icon5.png" alt="" class=" alignleft" />
+                <span class="titleBold">Available Open:</span><br/>
+                Monday - Friday / 8:30am - 17.00pm<br/>
+                Saturday / OFF
+            </div>
+            <div class="four columns">
+                <img src="images/icons/icon6.png" alt="" class=" alignleft" />
+                <span class="titleBold">Corporate Offices:</span><br/>
+                SmartGroup – Office Blvd No. 356-357<br/>
+                Farmville Town, LA 12345
+            </div>
+            <div class="four columns omega">
+                <img src="images/icons/icon7.png" alt="" class=" alignleft" />
+                <span class="titleBold">Contact Info:</span><br/>
+                Telp: +800 123 456<br/>
+                Email: <a href="mailto:www.templatesquare.com" > www.templatesquare.com</a>
+            </div>
 
-			#status h1 {
-				text-transform: uppercase;
-				font-size: 1.1em;
-				margin: 0 0 0.3em;
-			}
+            <div class="separator line"></div>
+            <div class="eight columns alpha">
+                <h4 class="titleUppercase">Contact Form</h4>
+                <p>Donec tristique nunc ut felis tincidunt non ultrices mauris scelerisque. Vivamus orci nisl, tempus eget <br/>scelerisque non, mattis sed mi.</p>
 
-			#page-body {
-				margin: 2em 1em 1.25em 18em;
-			}
+                <div id="contactform" class="six columns">
+                    <form id="contact" action="index.html">
+                        <fieldset>
+                            <label for="name" id="name_label">Your Name: <span class="required">*</span></label>
+                            <input type="text" name="name" id="name" size="50" value="" class="text-input" />
+                            <label for="email" id="email_label">Your Email Address: <span class="required">*</span></label>
+                            <input type="text" name="email" id="email" size="50" value="" class="text-input" />
+                            <label for="subject" id="subject_label">Subject</label>
+                            <input type="text" name="subject" id="subject"  value="" class="text-input" />
+                            <br />
+                            <input type="submit" name="submit" class="button" id="submit_btn" value="Send Message &rarr;"/><br class="clear" />
 
-			h2 {
-				margin-top: 1em;
-				margin-bottom: 0.3em;
-				font-size: 1em;
-			}
+                        </fieldset>
+                    </form>
+                </div><!-- end contactform -->
+            </div>
 
-			p {
-				line-height: 1.5;
-				margin: 0.25em 0;
-			}
-
-			#controller-list ul {
-				list-style-position: inside;
-			}
-
-			#controller-list li {
-				line-height: 1.3;
-				list-style-position: inside;
-				margin: 0.25em 0;
-			}
-
-			@media screen and (max-width: 480px) {
-				#status {
-					display: none;
-				}
-
-				#page-body {
-					margin: 0 1em 1em;
-				}
-
-				#page-body h1 {
-					margin-top: 0;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div id="status" role="complementary">
-			<h1>Application Status</h1>
-			<ul>
-				<li>App version: <g:meta name="app.version"/></li>
-				<li>Grails version: <g:meta name="app.grails.version"/></li>
-				<li>Groovy version: ${org.codehaus.groovy.runtime.InvokerHelper.getVersion()}</li>
-				<li>JVM version: ${System.getProperty('java.version')}</li>
-				<li>Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</li>
-				<li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
-				<li>Domains: ${grailsApplication.domainClasses.size()}</li>
-				<li>Services: ${grailsApplication.serviceClasses.size()}</li>
-				<li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
-			</ul>
-			<h1>Installed Plugins</h1>
-			<ul>
-				<g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-					<li>${plugin.name} - ${plugin.version}</li>
-				</g:each>
-			</ul>
-		</div>
-		<div id="page-body" role="main">
-			<h1>Welcome to Grails</h1>
-			<p>Congratulations, you have successfully started your first Grails application! At the moment
-			   this is the default page, feel free to modify it to either redirect to a controller or display whatever
-			   content you may choose. Below is a list of controllers that are currently deployed in this application,
-			   click on each to execute its default action:</p>
-
-			<div id="controller-list" role="navigation">
-				<h2>Available Controllers:</h2>
-				<ul>
-					<g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-						<li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
-					</g:each>
-				</ul>
-			</div>
-		</div>
-	</body>
-</html>
+            <div class="clear"></div><!-- clear float -->
+        </section>
+    </div>
+</div>
+<!-- END MAIN CONTENT -->
+</body>

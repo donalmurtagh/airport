@@ -1,0 +1,29 @@
+/* link color */
+a, a:visited, .colortext, .colortext a, .colortext a:visited{color:#ff7847}
+
+/* dropcap */
+.dropcap1{text-shadow:1px 1px 0 #ededed; color:#ff7847}
+.dropcap2, .circle{background:#ff7847; color:#fff;}		
+.dropcap3{	background:#ff7847; color:#fff;}
+
+/* highlight */
+.highlight1{background:#ff7847; color:#fff;}
+
+/* accordion */
+h2.accordion-title{ color:#ff7847;}
+
+/* blog */
+.posttitle a:hover{color:#ff7847}
+.postmonth {
+    background:#ff7847;
+}
+.entry-utility a, .entry-utility a:visited{color:#ff7847;}
+
+.wp-pagenavi .current, .wp-pagenavi a:hover{color:#fff; border:solid 1px #ff7847; background:#ff7847}
+
+/* portfolio */
+#filter li a:hover, #filter li.selected-1 a{color:#ff7847; border-bottom:3px solid #dedede;}
+
+/* sidebar */
+#sidebar li li a{ color:#ff7847;}
+#sidebar .rp-widget li h3 a{color:#ff7847;}

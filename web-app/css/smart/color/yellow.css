@@ -1,0 +1,29 @@
+/* link color */
+a, a:visited, .colortext, .colortext a, .colortext a:visited{color:#ffa342}
+
+/* dropcap */
+.dropcap1{text-shadow:1px 1px 0 #ededed; color:#ffa342}
+.dropcap2, .circle{background:#ffa342; color:#fff;}		
+.dropcap3{	background:#ffa342; color:#fff;}
+
+/* highlight */
+.highlight1{background:#ffa342; color:#fff;}
+
+/* accordion */
+h2.accordion-title{ color:#ffa342;}
+
+/* blog */
+.posttitle a:hover{color:#ffa342}
+.postmonth {
+    background:#ffa342;
+}
+.entry-utility a, .entry-utility a:visited{color:#ffa342;}
+
+.wp-pagenavi .current, .wp-pagenavi a:hover{color:#fff; border:solid 1px #ffa342; background:#ffa342}
+
+/* portfolio */
+#filter li a:hover, #filter li.selected-1 a{color:#ffa342; border-bottom:3px solid #dedede;}
+
+/* sidebar */
+#sidebar li li a{ color:#ffa342;}
+#sidebar .rp-widget li h3 a{color:#ffa342;}

@@ -1,0 +1,355 @@
+
+/* #Media Queries
+================================================== */
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (min-width: 959px) {
+	
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	#bodychild{width:100%;}
+	#logo h1{font-size:20px; line-height:20px;}
+	
+	/*============================================== CONTENT SECTION ==============================================*/
+	.frame220{width:93.2%; height:86%;}
+	.frame300{width:95%; height:88%;}
+	.frame460{width:96.66%; height:90%;}
+	.frame680{width:98.2%; height:94.5%;}
+	
+	.rp-widget li h3{ font-size:11px;}
+	.v-line{ border-left:1px solid #efefef; padding-left:15px; margin-left:5px;}
+	
+	/* pricing box */
+	ul.list-box .price{font-size:20px !important;}
+	ul.list-box > li{width:185px !important;}
+	
+	
+	/*============================================== SLIDER SECTION ==============================================*/
+	#layerslider.slideritems {
+		height:302px;
+		margin: 0px auto 14px auto;
+	}
+	
+	#layerslider.slideritems img.ls-bg{
+		width:748px;
+		height:302px;
+	}
+	
+	.ls-layer .button{left:50%; top:225px;}
+	
+	#layerslider.slideritems img.ls-s2{
+		width:312px;
+		left:32px;
+		top:34px;
+	}
+	#layerslider.slideritems .ls-s3{
+		left:50%;
+		top:60px;
+	}
+	#layerslider.slideritems .ls-s4{
+		left:50%;
+		top:176px;
+	}
+
+	
+	/*============================================== PORTFOLIO SECTION ==============================================*/
+	/* Portfolio 2 Column */
+	.ts-display-pf-col-2 li{width:364px;}
+	.ts-display-pf-col-2 .ts-display-pf-img{
+		width:364px;
+	}
+	
+	.ts-display-pf-col-2 .ts-display-pf-img a.image{
+		width:364px;
+	}
+	
+	.ts-display-pf-col-2  .ts-display-pf-img a .rollover{
+		width:364px;
+	}
+	
+	/* Portfolio 3 Column */
+	.ts-display-pf-col-3 li{width:236px;}
+	.ts-display-pf-col-3 .ts-display-pf-img{
+		width:236px;
+	}
+	
+	.ts-display-pf-col-3 .ts-display-pf-img a.image{
+		width:236px;
+	}
+	
+	.ts-display-pf-col-3  .ts-display-pf-img a .rollover{
+		width:236px;
+	}
+	
+	/* Portfolio 4 Column */
+	.ts-display-pf-col-4 li{width:172px;}
+	.ts-display-pf-col-4 .ts-display-pf-img{
+		width:172px;
+	}
+	
+	.ts-display-pf-col-4 .ts-display-pf-img a.image{
+		width:172px;
+	}
+	
+	.ts-display-pf-col-4  .ts-display-pf-img a .rollover{
+		width:172px;
+	}
+	
+	
+	/*======== Footer ===========*/
+	#footcol2, #footcol3{ width:145px;} 
+	#footcol2{ margin:0 0 0 8px}
+	
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	#bodychild{width:100%;}
+	#outerheader{height:auto;}
+	
+	/*============================================== HEADER SECTION ==============================================*/
+	#logo{text-align:center;}
+	#logo img{display:block;}
+	#logo .circle{display:inline-block; float:none; }
+	#logo h1{vertical-align:top;}
+
+	#navigation{text-align:center; clear:both; height:auto;}
+	.sf-menu a{background:transparent !important; border:0 !important}
+	.sf-menu > li{border:0 !important; display:none;}
+	nav{margin:0 0 20px 0; float:none; }
+	.js .tinynav { display: block; display: inline-block; text-align:left ; margin:0 0 0 0; width:100%}/* mobile dropdown */
+    .js #topnav { display: none }
+	
+	.pagetitle{font-size:30px; line-height:35px;}
+		
+	/*============================================== SLIDER SECTION ==============================================*/
+	#slidercontainer{ margin-top:0px;}
+	#slider{ background:transparent}
+	.flexslider .slides img{position:static; right:0;}
+	.flex-caption{width:50%;top:10%;}
+	.flex-caption h1{font-size:24px; line-height:30px;}
+	.flex-caption .slidetext{ display:none}
+
+	#slider .button{font-size:11px; padding:6px}
+	
+	/*============================================== AFTER HEADER SECTION ==============================================*/
+	#outerafterheader{padding:0 0 0 0;}
+	
+	/*============================================== CONTENT SECTION ==============================================*/
+	#content.positionright, #content.positionleft{background:transparent;}
+	.padcontent{padding-right:0;}
+	#content.positionright .padcontent{padding-left:0; padding-right:0}
+	.frame220, .frame300{width:96%; height:91.66%;}
+	.frame460{width:96%; height:89%;}
+	.frame680{width:96.77%; height:91%;}
+	
+	.v-line{border:0; padding:0; margin:0;}
+	#pagetitle-container{margin-right:0px; margin-top:0px; position:absolute; top:30px; right:20px; z-index:2;}  
+	#pagetitle-container .pagedesc{ display:none;}
+	
+	/* pricing box */
+	ul.list-box > li{margin-bottom:20px; width:100% !important; border-width:1px; border-radius:3px;}
+	ul.list-box li.current{margin-top:0;}
+	ul.list-box li.last{border-width:1px}
+	
+		
+	/*============================================== BLOG SECTION ==============================================*/
+	.post{padding-bottom:30px; margin-bottom:30px;}
+	.posttitle{margin-bottom:5px;}
+	.wp-pagenavi{margin-bottom:30px;}
+	
+	/*============================================== SIDEBAR SECTION ==============================================*/
+	#sidebar .widget-container{margin-bottom:20px; padding:20px 0 0 0;}
+	
+	
+	/*============================================== PORTFOLIO SECTION ==============================================*/
+	/* Portfolio 2 Column */
+	.ts-display-pf-col-2 li{width:300px;}
+	.ts-display-pf-col-2 .ts-display-pf-img{
+		width:300px;
+	}
+	
+	.ts-display-pf-col-2 .ts-display-pf-img a.image{
+		width:300px;
+	}
+	
+	.ts-display-pf-col-2  .ts-display-pf-img a .rollover{
+		width:300px;
+	}
+	
+	
+	/* Portfolio 3 Column */
+	.ts-display-pf-col-3 li{width:300px;}
+	.ts-display-pf-col-3 .ts-display-pf-img{
+		width:300px;
+	}
+	
+	.ts-display-pf-col-3 .ts-display-pf-img a.image{
+		width:300px;
+	}
+	
+	.ts-display-pf-col-3  .ts-display-pf-img a .rollover{
+		width:300px;
+	}
+	
+	
+	/* Portfolio 4 Column */
+	.ts-display-pf-col-4 li{width:300px;}
+	.ts-display-pf-col-4 .ts-display-pf-img{
+		width:300px;
+	}
+	
+	.ts-display-pf-col-4 .ts-display-pf-img a.image{
+		width:300px;
+	}
+	
+	.ts-display-pf-col-4  .ts-display-pf-img a .rollover{
+		width:300px;
+	}
+	
+	/*======== Footer ===========*/
+	#footcol2, #footcol3{ width:100%;} 
+	#footcol2{ margin-left:0px;}
+
+
+	#toTop{display:none !important;}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#bodychild{width:100%;}
+	
+	
+	/*============================================== SLIDER SECTION ==============================================*/
+	.flex-control-nav {bottom:10px;}
+	.flex-control-nav a {width:10px; height:10px;}
+	
+	#layerslider.slideritems {
+		height:170px;
+		margin: 0px auto 14px auto;
+	}
+	
+	#layerslider.slideritems img.ls-bg{
+		width:420px;
+		height:170px;
+	}
+	
+	.ls-layer .button{left:50%; top:93px;}
+	
+	#layerslider.slideritems img.ls-s2{
+		width:171px;
+		left:5%;
+		top:20px;
+	}
+	#layerslider.slideritems .ls-s3{
+		font-size:24px;
+		line-height:30px;
+		left:50%;
+		top:17px;
+	}
+	#layerslider.slideritems .ls-s4{
+		display:none;
+	}
+	
+	#slide1img1{
+		width:171px;
+		left:5%;
+		top:20px;
+	}
+	
+	
+	/*============================================== CONTENT SECTION ==============================================*/
+	.frame220{width:97.2%; height:94%;}
+	.frame300{width:97.2%; height:94%;}
+	.frame460{width:97.2%; height:92.2%;}
+	.frame680{width:97.66%; height:93.2%;}
+	
+	/*============================================== PORTFOLIO SECTION ==============================================*/
+	/* Portfolio 2 Column */
+	.ts-display-pf-col-2 li{width:420px;}
+	.ts-display-pf-col-2 .ts-display-pf-img{
+		width:420px;
+	}
+	
+	.ts-display-pf-col-2 .ts-display-pf-img a.image{
+		width:420px;
+	}
+	
+	.ts-display-pf-col-2  .ts-display-pf-img a .rollover{
+		width:420px;
+	}
+	
+	/* Portfolio 3 Column */
+	.ts-display-pf-col-3 li{width:420px;}
+	.ts-display-pf-col-3 .ts-display-pf-img{
+		width:420px;
+	}
+	
+	.ts-display-pf-col-3 .ts-display-pf-img a.image{
+		width:420px;
+	}
+	
+	.ts-display-pf-col-3  .ts-display-pf-img a .rollover{
+		width:420px;
+	}
+	
+	/* Portfolio 4 Column */
+	.ts-display-pf-col-4 li{width:420px;}
+	.ts-display-pf-col-4 .ts-display-pf-img{
+		width:420px;
+	}
+	
+	.ts-display-pf-col-4 .ts-display-pf-img a.image{
+		width:420px;
+	}
+	
+	.ts-display-pf-col-4  .ts-display-pf-img a .rollover{
+		width:420px;
+	}
+	
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	#bodychild{width:100%;}
+	
+	/*============================================== SLIDER SECTION ==============================================*/
+	.flex-caption h1{font-size:18px; line-height:24px;}
+	.flex-direction-nav { display:none;}
+	
+	.ls-smartgroup a.ls-nav-prev, .ls-smartgroup a.ls-nav-next{display:none;}
+	#layerslider.slideritems {
+		height:121px;
+		margin: 0px auto 0px auto;
+	}
+	
+	#layerslider.slideritems img.ls-bg{
+		width:300px;
+		height:121px;
+	}
+	
+	.ls-layer .button{left:50%; top:75px;}
+	
+	#layerslider.slideritems img.ls-s2{
+		width:123px;
+		left:5%;
+		top:14px;
+	}
+	#layerslider.slideritems .ls-s3{
+		font-size:18px;
+		line-height:24px;
+		left:50%;
+		top:12px;
+	}
+	#layerslider.slideritems .ls-s4{
+		display:none;
+	}
+	
+	/*============================================== BLOG SECTION ==============================================*/
+	.commentlist ol{padding-left:20px;}
+	.avatar{display:none;}
+	.comment-body{margin:0;}
+
+}

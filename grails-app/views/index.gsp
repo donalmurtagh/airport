@@ -32,20 +32,18 @@
 
             <div class="separator line"></div>
             <div class="eight columns alpha">
-                <h4 class="titleUppercase">Contact Form</h4>
-                <p>Donec tristique nunc ut felis tincidunt non ultrices mauris scelerisque. Vivamus orci nisl, tempus eget <br/>scelerisque non, mattis sed mi.</p>
+                <h4 class="titleUppercase">Login</h4>
+                <p>To continue past this point, you must login.</p>
 
                 <div id="contactform" class="six columns">
                     <form id="contact" action="index.html">
                         <fieldset>
-                            <label for="name" id="name_label">Your Name: <span class="required">*</span></label>
+                            <label for="name" id="name_label">Email Address: <span class="required">*</span></label>
                             <input type="text" name="name" id="name" size="50" value="" class="text-input" />
-                            <label for="email" id="email_label">Your Email Address: <span class="required">*</span></label>
+                            <label for="email" id="email_label">Password: <span class="required">*</span></label>
                             <input type="text" name="email" id="email" size="50" value="" class="text-input" />
-                            <label for="subject" id="subject_label">Subject</label>
-                            <input type="text" name="subject" id="subject"  value="" class="text-input" />
                             <br />
-                            <input type="submit" name="submit" class="button" id="submit_btn" value="Send Message &rarr;"/><br class="clear" />
+                            <input type="submit" name="submit" style="display: block" class="button" id="submit_btn" value="Login"/><br class="clear" />
 
                         </fieldset>
                     </form>

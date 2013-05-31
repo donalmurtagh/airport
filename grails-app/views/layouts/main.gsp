@@ -25,9 +25,17 @@
         <div id="outerheader">
             <div class="container">
                 <header id="top" class="twelve columns">
-                    <div id="logo" class="three columns alpha"><h1><a href="index.html"><span class="circle"><img src="images/icons/logo.png" alt=""/></span>
-                        <span class="titleBold">Smart</span><span class="titleRegular">Group</span></a></h1></div>
-                    <section id="navigation" class="nine columns omega">
+                    <div id="logo" class="five columns alpha">
+                        <h1>
+                            <g:link uri='/'>
+                                <span class="titleRegular">The</span>
+                                <span class="titleBold">Airport</span>
+                                <span class="titleRegular">Marketing</span>
+                                <span class="titleBold">Toolbox</span>
+                            </g:link>
+                        </h1>
+                    </div>
+                    <section id="navigation" class="seven columns omega">
                         <nav id="nav-wrap">
                             <ul id="topnav" class="sf-menu">
                                 <li><a href="index.html">Home</a></li>
@@ -50,14 +58,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="service.html">Services</a></li>
-                                <li><a href="#">Projects</a>
-                                    <ul>
-                                        <li><a href="portfolio2.html">Portfolio 2 Column</a></li>
-                                        <li><a href="portfolio3.html">Portfolio 3 Column</a></li>
-                                        <li><a href="portfolio4.html">Portfolio 4 Column</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="blog.html">Blog</a></li>
+
                                 <li class="current"><a href="contact.html">Contact</a></li>
                             </ul><!-- topnav -->
                         </nav><!-- nav -->
@@ -76,8 +77,8 @@
                     <div class="line-op"></div>
                     <img src="images/content/pagetitle-img2.png" alt="" class="scale-with-grid" />
                     <div id="pagetitle-container">
-                        <h1 class="pagetitle">Contact</h1>
-                        <span class="pagedesc">This can be your tagline or something you want. Lorem ipsum dolor</span>
+                        <h1 class="pagetitle">Welcome</h1>
+                        <span class="pagedesc">Your tagline goes here</span>
                     </div>
                 </div>
             </div>

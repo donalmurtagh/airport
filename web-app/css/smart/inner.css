@@ -64,7 +64,6 @@ USE THIS STYLE SHEET FOR INNER PAGE
 	position:absolute;
 	top:20px;
 	left:20px;
-	background:url(../images/shadow-mini.gif) no-repeat center bottom;
 	padding-bottom:6px;
 }
 .avatar{display:block}
@@ -111,7 +110,7 @@ USE THIS STYLE SHEET FOR INNER PAGE
 	overflow:hidden;
 }
 .ts-display-pf-img a .rollover{
-	background:url(../images/hover-zoom.png);
+	background:url(../../images/hover-zoom.png);
 	background-color:#000;
 	background-repeat:no-repeat;
 	background-position:center;
@@ -122,13 +121,13 @@ USE THIS STYLE SHEET FOR INNER PAGE
 	cursor:pointer;
 }
 .ts-display-pf-img a .rollover.gotolink{
-	background:url(../images/hover-link.png);
+	background:url(../../images/hover-link.png);
 	background-color:#000;
 	background-repeat:no-repeat;
 	background-position:center;
 }
 .ts-display-pf-img a .rollover.gotopost{
-	background:url(../images/hover-doc.png);
+	background:url(../../images/hover-doc.png);
 	background-color:#000;
 	background-repeat:no-repeat;
 	background-position:center;

@@ -155,7 +155,7 @@ ol ul {
 }
 	
 blockquote {
-    background-image: url("../images/quote.png"), url("../images/pattern.png");
+    background-image: url("../../images/quote.png"), url("../../images/pattern.png");
     background-position: 28px 25px, 0 0;
     background-repeat: no-repeat, repeat;
 	background-color:#f5f5f5;
@@ -165,9 +165,9 @@ blockquote {
 	font-family:Arial, Helvetica, sans-serif;
 }
 
-blockquote{background-image: url("../images/quote.png")\0/; background-repeat: no-repeat\0/; background-position: 28px 25px\0/;}/* IE-8 ONLY  */
+blockquote{background-image: url("../../images/quote.png")\0/; background-repeat: no-repeat\0/; background-position: 28px 25px\0/;}/* IE-8 ONLY  */
 
-blockquote span{background-image: url("../images/quote2.png"); background-position:right; background-repeat:no-repeat; padding:0px 30px 15px 0px;}	
+blockquote span{background-image: url("../../images/quote2.png"); background-position:right; background-repeat:no-repeat; padding:0px 30px 15px 0px;}
 	
 blockquote.left, blockquote.right  {
 	float:right;
@@ -373,9 +373,9 @@ ul.sf-menu li li li.sfHover ul {
 #outerafterheader{padding:0 0 0px 0;}
 #afterheader{position:relative;}
 #pagetitle-container{ float:right; text-align:right; margin-right:30px; margin-top:35px;} 
-.pattern1{ background:url(../images/pattern1.jpg) no-repeat;}
-.pattern2{ background:url(../images/pattern2.jpg) no-repeat;}
-.pattern3{ background:url(../images/pattern3.jpg) no-repeat;}
+.pattern1{ background:url(../../images/pattern1.jpg) no-repeat;}
+.pattern2{ background:url(../../images/pattern2.jpg) no-repeat;}
+.pattern3{ background:url(../../images/pattern3.jpg) no-repeat;}
 
 /*============================================ CONTENT  =================================================*/
 #outermain{padding:31px 0 60px 0;}
@@ -407,7 +407,7 @@ ul.sf-menu li li li.sfHover ul {
 
 
 .box{ padding:20px 15px 28px 15px;}
-.box-pattern{ background:url(../images/pattern.png); padding:20px 22px 30px 22px;}
+.box-pattern{ background:url(../../images/pattern.png); padding:20px 22px 30px 22px;}
 
 
 /*=== List ===*/
@@ -613,7 +613,7 @@ textarea:focus{outline:0;}
 /*=== Pullquotes ===*/
 .pullquote-right, .pullquote-left{
 	padding:0px 10px 0px 30px;
-	background-image:url(../images/quote.png);
+	background-image:url(../../images/quote.png);
 	background-repeat:no-repeat;
 	background-position:0px 0px;
 	float:right;
@@ -750,13 +750,13 @@ h2.trigger span {
 	text-decoration: none;
 	display: block;
 	height:39px;
-	background: url(../images/arrow-left.png) no-repeat right;
+	background: url(../../images/arrow-left.png) no-repeat right;
 	padding:0px 0px 0px 20px;
 	cursor:pointer;
 	line-height:40px;
 }
 
-h2.active span{ background:url(../images/arrow-down.png) no-repeat right;}
+h2.active span{ background:url(../../images/arrow-down.png) no-repeat right;}
 
 h2.active {}
 
@@ -782,7 +782,7 @@ ul.ts-accordion{
 ul.ts-accordion li{ list-style: none; margin:0; padding:0 }
 
 div.accordion-content{ padding:0px 0px 0px 35px; clear:both;}
-h2.accordion-title span.accordion-icon{ width: 22px; height: 23px; float:left; background:url(../images/accordion-icon.png) no-repeat; margin-right: 13px; cursor: pointer; display: block; }
+h2.accordion-title span.accordion-icon{ width: 22px; height: 23px; float:left; background:url(../../images/accordion-icon.png) no-repeat; margin-right: 13px; cursor: pointer; display: block; }
 h2.accordion-title.active span.accordion-icon{background-position:0 -23px;}
 div.accordion-title p{ margin-bottom: 0px; }
 
@@ -925,7 +925,7 @@ tr.odd td {}
 	cursor:pointer;
 	display:none;
 	font-size:12px;
-	background:url(../images/top.png) no-repeat;
+	background:url(../../images/top.png) no-repeat;
 	width:16px; height:16px;
 }
 

@@ -6,7 +6,7 @@ dataSource {
     logSql = false
     url = "jdbc:mysql://localhost/airport?useUnicode=yes&characterEncoding=UTF-8"
 
-    dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate'
+    dbCreate = "create" // one of 'create', 'create-drop', 'update', 'validate'
     username = 'root'
     password = ''
 

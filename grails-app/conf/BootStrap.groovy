@@ -35,7 +35,8 @@ class BootStrap {
 
         User user = User.findByUsername(username) ?: new User(
                 username: username,
-                password: defaultPassword).save(failOnError: true)
+                password: defaultPassword,
+                enabled: true).save(failOnError: true)
 
         if (!user.authorities.contains(role)) {
             UserRole.create user, role

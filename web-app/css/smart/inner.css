@@ -270,7 +270,6 @@ span.error{color:red;text-align:left; font-size:11px; padding-bottom:15px; displ
 	vertical-align:middle;
 	width:70%;
 	float:left;
-	font-style:italic;
 	padding:8px
 }
 #contactform textarea{ width:90%; float:left; font-style:italic} 
@@ -280,7 +279,6 @@ span.error{color:red;text-align:left; font-size:11px; padding-bottom:15px; displ
 .note{ color:#d45454;}
 #contactform .button{
 	cursor:pointer;
-	margin-top:20px;
 	clear:both;
 	font-size:13px;
 	font-weight:bold;

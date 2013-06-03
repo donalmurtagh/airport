@@ -3,6 +3,7 @@ package com.icaviation
 class User {
 
 	transient springSecurityService
+    def saltSource
 
 	String username
 	String password
@@ -10,6 +11,8 @@ class User {
 	boolean accountExpired
 	boolean accountLocked
 	boolean passwordExpired
+
+    Date dateCreated
 
 	static constraints = {
 		username blank: false, unique: true
@@ -34,7 +37,8 @@ class User {
 		}
 	}
 
-	protected void encodePassword() {
-		password = springSecurityService.encodePassword(password)
-	}
+    protected void encodePassword() {
+        def salt = saltSource.systemWideSalt
+        password = springSecurityService.encodePassword(password, salt)
+    }
 }

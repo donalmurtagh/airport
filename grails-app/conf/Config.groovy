@@ -69,25 +69,48 @@ environments {
     }
 }
 
-// log4j configuration
 log4j = {
-    // Example of changing the log pattern for the default console appender:
-    //
-    //appenders {
-    //    console name:'stdout', layout:pattern(conversionPattern: '%c{2} %m%n')
-    //}
+    appenders {
+        def logPattern = '%d{dd-MM-yyyy HH:mm:ss,SSS} %5p %c{2} - %m%n'
+        console name: 'stdout', layout: pattern(conversionPattern: logPattern)
 
-    error  'org.codehaus.groovy.grails.web.servlet',        // controllers
-           'org.codehaus.groovy.grails.web.pages',          // GSP
-           'org.codehaus.groovy.grails.web.sitemesh',       // layouts
-           'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
-           'org.codehaus.groovy.grails.web.mapping',        // URL mapping
-           'org.codehaus.groovy.grails.commons',            // core / classloading
-           'org.codehaus.groovy.grails.plugins',            // plugins
-           'org.codehaus.groovy.grails.orm.hibernate',      // hibernate integration
-           'org.springframework',
-           'org.hibernate',
-           'net.sf.ehcache.hibernate'
+        file name: "airportLog", file: "airport.log"
+
+        environments {
+            production {
+                // Change the location of the built-in unfiltered stacktrace logger's file output
+                // Must be a location tomcat7 user can write to: http://joshuakehn.com/2012/2/9/Grails-in-Production.html
+                rollingFile name: "stacktrace", file: "/var/log/tomcat7/stacktrace.log"
+
+                // Also change location of FileAppender output (see above)
+                file name: "airportLog", file: "/var/log/tomcat7/airport.log"
+            }
+        }
+    }
+
+    root {
+        error 'stdout', 'airportLog'
+    }
+
+    environments {
+        development {
+            debug 'com.icaviation', 'grails.app'
+        }
+
+        production {
+            info 'com.icaviation', 'grails.app'
+        }
+    }
+
+    // resource plugins log at debug level by default
+    error 'grails.app.service.org.grails.plugin.resource',
+            'grails.app.resourceMappers.org.grails.plugin.resource',
+            'grails.app.resourceMappers.org.grails.plugin.zippedresources',
+            'grails.app.resourceMappers.com.blockconsult.yuiminifyresources'
+
+    // Suppress this message that appears when every page is loaded
+    // "Invocation of <r:resource> for a resource that apparently doesn't exist: http://localhost:8080/summer-festivals/images/logo-home.png"
+    error 'grails.app.taglib.org.grails.plugin.resource'
 }
 
 // Added by the Spring Security Core plugin:
@@ -98,4 +121,19 @@ grails.plugins.springsecurity.authority.className = 'com.icaviation.Role'
 airport {
     userRoleName = 'ROLE_USER'
     adminRoleName = 'ROLE_ADMIN'
+}
+
+grails {
+
+    mail {
+        host = "smtp.gmail.com"
+        port = 465
+        username = "festivals@festivals.ie"
+        password = "murtagh8"
+
+        props = ["mail.transport.protocol":"smtps",
+                "mail.smtps.host":"smtp.gmail.com",
+                "mail.smtps.port":"465",
+                "mail.smtps.auth":"true"]
+    }
 }

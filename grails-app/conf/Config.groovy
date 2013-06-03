@@ -118,6 +118,9 @@ grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.icaviation.U
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.icaviation.UserRole'
 grails.plugins.springsecurity.authority.className = 'com.icaviation.Role'
 
+grails.plugins.springsecurity.useSecurityEventListener = true
+
+
 airport {
     userRoleName = 'ROLE_USER'
     adminRoleName = 'ROLE_ADMIN'
@@ -137,3 +140,6 @@ grails {
                 "mail.smtps.auth":"true"]
     }
 }
+
+flashHelper.keys = ['info', 'warn']
+flashHelper.separator = ' '

@@ -1,19 +1,18 @@
 package com.icaviation
 
 import com.icaviation.command.LoginCommand
+import org.springframework.security.core.context.SecurityContextHolder as SCH
+
 import grails.converters.JSON
-
-import javax.servlet.http.HttpServletResponse
-
 import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
-
 import org.springframework.security.authentication.AccountExpiredException
 import org.springframework.security.authentication.CredentialsExpiredException
 import org.springframework.security.authentication.DisabledException
 import org.springframework.security.authentication.LockedException
-import org.springframework.security.core.context.SecurityContextHolder as SCH
 import org.springframework.security.web.WebAttributes
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
+
+import javax.servlet.http.HttpServletResponse
 
 class LoginController {
 
@@ -53,10 +52,9 @@ class LoginController {
 
         String view = '/index'
         String postUrl = "${request.contextPath}${config.apf.filterProcessesUrl}"
-        def rememberMe = config.rememberMe.parameter
 
-        LoginCommand loginBean = new LoginCommand(_spring_security_remember_me: rememberMe)
-        render view: view, model: [postUrl: postUrl, rememberMeParameter: rememberMe, login: loginBean]
+        LoginCommand loginBean = new LoginCommand(j_username: params.username)
+        render view: view, model: [postUrl: postUrl, rememberMeParameter: config.rememberMe.parameter, login: loginBean]
     }
 
     /**
@@ -118,7 +116,10 @@ class LoginController {
             render([error: msg] as JSON)
         }
         else {
-            flash.message = msg
+            flashHelper.warn msg
+
+            // Add username to the params so that it can be redisplayed in the "try login again" form
+            params.username = username
             redirect action: 'auth', params: params
         }
     }

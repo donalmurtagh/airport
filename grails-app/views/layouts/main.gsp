@@ -101,6 +101,10 @@
         <!-- END FOOTER -->
     </div>
 </div>
+
+%{--Show flash messages in the top message bar--}%
+<g:render template="/common/notificationBar"/>
+
 <r:layoutResources/>
 </body>
 </html>

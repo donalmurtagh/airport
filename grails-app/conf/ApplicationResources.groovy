@@ -19,6 +19,7 @@ modules = {
         resource 'css/smart/inner.css'
         resource 'css/smart/color.css'
         resource 'css/smart/layout.css'
+        resource 'css/main.css'
 
         resource 'js/hoverIntent.js'
         resource 'js/superfish.js'

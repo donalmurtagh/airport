@@ -1,0 +1,37 @@
+.messageBarCommon {
+    background-color: white;
+    border-bottom: 3px solid;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 300;
+}
+
+.messageBarWarning {
+    color: #FF6027;
+    border-bottom-color: #FF6027;
+}
+
+#msgContainer {
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#notificationMessage {
+    padding: 7px 0 7px 50px;
+}
+
+#closeMsg {
+    padding-left: 15px;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+#topMessageBar {
+    cursor: pointer;
+}

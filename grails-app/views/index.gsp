@@ -14,21 +14,21 @@
             <div class="separator small"></div>
 
             <div class="four columns alpha">
-                <img src="images/icons/icon5.png" alt="" class=" alignleft"/>
+                <r:img uri="/images/icons/icon5.png" class="alignleft"/>
                 <span class="titleBold">Available Open:</span><br/>
                 Monday - Friday / 8:30am - 17.00pm<br/>
                 Saturday / OFF
             </div>
 
             <div class="four columns">
-                <img src="images/icons/icon6.png" alt="" class=" alignleft"/>
+                <r:img uri="/images/icons/icon6.png" class="alignleft"/>
                 <span class="titleBold">Corporate Offices:</span><br/>
                 SmartGroup – Office Blvd No. 356-357<br/>
                 Farmville Town, LA 12345
             </div>
 
             <div class="four columns omega">
-                <img src="images/icons/icon7.png" alt="" class=" alignleft"/>
+                <r:img uri="/images/icons/icon7.png" class="alignleft"/>
                 <span class="titleBold">Contact Info:</span><br/>
                 Telp: +800 123 456<br/>
                 Email: <a href="mailto:www.templatesquare.com">www.templatesquare.com</a>
@@ -36,29 +36,30 @@
 
             <div class="separator line"></div>
 
-            <div class="eight columns alpha">
-                <h4 class="titleUppercase">Login</h4>
+            <sec:ifNotLoggedIn>
+                <div class="eight columns alpha">
+                    <h4 class="titleUppercase">Login</h4>
 
-                <p>To continue past this point, you must login.</p>
+                    <p>To continue past this point, you must login.</p>
 
-                <div id="contactform" class="six columns">
+                    <div id="login" class="six columns">
 
-                    <form action="${request.contextPath}/j_spring_security_check" method="post">
-                        <fieldset>
-                            <f:field bean="login" property="j_username" label="Email Address" required="true"/>
-                            <f:field bean="login" property="j_password" label="Password">
-                                <g:passwordField name="${property}" class="text-input"/>
-                            </f:field>
-                            <f:field bean="login" property="_spring_security_remember_me" label="Remember Me"/>
-                        </fieldset>
+                        <form action="${request.contextPath}/j_spring_security_check" method="post">
+                            <fieldset>
+                                <f:field bean="login" property="j_username" label="Email Address" required="true"/>
+                                <f:field bean="login" property="j_password" label="Password">
+                                    <g:passwordField name="${property}" class="text-input"/>
+                                </f:field>
+                                <f:field bean="login" property="_spring_security_remember_me" label="Remember Me"/>
+                            </fieldset>
 
-                        <input type="submit" name="submit" style="display: block" class="button" id="submit_btn"
-                               value="Login"/><br class="clear"/>
+                            <input type="submit" name="submit" style="display: block" class="button" id="submit_btn"
+                                   value="Login"/><br class="clear"/>
 
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
-
+            </sec:ifNotLoggedIn>
             <div class="clear"></div><!-- clear float -->
         </section>
     </div>

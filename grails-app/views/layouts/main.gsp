@@ -38,7 +38,7 @@
                     <section id="navigation" class="seven columns omega">
                         <nav id="nav-wrap">
                             <ul id="topnav" class="sf-menu">
-                                <li><a href="index.html">Home</a></li>
+                                <li><g:link uri='/'>Home</g:link></li>
                                 <li><a href="about.html">About Us</a>
                                     <ul>
                                         <li><a href="index2.html">Homepage Flexslider</a></li>
@@ -59,7 +59,9 @@
                                 </li>
                                 <li><a href="service.html">Services</a></li>
 
-                                <li class="current"><a href="contact.html">Contact</a></li>
+                                <sec:ifLoggedIn>
+                                    <li><g:link controller="logout">Logout</g:link></li>
+                                </sec:ifLoggedIn>
                             </ul><!-- topnav -->
                         </nav><!-- nav -->
                         <div class="clear"></div>
@@ -75,7 +77,7 @@
             <div class="container">
                 <div id="afterheader" class="twelve columns pattern2">
                     <div class="line-op"></div>
-                    <img src="images/content/pagetitle-img2.png" alt="" class="scale-with-grid" />
+                    <r:img uri="/images/content/pagetitle-img2.png" class="scale-with-grid"/>
                     <div id="pagetitle-container">
                         <h1 class="pagetitle">Welcome</h1>
                         <span class="pagedesc">Your tagline goes here</span>

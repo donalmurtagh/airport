@@ -1,5 +1,6 @@
 package com.icaviation
 
+import com.icaviation.command.LoginCommand
 import grails.converters.JSON
 
 import javax.servlet.http.HttpServletResponse
@@ -50,10 +51,12 @@ class LoginController {
             return
         }
 
-        String view = 'auth'
+        String view = '/index'
         String postUrl = "${request.contextPath}${config.apf.filterProcessesUrl}"
-        render view: view, model: [postUrl: postUrl,
-                rememberMeParameter: config.rememberMe.parameter]
+        def rememberMe = config.rememberMe.parameter
+
+        LoginCommand loginBean = new LoginCommand(_spring_security_remember_me: rememberMe)
+        render view: view, model: [postUrl: postUrl, rememberMeParameter: rememberMe, login: loginBean]
     }
 
     /**

@@ -35,10 +35,11 @@ class AdminController {
                 UserRole.create user, userRole
 
                 flashHelper.info 'register.success': username
+                redirect action: 'listUsers'
             }
         } else {
             flashHelper.warn 'register.fail': username
+            render view: 'listUsers', model: [users: User.list(), newUser: user]
         }
-        redirect action: 'listUsers'
     }
 }

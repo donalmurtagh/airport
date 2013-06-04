@@ -1,3 +1,5 @@
+/* notification bar */
+
 .messageBarCommon {
     background-color: white;
     border-bottom: 3px solid;
@@ -34,4 +36,28 @@
 
 #topMessageBar {
     cursor: pointer;
+}
+
+/* form errors */
+.control-group.error input, .control-group.error select, .control-group.error textarea {
+    border-color: #FF6027;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+.control-group.error .checkbox, .control-group.error .radio, .control-group.error input, .control-group.error select, .control-group.error textarea {
+    color: inherit;
+    margin-bottom: 0;
+}
+
+.control-group.error .help-block, .control-group.error .help-inline {
+    color: #FF6027;
+}
+
+ul.help-inline {
+    margin-left: 15px;
+}
+
+.help-inline {
+    font-size: 95%;
+    padding-left: 5px;
 }

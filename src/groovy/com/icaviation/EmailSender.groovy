@@ -30,10 +30,8 @@ class EmailSender {
      * @param messageSubject used to resolve the email subject
      * @param mailTemplate path to the template that generates the body of the message
      * @param mailModel model that the template uses to generate the message body
-     * @param sendImmediately send the mail immediately, or wait until the next time the mail-sending job runs
      */
-    void send(String recipient, MessageSourceResolvable messageSubject, String mailTemplate,
-              Map mailModel, Boolean sendImmediately = true) {
+    void send(String recipient, MessageSourceResolvable messageSubject, String mailTemplate, Map mailModel) {
 
         String mailSubject = resolve(messageSubject)
         mailModel.baseUrl = getBaseUrl()
@@ -43,7 +41,6 @@ class EmailSender {
             to recipient
             subject mailSubject
             html mailBody
-            immediate sendImmediately
         }
     }
 

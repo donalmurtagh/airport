@@ -859,7 +859,7 @@ form {
 
 input[type="text"],
 textarea, input[type="password"], select {
-    padding: 7px 5px;
+    padding: 4px;
     font-size: 13px;
     font-family: Arial;
     -moz-border-radius: 3px;

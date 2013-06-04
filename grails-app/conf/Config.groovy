@@ -1,3 +1,5 @@
+import grails.util.Environment
+
 // locations to search for config files that get merged into the main config;
 // config files can be ConfigSlurper scripts, Java properties files, or classes
 // in the classpath in ConfigSlurper format
@@ -6,6 +8,9 @@
 //                             "classpath:${appName}-config.groovy",
 //                             "file:${userHome}/.grails/${appName}-config.properties",
 //                             "file:${userHome}/.grails/${appName}-config.groovy"]
+
+grails.config.locations = ["file:${userHome}/.grails/${appName}-config-${Environment.current}.properties"]
+
 
 // if (System.properties["${appName}.config.location"]) {
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
@@ -131,17 +136,14 @@ airport {
 }
 
 grails {
-
+    mail.default.from = "info@ic-aviation.com"
     mail {
-        host = "smtp.gmail.com"
-        port = 465
-        username = "festivals@festivals.ie"
-        password = "murtagh8"
-
-        props = ["mail.transport.protocol":"smtps",
-                "mail.smtps.host":"smtp.gmail.com",
-                "mail.smtps.port":"465",
-                "mail.smtps.auth":"true"]
+        host = "send.one.com"
+        port = 2525
+        username = "info@ic-aviation.com"
+        // password is in external file
+        props = ["mail.smtp.starttls.enable":"true",
+                "mail.smtp.port":"2525"]
     }
 }
 

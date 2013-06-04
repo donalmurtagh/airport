@@ -5,10 +5,9 @@ dataSource {
     dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
     logSql = false
     url = "jdbc:mysql://localhost/airport?useUnicode=yes&characterEncoding=UTF-8"
-
+    // password is in external file
     dbCreate = "create" // one of 'create', 'create-drop', 'update', 'validate'
     username = 'root'
-    password = ''
 
     // http://grails.1312388.n4.nabble.com/MySQL-datasource-best-practice-setup-for-production-app-td4344921.html
     properties {

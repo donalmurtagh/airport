@@ -1285,12 +1285,12 @@ tr th,
 thead th {
     font-size: 14px;
     line-height: 18px;
-    padding: 9px 24px;
+    padding: 9px 10px;
     font-family: 'Oswald', sans-serif, arial;
 }
 
 tr td {
-    padding: 6px 24px;
+    padding: 6px 10px;
 }
 
 tr.odd td {

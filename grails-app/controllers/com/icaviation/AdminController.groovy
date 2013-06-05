@@ -10,12 +10,23 @@ class AdminController {
 
     EmailSender emailSender
 
+    @Lazy
+    private Role userRole = {
+        Role.createCriteria().get {
+            eq 'authority', grailsApplication.config.airport.userRoleName
+        }
+    }()
+
     def listUsers() {
-        [users: User.list(), newUser: new User()]
+        [users: findAllRegularUsers(), newUser: new User()]
+    }
+
+    private String generatePasword() {
+        RandomStringUtils.randomAlphanumeric(10)
     }
 
     def addUser() {
-        def randomPassword = RandomStringUtils.randomAlphanumeric(10)
+        def randomPassword = generatePasword()
         def username = params.username
         User user = new User(username: username, password: randomPassword, enabled: true)
 
@@ -23,11 +34,6 @@ class AdminController {
             User.withTransaction { TransactionStatus status ->
 
                 try {
-                    Role userRole = Role.createCriteria().get {
-                        eq 'authority', grailsApplication.config.airport.userRoleName
-                        cache true
-                    }
-
                     user = user.save(failOnError: true)
                     UserRole.create user, userRole
 
@@ -40,12 +46,12 @@ class AdminController {
                     log.error "Error registering user, errors: $user.errors", ex
 
                     flashHelper.warn 'register.fail': username
-                    render view: 'listUsers', model: [users: User.list(), newUser: user]
+                    render view: 'listUsers', model: [users: findAllRegularUsers(), newUser: user]
                 }
             }
         } else {
             flashHelper.warn 'register.fail.invalid': username
-            render view: 'listUsers', model: [users: User.list(), newUser: user]
+            render view: 'listUsers', model: [users: findAllRegularUsers(), newUser: user]
         }
     }
 
@@ -58,5 +64,40 @@ class AdminController {
         // even if the email is sent synchronously it will not cause a transaction rollback, so we might as well
         // send it asynchronously
         emailSender.send(username, subject, '/email/register', mailModel, true)
+    }
+
+    private findAllRegularUsers() {
+        UserRole.findAllByRoleName(userRole.authority).user
+    }
+
+    def delete() {
+        User user = User.get(params.id)
+
+        User.withTransaction {
+            UserRole.removeAll(user)
+            user.delete()
+        }
+        flashHelper.info 'user.deleted': user.username
+        redirect action: 'listUsers'
+    }
+
+    def toggleEnabled() {
+        User user = User.get(params.id)
+        user.enabled = !user.enabled
+        user.save(failOnError: true)
+
+        def newStatus = user.enabled ? 'enabled' : 'disabled'
+        flashHelper.info 'user.enabled.toggle': [user.username, newStatus]
+        redirect action: 'listUsers'
+    }
+
+    def resendInvite() {
+        User user = User.get(params.id)
+        String newPassword = generatePasword()
+        user.password = newPassword
+        user.save(failOnError: true)
+        sendRegistrationEmail(user.username, newPassword)
+        flashHelper.info 'user.invite.resent': user.username
+        redirect action: 'listUsers'
     }
 }

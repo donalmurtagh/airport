@@ -36,6 +36,12 @@ hibernate {
 environments {
 
     development {
+        dataSource {
+            logSql = true
+        }
 
+        hibernate {
+            format_sql = true
+        }
     }
 }

@@ -42,6 +42,14 @@ class UserRole implements Serializable {
 		true
 	}
 
+    static List<UserRole> findAllByRoleName(String roleName) {
+        executeQuery("""
+                select ur from UserRole ur
+                left join fetch ur.user
+                left join fetch ur.role
+                where ur.role.authority = ?""", [roleName])
+    }
+
 	static void removeAll(User user) {
 		executeUpdate 'DELETE FROM UserRole WHERE user=:user', [user: user]
 	}

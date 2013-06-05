@@ -39,7 +39,7 @@
                                 <th>Email</th>
                                 <th colspan="2">Account Status</th>
                                 <th>Registered On</th>
-                                <th></th>
+                                <th class="collapse-border"></th>
                                 <th></th>
                             </tr>
                             </thead>
@@ -61,7 +61,7 @@
                                         </g:else>
                                     </td>
                                     <td><g:formatDate date="${user.dateCreated}"/></td>
-                                    <td class="center">
+                                    <td class="center collapse-border">
                                         <g:link action="resendInvite" id="${user.id}" class="button small"
                                                 title="Send another invitation email to this user"
                                                 onclick="return confirm('${g.message(code: 'user.resendInvite.confirm')}');">Resend Invite</g:link>

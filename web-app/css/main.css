@@ -2,14 +2,12 @@
 
 .messageBarCommon {
     background-color: white;
-    border-bottom: 3px solid;
-    font-size: 14px;
+    border-bottom: 2px solid;
+    font-size: 13px;
     font-weight: bold;
-    padding-bottom: 10px;
-    padding-top: 15px;
+    padding-top: 5px;
     position: fixed;
     text-align: center;
-    top: 0;
     width: 100%;
     z-index: 300;
 }
@@ -31,7 +29,7 @@
 #closeMsg {
     padding-left: 15px;
     font-weight: normal;
-    font-size: 0.9em;
+    font-size: 0.85em;
 }
 
 #topMessageBar {

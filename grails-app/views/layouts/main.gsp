@@ -59,7 +59,7 @@
                                 </li>
 
                                 <sec:ifAllGranted roles="ROLE_ADMIN">
-                                    <li><g:link controller="admin" action="listUsers">Admin</g:link></li>
+                                    <li><g:link controller="user" action="listUsers">Admin</g:link></li>
                                 </sec:ifAllGranted>
 
                                 <sec:ifLoggedIn>

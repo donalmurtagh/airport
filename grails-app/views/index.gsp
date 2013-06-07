@@ -43,7 +43,7 @@
 
                     <div class="form-container">
 
-                        <form action="${request.contextPath}/j_spring_security_check" method="post">
+                        <form controller="user" action="changePassword" method="post">
                             <fieldset>
                                 <f:field bean="login" property="j_username" label="Email Address" required="true"/>
                                 <f:field bean="login" property="j_password" label="Password">
@@ -52,8 +52,7 @@
                                 <f:field bean="login" property="_spring_security_remember_me" label="Remember Me"/>
                             </fieldset>
 
-                            <input type="submit" name="submit" class="submit button" id="submit_btn"
-                                   value="Login"/><br class="clear"/>
+                            <input type="submit" name="submit" class="submit button" value="Login"/><br class="clear"/>
 
                         </form>
                     </div>
@@ -76,8 +75,7 @@
                                 <f:field bean="login" property="_spring_security_remember_me" label="Remember Me"/>
                             </fieldset>
 
-                            <input type="submit" name="submit" class="submit button" id="submit_btn"
-                                   value="Login"/><br class="clear"/>
+                            <input type="submit" name="submit" class="submit button" value="Login"/><br class="clear"/>
 
                         </form>
                     </div>

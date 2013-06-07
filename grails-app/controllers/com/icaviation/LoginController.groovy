@@ -50,11 +50,10 @@ class LoginController {
             return
         }
 
-        String view = '/index'
         String postUrl = "${request.contextPath}${config.apf.filterProcessesUrl}"
 
         LoginCommand loginBean = new LoginCommand(j_username: params.username)
-        render view: view, model: [postUrl: postUrl, rememberMeParameter: config.rememberMe.parameter, login: loginBean]
+        render view: '/index', model: [postUrl: postUrl, rememberMeParameter: config.rememberMe.parameter, login: loginBean]
     }
 
     /**

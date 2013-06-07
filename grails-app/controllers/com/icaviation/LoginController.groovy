@@ -52,7 +52,9 @@ class LoginController {
 
         String postUrl = "${request.contextPath}${config.apf.filterProcessesUrl}"
 
-        LoginCommand loginBean = new LoginCommand(j_username: params.username)
+        // I don't know why this is necessary: http://stackoverflow.com/questions/16984884
+        String decodeUsername = params.username?.decodeURL()
+        LoginCommand loginBean = new LoginCommand(j_username: decodeUsername)
         render view: '/index', model: [postUrl: postUrl, rememberMeParameter: config.rememberMe.parameter, login: loginBean]
     }
 

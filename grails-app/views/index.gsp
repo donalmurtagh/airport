@@ -45,11 +45,17 @@
 
                         <form controller="user" action="changePassword" method="post">
                             <fieldset>
-                                <f:field bean="login" property="j_username" label="Email Address" required="true"/>
-                                <f:field bean="login" property="j_password" label="Password">
+                                <f:field bean="changePassword" property="currentPassword" label="Current Password">
                                     <g:passwordField name="${property}" class="text-input"/>
                                 </f:field>
-                                <f:field bean="login" property="_spring_security_remember_me" label="Remember Me"/>
+
+                                <f:field bean="changePassword" property="newPassword" label="New Password">
+                                    <g:passwordField name="${property}" class="text-input"/>
+                                </f:field>
+
+                                <f:field bean="changePassword" property="newPasswordConfirm" label="Confirm New Password">
+                                    <g:passwordField name="${property}" class="text-input"/>
+                                </f:field>
                             </fieldset>
 
                             <input type="submit" name="submit" class="submit button" value="Login"/><br class="clear"/>

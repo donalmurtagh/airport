@@ -36,13 +36,12 @@
 
             <div class="separator line"></div>
 
-            <sec:ifNotLoggedIn>
-                <div class="eight columns alpha">
-                    <h4 class="titleUppercase">Login</h4>
+            <div class="four columns alpha">
 
-                    <p>To continue past this point, you must login.</p>
+                <sec:ifLoggedIn>
+                    <h4 class="titleUppercase">Change Password</h4>
 
-                    <div class="six columns form-container">
+                    <div class="form-container">
 
                         <form action="${request.contextPath}/j_spring_security_check" method="post">
                             <fieldset>
@@ -58,8 +57,35 @@
 
                         </form>
                     </div>
-                </div>
-            </sec:ifNotLoggedIn>
+                </sec:ifLoggedIn>
+
+
+                <sec:ifNotLoggedIn>
+                    <h4 class="titleUppercase">Login</h4>
+
+                    <p>To continue past this point, you must login.</p>
+
+                    <div class="form-container">
+
+                        <form action="${request.contextPath}/j_spring_security_check" method="post">
+                            <fieldset>
+                                <f:field bean="login" property="j_username" label="Email Address" required="true"/>
+                                <f:field bean="login" property="j_password" label="Password">
+                                    <g:passwordField name="${property}" class="text-input"/>
+                                </f:field>
+                                <f:field bean="login" property="_spring_security_remember_me" label="Remember Me"/>
+                            </fieldset>
+
+                            <input type="submit" name="submit" class="submit button" id="submit_btn"
+                                   value="Login"/><br class="clear"/>
+
+                        </form>
+                    </div>
+                </sec:ifNotLoggedIn>
+            </div>
+
+            <div class="eight columns omega"></div>
+
             <div class="clear"></div><!-- clear float -->
         </section>
     </div>

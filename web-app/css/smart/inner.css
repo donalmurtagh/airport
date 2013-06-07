@@ -481,7 +481,7 @@ fieldset {
     position: relative;
 }
 
-#login label {
+.form-container label {
     display: block;
     width: 100%;
     float: left;
@@ -500,7 +500,7 @@ span.error {
     display: block;
 }
 
-#login input.text-input {
+.form-container input.text-input {
     margin-bottom: 15px;
     vertical-align: middle;
     width: 70%;
@@ -508,7 +508,7 @@ span.error {
     padding: 4px
 }
 
-#login textarea {
+.form-container textarea {
     width: 90%;
     float: left;
     font-style: italic
@@ -531,7 +531,7 @@ span.error {
     color: #d45454;
 }
 
-#login .button {
+.form-container .button {
     margin-top: 10px;
     cursor: pointer;
     clear: both;

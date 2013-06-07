@@ -42,7 +42,7 @@
 
                     <p>To continue past this point, you must login.</p>
 
-                    <div id="login" class="six columns">
+                    <div class="six columns form-container">
 
                         <form action="${request.contextPath}/j_spring_security_check" method="post">
                             <fieldset>
@@ -53,7 +53,7 @@
                                 <f:field bean="login" property="_spring_security_remember_me" label="Remember Me"/>
                             </fieldset>
 
-                            <input type="submit" name="submit" style="display: block" class="button" id="submit_btn"
+                            <input type="submit" name="submit" class="submit button" id="submit_btn"
                                    value="Login"/><br class="clear"/>
 
                         </form>

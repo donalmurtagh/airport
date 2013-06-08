@@ -32,8 +32,7 @@ class LoginController {
     def index = {
         if (springSecurityService.isLoggedIn()) {
             redirect uri: SpringSecurityUtils.securityConfig.successHandler.defaultTargetUrl
-        }
-        else {
+        } else {
             redirect action: 'auth', params: params
         }
     }
@@ -52,9 +51,9 @@ class LoginController {
 
         String postUrl = "${request.contextPath}${config.apf.filterProcessesUrl}"
 
-        // I don't know why this is necessary: http://stackoverflow.com/questions/16984884
-        String decodeUsername = params.username?.decodeURL()
-        LoginCommand loginBean = new LoginCommand(j_username: decodeUsername)
+        String lastUsername = session[UsernamePasswordAuthenticationFilter.SPRING_SECURITY_LAST_USERNAME_KEY]?.decodeHTML()
+
+        LoginCommand loginBean = new LoginCommand(j_username: lastUsername)
         render view: '/index', model: [postUrl: postUrl, rememberMeParameter: config.rememberMe.parameter, login: loginBean]
     }
 
@@ -92,35 +91,30 @@ class LoginController {
      */
     def authfail = {
 
-        def username = session[UsernamePasswordAuthenticationFilter.SPRING_SECURITY_LAST_USERNAME_KEY]
         String msg = ''
         def exception = session[WebAttributes.AUTHENTICATION_EXCEPTION]
         if (exception) {
             if (exception instanceof AccountExpiredException) {
                 msg = g.message(code: "springSecurity.errors.login.expired")
-            }
-            else if (exception instanceof CredentialsExpiredException) {
+
+            } else if (exception instanceof CredentialsExpiredException) {
                 msg = g.message(code: "springSecurity.errors.login.passwordExpired")
-            }
-            else if (exception instanceof DisabledException) {
+
+            } else if (exception instanceof DisabledException) {
                 msg = g.message(code: "springSecurity.errors.login.disabled")
-            }
-            else if (exception instanceof LockedException) {
+
+            } else if (exception instanceof LockedException) {
                 msg = g.message(code: "springSecurity.errors.login.locked")
-            }
-            else {
+
+            } else {
                 msg = g.message(code: "springSecurity.errors.login.fail")
             }
         }
 
         if (springSecurityService.isAjax(request)) {
             render([error: msg] as JSON)
-        }
-        else {
+        } else {
             flashHelper.warn msg
-
-            // Add username to the params so that it can be redisplayed in the "try login again" form
-            params.username = username
             redirect action: 'auth', params: params
         }
     }

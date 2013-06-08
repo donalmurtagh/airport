@@ -82,7 +82,6 @@
                             </fieldset>
 
                             <input type="submit" name="submit" class="submit button" value="Login"/><br class="clear"/>
-
                         </form>
                     </div>
                 </sec:ifNotLoggedIn>

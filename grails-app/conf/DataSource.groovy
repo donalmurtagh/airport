@@ -48,7 +48,6 @@ environments {
     production {
         dataSource {
             url = "jdbc:mysql://mysql-airport.jelastic.dogado.eu/airport?useUnicode=yes&characterEncoding=UTF-8"
-            password = ''
         }
     }
 }

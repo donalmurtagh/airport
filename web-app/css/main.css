@@ -56,6 +56,14 @@ ul.help-inline {
     clear: left;
 }
 
+ul.help-inline li {
+    padding-bottom: 0;
+}
+
+ul.help-inline li:last-child {
+    padding-bottom: 10px;
+}
+
 .help-inline {
     font-size: 95%;
     padding-left: 5px;
@@ -88,4 +96,8 @@ input[type="color"]:focus,
 
 .bottom-spacer {
     margin-bottom: 10px;
+}
+
+.double-top-spacer {
+    margin-top: 20px;
 }

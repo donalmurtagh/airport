@@ -1,13 +1,14 @@
 package com.icaviation
 
-import com.icaviation.command.ChangePasswordCommand
+import com.icaviation.command.*
 import com.icaviation.i18n.GroovyMessageSourceResolvable
 import grails.plugins.springsecurity.Secured
 import grails.plugins.springsecurity.SpringSecurityService
 import org.apache.commons.lang.RandomStringUtils
+import org.codehaus.groovy.grails.plugins.springsecurity.SpringSecurityUtils
 import org.springframework.transaction.TransactionStatus
 
-@Secured(['ROLE_ADMIN'])
+
 class UserController {
 
     EmailSender emailSender
@@ -19,6 +20,86 @@ class UserController {
             eq 'authority', grailsApplication.config.airport.userRoleName
         }
     }()
+
+    def beginPasswordReset() {
+        [forgotPassword: new ForgotPasswordCommand()]
+    }
+
+
+    /**
+     * Send an email that will allow the user to reset their password
+     */
+    def forgotPassword(ForgotPasswordCommand command) {
+
+        if (!command.validate()) {
+            render(view: 'beginPasswordReset', model: [forgotPassword: command])
+            flashHelper.warn 'forgotPassword.error'
+            return
+        }
+        User user = User.findByUsername(command.username)
+        def registrationCode = new RegistrationCode(username: user.username).save(failOnError: true)
+
+        String url = generateLink('resetPassword', [t: registrationCode.token])
+
+        def mailModel = [url: url]
+        def subject = new GroovyMessageSourceResolvable('email.subject.passwordReset')
+        emailSender.send(user.username, subject, '/email/passwordReset', mailModel, true)
+
+        log.info "Password confirmation email sent to $user.username"
+        flashHelper.info 'forgotPassword.email': user.username
+        redirect controller: 'home'
+    }
+
+    /**
+     * This action has two roles:
+     * <ul>
+     *   <li>Handles the link contained in the password reset email, i.e. shows the form that allows the user to
+     *   choose a new password</li>
+     *   <li>Handles the submission of this form</li>
+     * </ul>
+     */
+    def resetPassword(ResetPasswordCommand command) {
+
+        String token = params.t
+        def defaultTargetUrl = SpringSecurityUtils.securityConfig.successHandler.defaultTargetUrl
+
+        def registrationCode = token ? RegistrationCode.findByToken(token) : null
+        if (!registrationCode) {
+            flashHelper.warn 'resetPassword.badCode'
+            redirect uri: defaultTargetUrl
+            return
+        }
+
+        if (!request.post) {
+            return [token: token, command: new ResetPasswordCommand()]
+        }
+
+        command.username = registrationCode.username
+
+        if (!command.validate()) {
+            flashHelper.warn 'resetPassword.change.error'
+            return [token: token, command: command]
+        }
+
+        RegistrationCode.withTransaction { status ->
+            def user = User.findByUsername(registrationCode.username)
+            user.password = command.password
+            user.save(failOnError: true)
+            registrationCode.delete()
+        }
+
+        springSecurityService.reauthenticate registrationCode.username
+        flashHelper.info 'resetPassword.success'
+
+        String postResetUrl = defaultTargetUrl
+        redirect uri: postResetUrl
+    }
+
+    private String generateLink(String action, linkParams) {
+        createLink(base: "$request.scheme://$request.serverName:$request.serverPort$request.contextPath",
+                controller: 'user', action: action,
+                params: linkParams)
+    }
 
     @Secured(['ROLE_ADMIN', 'ROLE_USER'])
     def changePassword(ChangePasswordCommand command) {
@@ -35,6 +116,7 @@ class UserController {
         }
     }
 
+    @Secured(['ROLE_ADMIN'])
     def listUsers() {
         [users: findAllRegularUsers(), newUser: new User()]
     }
@@ -43,6 +125,7 @@ class UserController {
         RandomStringUtils.randomAlphanumeric(10)
     }
 
+    @Secured(['ROLE_ADMIN'])
     def addUser() {
         def randomPassword = generatePasword()
         def username = params.username
@@ -88,6 +171,7 @@ class UserController {
         UserRole.findAllByRoleName(userRole.authority).user
     }
 
+    @Secured(['ROLE_ADMIN'])
     def delete() {
         User user = User.get(params.id)
 
@@ -99,6 +183,7 @@ class UserController {
         redirect action: 'listUsers'
     }
 
+    @Secured(['ROLE_ADMIN'])
     def toggleEnabled() {
         User user = User.get(params.id)
         user.enabled = !user.enabled
@@ -109,6 +194,7 @@ class UserController {
         redirect action: 'listUsers'
     }
 
+    @Secured(['ROLE_ADMIN'])
     def resendInvite() {
         User user = User.get(params.id)
         String newPassword = generatePasword()

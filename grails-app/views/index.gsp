@@ -1,5 +1,4 @@
 <head>
-    <meta name="layout" content="main"/>
 </head>
 
 <body>
@@ -30,12 +29,11 @@
                                 </f:field>
                             </fieldset>
 
-                            <input type="submit" name="submit" class="submit button" value="Change"/><br class="clear"/>
+                            <input type="submit" name="submit" class="submit button" value="Change"/>
 
                         </g:form>
                     </div>
                 </sec:ifLoggedIn>
-
 
                 <sec:ifNotLoggedIn>
                     <h4 class="titleUppercase">Login</h4>
@@ -53,9 +51,11 @@
                                 <f:field bean="login" property="_spring_security_remember_me" label="Remember Me"/>
                             </fieldset>
 
-                            <input type="submit" name="submit" class="submit button" value="Login"/><br class="clear"/>
+                            <input type="submit" name="submit" class="submit button" value="Login"/>
                         </form>
                     </div>
+
+                    <p class="double-top-spacer">Forgot password? <g:link controller="user" action="beginPasswordReset">Recover it here</g:link>.</p>
                 </sec:ifNotLoggedIn>
             </div>
 

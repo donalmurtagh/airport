@@ -10,6 +10,8 @@ import org.codehaus.groovy.grails.web.mapping.LinkGenerator
 import org.springframework.context.MessageSource
 import org.springframework.context.MessageSourceResolvable
 
+import javax.annotation.PostConstruct
+import javax.annotation.PreDestroy
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
@@ -21,6 +23,11 @@ class EmailSender {
     MailService mailService
 
     private final ExecutorService threadPool = Executors.newFixedThreadPool(5)
+
+    @PreDestroy
+    private void close() {
+        threadPool.shutdown()
+    }
 
     private String getBaseUrl() {
         String baseUrl = linkGenerator.link(absolute: true, uri: '/')

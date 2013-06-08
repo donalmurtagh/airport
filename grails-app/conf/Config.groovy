@@ -74,7 +74,7 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = false
-        grails.serverURL = "http://airport.jelastic.dogado.eu/"
+        grails.serverURL = "http://airport.jelastic.dogado.eu"
     }
 }
 

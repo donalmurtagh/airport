@@ -23,16 +23,15 @@ class ChangePasswordCommand {
 
         springSecurityService bindable: false
 
-        currentPassword validator: {val, self ->
+        currentPassword blank: false, validator: {val, self ->
             User user = self.springSecurityService.currentUser
             user.password == self.encodedCurrentPassword
         }
 
         newPassword blank: false, validator: {val, self ->
-
-            if (val != self.newPasswordConfirm) {
-                'user.password.validator.error'
-            }
+            val == self.newPasswordConfirm
         }
+
+        newPasswordConfirm blank: false
     }
 }

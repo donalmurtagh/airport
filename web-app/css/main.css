@@ -52,7 +52,8 @@
 }
 
 ul.help-inline {
-    margin-left: 15px;
+    margin-left: 10px;
+    clear: left;
 }
 
 .help-inline {

@@ -27,6 +27,8 @@ class UserController {
             User user = springSecurityService.currentUser
             user.password = command.newPassword
             user.save(failOnError: true)
+            flashHelper.info 'passwordChange.success'
+            redirect controller: 'home'
 
         } else {
             render view: '/index', model: [changePassword: command]

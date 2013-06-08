@@ -43,7 +43,7 @@
 
                     <div class="form-container">
 
-                        <form controller="user" action="changePassword" method="post">
+                        <g:form controller="user" action="changePassword" method="post">
                             <fieldset>
                                 <f:field bean="changePassword" property="currentPassword" label="Current Password">
                                     <g:passwordField name="${property}" class="text-input"/>
@@ -58,9 +58,9 @@
                                 </f:field>
                             </fieldset>
 
-                            <input type="submit" name="submit" class="submit button" value="Login"/><br class="clear"/>
+                            <input type="submit" name="submit" class="submit button" value="Change"/><br class="clear"/>
 
-                        </form>
+                        </g:form>
                     </div>
                 </sec:ifLoggedIn>
 

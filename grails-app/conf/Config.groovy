@@ -117,8 +117,6 @@ log4j = {
             'grails.app.resourceMappers.org.grails.plugin.zippedresources',
             'grails.app.resourceMappers.com.blockconsult.yuiminifyresources'
 
-    // Suppress this message that appears when every page is loaded
-    // "Invocation of <r:resource> for a resource that apparently doesn't exist: http://localhost:8080/summer-festivals/images/logo-home.png"
     error 'grails.app.taglib.org.grails.plugin.resource'
 }
 

@@ -25,6 +25,7 @@ grails.project.dependency.resolution = {
 
         mavenLocal()
         mavenCentral()
+        mavenRepo "http://maven.springframework.org/milestone/"
 
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://snapshots.repository.codehaus.org"
@@ -50,5 +51,6 @@ grails.project.dependency.resolution = {
         build ":tomcat:$grailsVersion"
 
         compile ":spring-security-core:1.2.7.3", ":mail:1.0.1"
+        compile ":cloud-foundry:1.2.3"
     }
 }

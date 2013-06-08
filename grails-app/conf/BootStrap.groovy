@@ -29,7 +29,7 @@ class BootStrap {
                 def page = it + 1
 
                 5.times {
-                    new ToolboxItem(page: page, text: "Question ${++questionIndex}").save(failOnError: true)
+                    new ToolboxItem(page: page, text: "Item ${++questionIndex}").save(failOnError: true)
                 }
             }
         }

@@ -98,6 +98,10 @@ input[type="color"]:focus,
     margin-bottom: 10px;
 }
 
+.double-bottom-spacer {
+    margin-bottom: 20px;
+}
+
 .double-top-spacer {
     margin-top: 20px;
 }

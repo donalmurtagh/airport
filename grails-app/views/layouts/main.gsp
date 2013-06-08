@@ -39,24 +39,19 @@
                         <nav id="nav-wrap">
                             <ul id="topnav" class="sf-menu">
                                 <li><g:link uri='/'>Home</g:link></li>
-                                <li><a href="about.html">About Us</a>
-                                    <ul>
-                                        <li><a href="index2.html">Homepage Flexslider</a></li>
-                                        <li><a href="element.html">Elements</a></li>
-                                        <li><a href="columns.html">Columns</a></li>
-                                        <li><a href="pricing.html">Pricing Tables</a></li>
-                                        <li><a href="sidebar_right.html">Page Sidebar Right</a></li>
-                                        <li><a href="sidebar_left.html">Page Sidebar Left</a></li>
-                                        <li><a href="single.html">Blog Details</a></li>
-                                        <li><a href="#">Dropdown</a>
-                                            <ul>
-                                                <li><a href="#">Only</a></li>
-                                                <li><a href="#">Example of</a></li>
-                                                <li><a href="#">The Dropdown</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
+
+                                <sec:ifLoggedIn>
+                                    <li><g:link controller="toolbox" action="showPage">Toolbox</g:link>
+                                        <ul>
+                                            <g:each var="page" in="${(1..lastToolboxPage)}">
+                                                <li>
+                                                    <g:link controller="toolbox" action="showPage"
+                                                            params="[page: page]">Page ${page}</g:link>
+                                                </li>
+                                            </g:each>
+                                        </ul>
+                                    </li>
+                                </sec:ifLoggedIn>
 
                                 <sec:ifAllGranted roles="ROLE_ADMIN">
                                     <li><g:link controller="user" action="listUsers">Admin</g:link></li>
@@ -69,6 +64,7 @@
                         </nav><!-- nav -->
                         <div class="clear"></div>
                     </section>
+
                     <div class="clear"></div>
                 </header>
             </div>
@@ -97,6 +93,7 @@
             <div class="container">
                 <div id="footercontainer" class="twelve columns">
                     <footer id="footer">&copy; 2013 All Rights Reserved</footer>
+
                     <div id="toTop"></div>
                 </div>
             </div>

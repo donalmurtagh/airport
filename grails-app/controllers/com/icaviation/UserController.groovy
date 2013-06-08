@@ -25,7 +25,6 @@ class UserController {
         [forgotPassword: new ForgotPasswordCommand()]
     }
 
-
     /**
      * Send an email that will allow the user to reset their password
      */

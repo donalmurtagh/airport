@@ -1,3 +1,4 @@
+import grails.util.GrailsUtil
 import org.codehaus.groovy.grails.commons.GrailsApplication
 import com.icaviation.*
 
@@ -20,6 +21,17 @@ class BootStrap {
         // create some admins
         ['tshearer@ic-aviation.com', 'domurtag@yahoo.co.uk'].each {
             createUser it, adminRole
+        }
+
+        if (GrailsUtil.developmentEnv) {
+            def questionIndex = 0
+            3.times {
+                def page = it + 1
+
+                5.times {
+                    new ToolboxItem(page: page, text: "Question ${++questionIndex}").save(failOnError: true)
+                }
+            }
         }
     }
 

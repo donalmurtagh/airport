@@ -23,14 +23,12 @@ class BootStrap {
             createUser it, adminRole
         }
 
-        if (GrailsUtil.developmentEnv) {
-            def questionIndex = 0
-            3.times {
-                def page = it + 1
+        def questionIndex = 0
+        3.times {
+            def page = it + 1
 
-                5.times {
-                    new ToolboxItem(page: page, text: "Item ${++questionIndex}").save(failOnError: true)
-                }
+            5.times {
+                new ToolboxItem(page: page, text: "Item ${++questionIndex}").save(failOnError: true)
             }
         }
     }

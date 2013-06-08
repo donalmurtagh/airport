@@ -74,7 +74,7 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = false
-        // TODO: grails.serverURL = "http://www.changeme.com"
+        grails.serverURL = "http://airport.jelastic.dogado.eu/"
     }
 }
 
@@ -84,17 +84,6 @@ log4j = {
         console name: 'stdout', layout: pattern(conversionPattern: logPattern)
 
         file name: "airportLog", file: "airport.log"
-
-        environments {
-            production {
-                // Change the location of the built-in unfiltered stacktrace logger's file output
-                // Must be a location tomcat7 user can write to: http://joshuakehn.com/2012/2/9/Grails-in-Production.html
-                rollingFile name: "stacktrace", file: "/var/log/tomcat7/stacktrace.log"
-
-                // Also change location of FileAppender output (see above)
-                file name: "airportLog", file: "/var/log/tomcat7/airport.log"
-            }
-        }
     }
 
     root {

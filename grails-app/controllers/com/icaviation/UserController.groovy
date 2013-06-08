@@ -157,8 +157,7 @@ class UserController {
 
     private sendRegistrationEmail(String username, String plainTextPassword) {
 
-        // TODO: add the change password URL
-        def mailModel = [username: username, password: plainTextPassword, changePasswordUrl: '']
+        def mailModel = [username: username, password: plainTextPassword]
         def subject = new GroovyMessageSourceResolvable('register.subject')
 
         // even if the email is sent synchronously it will not cause a transaction rollback, so we might as well

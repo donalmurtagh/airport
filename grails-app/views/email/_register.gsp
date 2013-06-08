@@ -9,8 +9,7 @@ You can login with the following information:</p>
 </ul>
 
 <p style="margin-bottom: 10px;">
-    After logging in with this temporary password, please
-    <a href="${changePasswordUrl}">change it</a> to something you'll remember more easily.
+    After logging in with this temporary password, please change it to something you'll remember more easily.
 </p>
 
 <p>Best Wishes,</p>

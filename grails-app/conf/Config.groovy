@@ -63,6 +63,9 @@ environments {
     development {
         grails.serverURL = "http://localhost:8080/airport"
         grails.logging.jul.usebridge = true
+
+        // Disable resource optimisations
+        grails.resources.mappers.hashandcache.excludes = ['**/*']
     }
     production {
         grails.logging.jul.usebridge = false
@@ -85,11 +88,9 @@ log4j = {
                 // Change the location of the built-in unfiltered stacktrace logger's file output
                 // Must be a location tomcat7 user can write to: http://joshuakehn.com/2012/2/9/Grails-in-Production.html
                 rollingFile name: "stacktrace", file: "/var/log/tomcat7/stacktrace.log"
-                //rollingFile name: "stacktrace", file: "/tmp/stacktrace.log"
 
                 // Also change location of FileAppender output (see above)
                 file name: "airportLog", file: "/var/log/tomcat7/airport.log"
-                //file name: "airportLog", file: "/tmp/airport.log"
             }
         }
     }
@@ -123,6 +124,10 @@ grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.icaviatio
 grails.plugins.springsecurity.authority.className = 'com.icaviation.Role'
 
 grails.plugins.springsecurity.useSecurityEventListener = true
+
+grails.plugins.springsecurity.controllerAnnotations.staticRules = [
+        '/console/**': ['ROLE_ADMIN']
+]
 
 
 airport {

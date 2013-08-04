@@ -40,17 +40,25 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        runtime ":hibernate:$grailsVersion", ":jquery:1.8.3", ":resources:1.1.6", ":fields:1.3", ":flash-helper:0.9.5"
-
+        runtime ":hibernate:$grailsVersion",
+                ":jquery:1.8.3",
+                ":console:1.2",
+                ":fields:1.3",
+                ":flash-helper:0.9.5",
+                ":resources:1.1.6",
+                ":cached-resources:1.0",
+                ":zipped-resources:1.0"
 
         // Uncomment these (or add new ones) to enable additional resources capabilities
         //runtime ":zipped-resources:1.0"
         //runtime ":cached-resources:1.0"
         //runtime ":yui-minify-resources:0.1.5"
 
-        build ":tomcat:$grailsVersion"
+        build ":tomcat:$grailsVersion",
+                ":yui-war-minify:1.3"
 
-        compile ":spring-security-core:1.2.7.3", ":mail:1.0.1"
-        //compile ":cloud-foundry:1.2.3"
+        compile ":spring-security-core:1.2.7.3",
+                ":mail:1.0.1",
+                ":cache-headers:1.1.5"
     }
 }

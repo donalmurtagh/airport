@@ -27,7 +27,8 @@ class BootStrap {
         def builder = new DomainBuilder()
         builder.classNameResolver = 'com.icaviation'
 
-        def fullService = builder.toolbox(name: 'Full Service Airlines') {
+        def allToolboxes = []
+        allToolboxes << builder.toolbox(name: 'Full Service Airlines') {
             toolboxItem(
                     heading: 'How many people live in your catchment and what are their travel patterns?',
                     text: 'Obviously, the bigger the catchment the more opportunity that exists for the carrier to attract people onto its flights. However, Flag Carrier airlines are also very interested in traffic flows from a particular city or region. Try to identify where people want to go or where they are going already. There are various ways to do this, many airports carry out surveys in the local area for example. Or speak to some of the businesses operating in your area and ask them where they need their employees to travel to most often. There are also companies like MK Metrics that can carry out passenger demand analyses for particular destinations.'
@@ -42,11 +43,12 @@ class BootStrap {
             )
         }
 
-        fullService.save(failOnError: true)
+        allToolboxes << builder.toolbox(name: 'Empty Toolbox')
+        allToolboxes << builder.toolbox(name: 'Empty Toolbox2')
 
-        new Toolbox(name: 'Empty Toolbox').save(failOnError: true)
-        new Toolbox(name: 'Empty Toolbox2').save(failOnError: true)
-
+        allToolboxes.each {
+            it.save(failOnError: true)
+        }
     }
 
     /**

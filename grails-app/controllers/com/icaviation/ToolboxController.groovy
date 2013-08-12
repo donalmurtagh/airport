@@ -11,25 +11,23 @@ class ToolboxController {
 
     SpringSecurityService springSecurityService
 
-    def showPage(Integer page) {
+    def show() {
 
-        if (!page || page > getLastPageIndex()) {
-            page = 1
-        }
+        Toolbox toolbox = Toolbox.read(params.id)
 
         List<Response> completedItems = Response.withCriteria {
             eq 'user', springSecurityService.currentUser
             eq 'complete', true
 
             toolboxItem {
-                eq 'page', page
+                eq 'toolbox', toolbox
             }
         }
 
-        List<ToolboxItem> toolboxItems = ToolboxItem.findAllByPage(page)
+        List<ToolboxItem> toolboxItems = ToolboxItem.findAllByToolbox(toolbox)
         List<Long> completedToolboxItemIds = completedItems.toolboxItem.id
 
-        [completedToolboxItemIds: completedToolboxItemIds, toolboxItems: toolboxItems, page: page]
+        [completedToolboxItemIds: completedToolboxItemIds, toolboxItems: toolboxItems, toolbox: toolbox]
     }
 
     def toggleItem() {
@@ -46,16 +44,6 @@ class ToolboxController {
             }
 
             render status: HttpServletResponse.SC_OK
-        }
-    }
-
-    private Integer getLastPageIndex() {
-        ToolboxItem.createCriteria().get {
-            cache true
-
-            projections {
-                max('page')
-            }
         }
     }
 }

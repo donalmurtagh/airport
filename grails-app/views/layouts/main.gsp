@@ -41,12 +41,11 @@
                                 <li><g:link uri='/'>Home</g:link></li>
 
                                 <sec:ifLoggedIn>
-                                    <li><g:link controller="toolbox" action="showPage">Toolbox</g:link>
+                                    <li><a href="javascript:void(0)">Marketing to Airlines</a>
                                         <ul>
-                                            <g:each var="page" in="${(1..lastToolboxPage)}">
+                                            <g:each var="toolbox" in="${toolboxes}">
                                                 <li>
-                                                    <g:link controller="toolbox" action="showPage"
-                                                            params="[page: page]">Page ${page}</g:link>
+                                                    <g:link controller="toolbox" action="show" id="${toolbox.id}">${toolbox.name.encodeAsHTML()}</g:link>
                                                 </li>
                                             </g:each>
                                         </ul>

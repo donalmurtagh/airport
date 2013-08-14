@@ -13,13 +13,9 @@
 
             <h2>${toolbox.name}</h2>
 
-            <p class="double-bottom-spacer">
-                For more information about each topic, click on the sections below to expand them. Use the checkboxes
-                to indicate which items have been completed.
-            </p>
-
             <g:each in="${toolbox.toolboxSections}" var="section">
-                <h3>${section.name.encodeAsHTML()}</h3>
+                <h3 class="double-top-spacer">${section.heading.encodeAsHTML()}</h3>
+                <p class="bottom-spacer">${section.text.encodeAsHTML()}</p>
 
                 <div class="toggle">
 

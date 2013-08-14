@@ -3,7 +3,8 @@ package com.icaviation
 
 class ToolboxSection {
 
-    String name
+    String heading
+    String text
 
     static hasMany = [toolboxItems: ToolboxItem]
     List toolboxItems
@@ -11,10 +12,13 @@ class ToolboxSection {
     static belongsTo = [toolbox: Toolbox]
 
     static constraints = {
-        name blank: false
+        heading blank: false
+        text blank: false
     }
 
     static mapping = {
+        text type: 'text'
+
         cache usage: 'read-only'
         toolboxItems cache: true
     }

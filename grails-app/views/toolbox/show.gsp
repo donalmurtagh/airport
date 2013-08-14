@@ -13,24 +13,31 @@
 
             <h2>${toolbox.name}</h2>
 
-            <p class="double-bottom-spacer">Select the items that have been completed.</p>
+            <p class="double-bottom-spacer">
+                For more information about each topic, click on the sections below to expand them. Use the checkboxes
+                to indicate which items have been completed.
+            </p>
 
             <g:each in="${toolbox.toolboxSections}" var="section">
                 <h3>${section.name.encodeAsHTML()}</h3>
 
-                <g:each in="${section.toolboxItems}" var="item">
+                <div class="toggle">
 
-                    <div class="bottom-spacer">
-                        <h4 class="item-title">${item.heading.encodeAsHTML()}</h4>
+                    <g:each in="${section.toolboxItems}" var="item">
 
-                        <label for="item-${item.id}">
+                        <h2 class="trigger"><span>${item.heading.encodeAsHTML()}</span></h2>
 
-                            <g:checkBox name="item-${item.id}" value="${item.id in completedToolboxItemIds}"
-                                        onchange="${remoteFunction(action: 'toggleItem', id: item.id)}"/>
-                            ${item.text}
-                        </label>
-                    </div>
-                </g:each>
+                        <div class="toggle_container">
+                            <div class="block">
+                                <p>
+                                    ${item.text}
+                                    <g:checkBox name="item-${item.id}" value="${item.id in completedToolboxItemIds}"
+                                            onchange="${remoteFunction(action: 'toggleItem', id: item.id)}"/>
+                                </p>
+                            </div>
+                        </div>
+                    </g:each>
+                </div>
             </g:each>
         </section>
     </div>

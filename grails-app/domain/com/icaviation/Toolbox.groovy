@@ -3,7 +3,9 @@ package com.icaviation
 
 class Toolbox {
     String name
-    static hasMany = [toolboxItems: ToolboxItem]
+
+    static hasMany = [toolboxSections: ToolboxSection]
+    List toolboxSections
 
     static constraints = {
         name blank: false
@@ -11,6 +13,6 @@ class Toolbox {
 
     static mapping = {
         cache usage: 'read-only'
-        toolboxItems cache: true
+        toolboxSections cache: true
     }
 }

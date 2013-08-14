@@ -20,14 +20,14 @@ class ToolboxController {
             eq 'complete', true
 
             toolboxItem {
-                eq 'toolbox', toolbox
+                toolboxSection {
+                    eq 'toolbox', toolbox
+                }
             }
         }
 
-        List<ToolboxItem> toolboxItems = ToolboxItem.findAllByToolbox(toolbox)
         List<Long> completedToolboxItemIds = completedItems.toolboxItem.id
-
-        [completedToolboxItemIds: completedToolboxItemIds, toolboxItems: toolboxItems, toolbox: toolbox]
+        [completedToolboxItemIds: completedToolboxItemIds, toolbox: toolbox]
     }
 
     def toggleItem() {

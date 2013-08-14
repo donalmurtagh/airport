@@ -6,7 +6,7 @@ class ToolboxItem {
     String text
 
     static hasMany = [responses: Response]
-    static belongsTo = [toolbox: Toolbox]
+    static belongsTo = [toolboxSection: ToolboxSection]
 
     static constraints = {
         heading blank: false

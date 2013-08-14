@@ -1,8 +1,8 @@
 <head>
     <style type="text/css">
-        .item-title {
-            font-weight: normal;
-        }
+    .item-title {
+        font-weight: normal;
+    }
     </style>
 </head>
 
@@ -15,18 +15,22 @@
 
             <p class="double-bottom-spacer">Select the items that have been completed.</p>
 
-            <g:each in="${toolboxItems}" var="item">
+            <g:each in="${toolbox.toolboxSections}" var="section">
+                <h3>${section.name.encodeAsHTML()}</h3>
 
-                <div class="bottom-spacer">
-                    <h4 class="item-title">${item.heading}</h4>
+                <g:each in="${section.toolboxItems}" var="item">
 
-                    <label for="item-${item.id}">
+                    <div class="bottom-spacer">
+                        <h4 class="item-title">${item.heading.encodeAsHTML()}</h4>
 
-                        <g:checkBox name="item-${item.id}" value="${item.id in completedToolboxItemIds}"
-                                    onchange="${remoteFunction(action: 'toggleItem', id: item.id)}"/>
-                        ${item.text}
-                    </label>
-                </div>
+                        <label for="item-${item.id}">
+
+                            <g:checkBox name="item-${item.id}" value="${item.id in completedToolboxItemIds}"
+                                        onchange="${remoteFunction(action: 'toggleItem', id: item.id)}"/>
+                            ${item.text}
+                        </label>
+                    </div>
+                </g:each>
             </g:each>
         </section>
     </div>

@@ -17,6 +17,11 @@
             margin-bottom: 5px;
         }
 
+        .toggle_container label {
+            color: #676767;
+            font-weight: bold;
+        }
+
         .label-holder {
             margin-left: 20px;
             margin-bottom: 10px;

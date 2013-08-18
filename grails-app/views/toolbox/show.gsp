@@ -17,7 +17,17 @@
             margin-bottom: 5px;
         }
 
+        .label-holder {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: justify;
+        }
     </style>
+
+    <title>${toolbox.name}</title>
 </head>
 
 <body>
@@ -41,9 +51,16 @@
                         <div class="toggle_container">
                             <div class="block">
                                 ${item.text}
-                                <g:checkBox style="float: left;" name="item-${item.id}"
-                                            value="${item.id in completedToolboxItemIds}"
-                                            onchange="${remoteFunction(action: 'toggleItem', id: item.id)}"/>
+
+
+                            </div>
+                            <div class="label-holder">
+                                <label for="item-${item.id}">
+                                    <g:checkBox name="item-${item.id}"
+                                                value="${item.id in completedToolboxItemIds}"
+                                                onchange="${remoteFunction(action: 'toggleItem', id: item.id)}"/>
+                                    Completed
+                                </label>
                             </div>
                         </div>
                     </g:each>

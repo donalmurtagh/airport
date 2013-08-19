@@ -105,3 +105,7 @@ input[type="color"]:focus,
 .double-top-spacer {
     margin-top: 20px;
 }
+
+.top-spacer {
+    margin-top: 10px;
+}

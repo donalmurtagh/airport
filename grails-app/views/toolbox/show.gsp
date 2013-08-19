@@ -45,20 +45,16 @@
             <g:each in="${toolbox.toolboxSections}" var="section">
                 <h3 class="double-top-spacer">${section.heading.encodeAsHTML()}</h3>
 
-                <p class="bottom-spacer">${section.text.encodeAsHTML()}</p>
+                ${section.text}
 
-                <div class="toggle">
+                <div class="toggle top-spacer">
 
                     <g:each in="${section.toolboxItems}" var="item">
 
                         <h2 class="trigger"><span>${item.heading.encodeAsHTML()}</span></h2>
 
                         <div class="toggle_container">
-                            <div class="block">
-                                ${item.text}
-
-
-                            </div>
+                            <div class="block">${item.text}</div>
                             <div class="label-holder">
                                 <label for="item-${item.id}">
                                     <g:checkBox name="item-${item.id}"

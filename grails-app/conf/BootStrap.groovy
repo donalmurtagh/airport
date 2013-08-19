@@ -162,7 +162,8 @@ class BootStrap {
             }
             toolboxSection(
                     heading: 'Deliver and Communicate',
-                    text: "<p>So when you have created a strong Business Case, what do you do next?  Making contact with airlines can sometimes be quite a daunting task, Flag Carrier airlines in particular are often very large companies with thousands of staff, so where do you start? There are some general principles to follow when approaching airlines whether that is by phone, by letter or in a direct face to face meeting:</p>") {
+                    text: "<p>So when you have created a strong Business Case, what do you do next?  Making contact with airlines can sometimes be quite a daunting task, Flag Carrier airlines in particular are often very large companies with thousands of staff, so where do you start? There are some general principles to follow when approaching airlines whether that is by phone, by letter or in a direct face to face meeting:</p>",
+                    showCheckboxes: false) {
                 toolboxItem(
                         heading: 'Be Clear and Concise',
                         text: "<p>Keep the message clear and concise - busy people don't want to be wasting their time listening to lot of superfluous information. Stick to the facts that you have gathered while creating your Business Case and avoid unnecessary information.</p>"
@@ -321,7 +322,7 @@ class BootStrap {
                         text: """\
                                 <p>The airport will offer a 3 year, zero airport and handling cost incentive to any airline that can transport a minimum of 50,000 passengers to and from any new destination in Spain. In addition, from year  4 onwards, for a further 3 years, the all inclusive airport fee shall be €5 per departing passenger. There will also be a passenger volume incentive that will reduce the airlines' costs as follows:    </p>
 
-                                <table class="item-table">
+                                <table id="charges">
                                     <thead>
                                         <tr>
                                             <th>Year</th>

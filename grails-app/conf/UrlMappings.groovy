@@ -1,3 +1,5 @@
+import grails.util.GrailsUtil
+
 class UrlMappings {
 
 	static mappings = {
@@ -8,6 +10,9 @@ class UrlMappings {
 		}
 
         "/"(controller: 'home')
-		"500"(view:'/error')
+
+        "403"(controller: "error", action: "forbidden")
+        "404"(controller: "error", action: "notFound")
+        "500"(controller: "error", action: "serverError")
 	}
 }

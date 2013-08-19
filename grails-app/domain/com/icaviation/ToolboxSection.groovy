@@ -5,6 +5,7 @@ class ToolboxSection {
 
     String heading
     String text
+    Boolean showCheckboxes = true
 
     static hasMany = [toolboxItems: ToolboxItem]
     List toolboxItems

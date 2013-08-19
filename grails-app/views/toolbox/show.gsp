@@ -30,6 +30,15 @@
         p {
             text-align: justify;
         }
+
+        #charges {
+            width: 50%;
+            margin: 10px auto 0 auto;
+        }
+
+        #charges td {
+            text-align: center;
+        }
     </style>
 
     <title>${toolbox.name}</title>
@@ -55,14 +64,17 @@
 
                         <div class="toggle_container">
                             <div class="block">${item.text}</div>
-                            <div class="label-holder">
-                                <label for="item-${item.id}">
-                                    <g:checkBox name="item-${item.id}"
-                                                value="${item.id in completedToolboxItemIds}"
-                                                onchange="${remoteFunction(action: 'toggleItem', id: item.id)}"/>
-                                    Completed
-                                </label>
-                            </div>
+
+                            <g:if test="${section.showCheckboxes}">
+                                <div class="label-holder">
+                                    <label for="item-${item.id}">
+                                        <g:checkBox name="item-${item.id}"
+                                                    value="${item.id in completedToolboxItemIds}"
+                                                    onchange="${remoteFunction(action: 'toggleItem', id: item.id)}"/>
+                                        Completed
+                                    </label>
+                                </div>
+                            </g:if>
                         </div>
                     </g:each>
                 </div>

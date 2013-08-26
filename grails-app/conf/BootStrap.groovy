@@ -362,7 +362,55 @@ class BootStrap {
                         heading: 'Route Potential',
                         text: '<p>We already have several charter and scheduled flights to the canary islands, Malaga and Alicante. During the summer months all of these flights are booked with an average load factor of 85% and the averages fares are usually around €250 per round trip.</p>'
                 )
+            }
 
+            toolboxSection(
+                    heading: 'Deliver and Communicate',
+                    text: 'So when you have created a strong Business Case, what do you do next?  Making contact with airlines can sometimes be quite a daunting task, LCC airlines tend to be a bit more visible and approachable in the market, but it can still be a challenge to know where to start. There are some general principles to follow when approaching airlines whether that is by phone, by letter or in a direct face to face meeting:') {
+                toolboxItem(
+                        heading: 'Be Clear and Concise',
+                        text: "Keep the message clear and concise - busy people don't want to be wasting their time listening to lot of superfluous information. Stick to the facts that you have gathered while creating your Business Case and avoid unnecessary information."
+                )
+                toolboxItem(
+                        heading: 'Do Your Research',
+                        text: "As mentioned in the Target a Carrier section, you need to understand the airline you are contacting by doing as much research as possible about them. There is nothing worse than airport managers who ask an airline to perform an operation that they clearly cannot do. This may be because the carrier does not have a base at the other end of the route, or its aircraft may be unsuitable, or it may have said publicly that they are not focusing on that market - there could be many reasons. But understanding about the airlines' business model and strategy will make you stand out."
+                )
+                toolboxItem(
+                        heading: 'Use the Appropriate Language',
+                        text: "If you can speak and write in the local language of the airline, then obviously use it. But if you are not familiar with the language, get assistance with translations so that you can present something that looks good and can be clearly understood."
+                )
+                toolboxItem(
+                        heading: 'Timing',
+                        text: "Remember the IATA schedule periods for summer operations (April - October) and winter (November - March) respectively. If the route you are targeting will clearly only be a summer production, then make sure the airline has enough time to plan for that."
+                )
+                toolboxItem(
+                        heading: 'Have Patience',
+                        text: "Have patience! If you send a letter or a leave a phone message, don't start to bombard them until you get a response - they will not appreciate this. Give them time and send gentle non-invasive reminders every so often."
+                )
+                toolboxItem(
+                        heading: 'If you don\'t have any contacts at the airline you want to target, what should you do?',
+                        text: """\
+                            <p>There are various industry events that take place all over the world. Many of these either have official meetings with airlines that you pay for or informal networking events. Consider attending and make contact with as many airlines as possible. There are also a few other tricks worth considering, as set out below:</p>
+                            <ol>
+                                <li>There is a <a href='http://www.terrapinn.com/conference/world-low-cost-airlines/index.stm'>World Low Cost Conference</a> that takes place each year, which as well as having interesting speakers, will also have many low cost airline representatives present.</li>
+                                <li>The Routes Company organises international and regional aviation events, whereby airline delegates can pay to attend meetings with airlines. There are also informal networking events. These events can be expensive, but an excellent forum for meeting airlines.</li>
+                                <li>French Connect in France is a smaller version of the Routes events and quite focused on the French market - but a good forum if this region is on your radar for route development.</li>
+                                <li>IATA runs regular slot conferences and these are always attended by the main airline representatives. So if the slot coordinator from your airport is attending, why not tag along and you never know who you might get to meet.</li>
+                                <li>For more informal networking opportunities, look at some specific events taking place in various countries like:
+
+                                    <ul>
+                                        <li>The Internationale Tourismus-Börse (ITB) in Berlin</li>
+                                        <li>The World Travel Market, London</li>
+                                        <li>Borsa Internazionale Del Turismo (BIT) in Milan</li>
+                                        <li>International Tourism Trade Fair (FITUR) in Madrid</li>
+                                    </ul>
+                                </li>
+                                <li>Writing unsolicited letters to airlines can sometimes seem like a pointless task. And if you write a letter that begins with "Dear Airline.....", you can probably forget about making any progress. Try to find out the name of a key person within the company and then DO NOT send them pages and pages of waffle. This could be your one chance to make an impression - again this all comes back to presenting a solid Business Case so they cannot ignore your offer.</li>
+                                <li>There are many aviation specialists and consultants who have a network of contacts at different airlines, consider using one of them to get some ideas about who is best to contact.</li>
+                                <li>Contact colleagues at other airport to get a name and contact details for the airline you wish to approach.</li>
+                            </ol>
+                            """
+                )
             }
         }
 

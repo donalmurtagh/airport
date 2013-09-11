@@ -1,22 +1,5 @@
 <head>
     <style type="text/css">
-        .item-title {
-            font-weight: normal;
-        }
-
-        .toggle_container ul li {
-            padding-bottom: 0;
-        }
-
-        .toggle_container ol ul {
-            margin-left: 15px;
-        }
-
-        .toggle_container ol {
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-
         .toggle_container label {
             color: #676767;
             font-weight: bold;
@@ -25,10 +8,6 @@
         .label-holder {
             margin-left: 20px;
             margin-bottom: 10px;
-        }
-
-        p {
-            text-align: justify;
         }
 
         #charges {
@@ -42,6 +21,7 @@
     </style>
 
     <title>${toolbox.name}</title>
+    <r:require module="toolbox"/>
 </head>
 
 <body>

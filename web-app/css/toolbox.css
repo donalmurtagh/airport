@@ -1,0 +1,20 @@
+.item-title {
+    font-weight: normal;
+}
+
+.toggle_container ul li {
+    padding-bottom: 0;
+}
+
+.toggle_container ol ul {
+    margin-left: 15px;
+}
+
+.toggle_container ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: justify;
+}

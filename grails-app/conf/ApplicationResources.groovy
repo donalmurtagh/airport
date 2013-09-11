@@ -29,4 +29,9 @@ modules = {
         resource url: 'http://html5shim.googlecode.com/svn/trunk/html5.js', disposition: 'head',
                 wrapper: { s -> "<!--[if lt IE 9]>$s<![endif]-->" }
     }
+
+    toolbox {
+        defaultBundle doBundle ? 'toolbox' : false
+        resource 'css/toolbox.css'
+    }
 }

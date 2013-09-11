@@ -11,13 +11,13 @@ class ToolboxFilters {
         all(controller: '*', action: '*') {
 
             after = { Map model ->
-                if (model && springSecurityService.loggedIn) {
+                if (springSecurityService.loggedIn) {
 
-                    model.toolboxes = Toolbox.withCriteria {
+                    // store the data as a request attribute rather than in the model, because the model is not available
+                    // when a URL is mapped directly to a view in UrlMappings.groovy
+                    request['toolboxes'] = Toolbox.withCriteria {
                         cache: true
                     }
-
-                    log.debug "${model.toolboxes.size()} toolboxes added to model"
                 }
             }
         }

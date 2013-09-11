@@ -25,7 +25,7 @@
         <div id="outerheader">
             <div class="container">
                 <header id="top" class="twelve columns">
-                    <div id="logo" class="five columns alpha">
+                    <div id="logo" class="four columns alpha">
                         <h1>
                             <g:link uri='/'>
                                 <span class="titleRegular">The</span>
@@ -35,12 +35,14 @@
                             </g:link>
                         </h1>
                     </div>
-                    <section id="navigation" class="seven columns omega">
+                    <section id="navigation" class="eight columns omega">
                         <nav id="nav-wrap">
                             <ul id="topnav" class="sf-menu">
                                 <li><g:link uri='/'>Home</g:link></li>
 
                                 <sec:ifLoggedIn>
+                                    <li><g:link uri="/otherCustomers">Marketing To Other Customers</g:link></li>
+
                                     <li><a href="javascript:void(0)">Marketing to Airlines</a>
                                         <ul>
                                             <g:each var="toolbox" in="${toolboxes}">

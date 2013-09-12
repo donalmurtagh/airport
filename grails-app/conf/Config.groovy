@@ -126,11 +126,6 @@ grails.plugins.springsecurity.authority.className = 'com.icaviation.Role'
 
 grails.plugins.springsecurity.useSecurityEventListener = true
 
-grails.plugins.springsecurity.controllerAnnotations.staticRules = [
-        '/console/**': ['ROLE_ADMIN']
-]
-
-
 airport {
     userRoleName = 'ROLE_USER'
     adminRoleName = 'ROLE_ADMIN'

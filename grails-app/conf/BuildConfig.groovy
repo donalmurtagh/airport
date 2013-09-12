@@ -1,3 +1,5 @@
+import grails.util.Environment
+
 grails.servlet.version = "2.5" // Change depending on target container compliance (2.5 or 3.0)
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
@@ -45,13 +47,12 @@ grails.project.dependency.resolution = {
                 ":fields:1.3",
                 ":flash-helper:0.9.5",
                 ":resources:1.1.6",
-                ":cached-resources:1.0",
-                ":zipped-resources:1.0"
+                ":cached-resources:1.0"
 
-        // Uncomment these (or add new ones) to enable additional resources capabilities
-        //runtime ":zipped-resources:1.0"
-        //runtime ":cached-resources:1.0"
-        //runtime ":yui-minify-resources:0.1.5"
+        if (!Environment.isDevelopmentMode()) {
+            // don't include in dev, because it prevents static resources from reloading
+            runtime ":zipped-resources:1.0"
+        }
 
         build ":tomcat:$grailsVersion",
                 ":yui-war-minify:1.3"

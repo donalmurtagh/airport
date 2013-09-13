@@ -25,17 +25,14 @@
         <div id="outerheader">
             <div class="container">
                 <header id="top" class="twelve columns">
-                    <div id="logo" class="four columns alpha">
+                    <div id="logo" class="three columns alpha">
                         <h1>
                             <g:link uri='/'>
-                                <span class="titleRegular">The</span>
-                                <span class="titleBold">Airport</span>
-                                <span class="titleRegular">Marketing</span>
-                                <span class="titleBold">Toolbox</span>
+                                <r:img uri="/images/logo.jpg" class="scale-with-grid"/>
                             </g:link>
                         </h1>
                     </div>
-                    <section id="navigation" class="eight columns omega">
+                    <section id="navigation" class="nine columns omega">
                         <nav id="nav-wrap">
                             <ul id="topnav" class="sf-menu">
                                 <li><g:link uri='/'>Home</g:link></li>

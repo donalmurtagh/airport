@@ -39,7 +39,7 @@
 
                                 <sec:ifLoggedIn>
                                     <li><a href="javascript:void(0)">Pilot Project</a></li>
-                                    <li><a href="javascript:void(0)">Documents</a></li>
+                                    <li><a href="javascript:void(0)">Output Reports</a></li>
                                     <li><a href="javascript:void(0)">Media</a></li>
 
                                     <li><a href="javascript:void(0)">Airlines</a>

@@ -12,6 +12,12 @@
     z-index: 300;
 }
 
+#contact {
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+
 .messageBarWarning {
     color: #FF6027;
     border-bottom-color: #FF6027;

@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
 <div id="bodychild">
     <div id="outercontainer">
         <!-- HEADER -->
@@ -115,6 +116,12 @@
 
 %{--Show flash messages in the top message bar--}%
 <g:render template="/common/notificationBar"/>
+
+<div id="contact">
+    <a href="mailto:info@ic-aviation.com">
+        <r:img uri="/images/icons/icon-s3.png" class="scale-with-grid" title="Click here to contact us"/>
+    </a>
+</div>
 
 <r:layoutResources/>
 </body>

@@ -8,6 +8,10 @@
         #maincontent ol > li {
             padding-bottom: 5px;
         }
+
+        #maincontent ul {
+            margin-left: 15px;
+        }
     </style>
 </head>
 

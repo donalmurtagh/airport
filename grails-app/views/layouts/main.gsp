@@ -76,11 +76,8 @@
         <div id="outerafterheader">
             <div class="container">
                 <div id="afterheader" class="twelve columns pattern2">
-                    <div class="line-op"></div>
-                    <r:img uri="/images/content/pagetitle-img2.png" class="scale-with-grid"/>
                     <div id="pagetitle-container">
-                        <h1 class="pagetitle">Welcome</h1>
-                        <span class="pagedesc">Your tagline goes here</span>
+                        <h1 class="pagetitle">Welcome to The Airport Marketing Toolbox</h1>
                     </div>
                 </div>
             </div>

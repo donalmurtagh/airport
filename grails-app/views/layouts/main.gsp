@@ -25,30 +25,46 @@
         <div id="outerheader">
             <div class="container">
                 <header id="top" class="twelve columns">
-                    <div id="logo" class="three columns alpha">
+                    <div id="logo" class="two columns alpha">
                         <h1>
                             <g:link uri='/'>
                                 <r:img uri="/images/logo.jpg" class="scale-with-grid"/>
                             </g:link>
                         </h1>
                     </div>
-                    <section id="navigation" class="nine columns omega">
+                    <section id="navigation" class="ten columns omega">
                         <nav id="nav-wrap">
                             <ul id="topnav" class="sf-menu">
                                 <li><g:link uri='/'>Home</g:link></li>
 
                                 <sec:ifLoggedIn>
-                                    <li><g:link uri="/otherCustomers">Marketing To Other Customers</g:link></li>
+                                    <li><a href="javascript:void(0)">Pilot Project</a></li>
+                                    <li><a href="javascript:void(0)">Documents</a></li>
+                                    <li><a href="javascript:void(0)">Media</a></li>
 
-                                    <li><a href="javascript:void(0)">Marketing to Airlines</a>
+                                    <li><a href="javascript:void(0)">Airlines</a>
                                         <ul>
                                             <g:each var="toolbox" in="${toolboxes}">
                                                 <li>
-                                                    <g:link controller="toolbox" action="show" id="${toolbox.id}">${toolbox.name.encodeAsHTML()}</g:link>
+                                                    <g:link controller="toolbox" action="show"
+                                                            id="${toolbox.id}">${toolbox.name.encodeAsHTML()}</g:link>
                                                 </li>
                                             </g:each>
                                         </ul>
                                     </li>
+
+                                    <li><a href="javascript:void(0)">Passengers</a>
+                                        <ul>
+                                            <li><g:link uri="/googleAdwords">Google Adwords</g:link></li>
+                                            <li><a href="javascript:void(0)">Other Digital</a></li>
+                                            <li><a href="javascript:void(0)">Gorilla</a></li>
+                                            <li><a href="javascript:void(0)">Best Practice</a></li>
+                                            <li><a href="javascript:void(0)">TV/Radio</a></li>
+                                            <li><a href="javascript:void(0)">Events</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li><g:link uri="/otherCustomers">Other Customers</g:link></li>
                                 </sec:ifLoggedIn>
 
                                 <sec:ifAllGranted roles="ROLE_ADMIN">

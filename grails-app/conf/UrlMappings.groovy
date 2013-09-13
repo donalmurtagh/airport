@@ -10,7 +10,9 @@ class UrlMappings {
 		}
 
         "/"(controller: 'home')
-        "/otherCustomers"(view: "/toolbox/otherCustomers")
+        "/otherCustomers"(view: "/otherCustomers")
+        "/googleAdwords"(view: "/googleAdwords")
+
         "403"(controller: "error", action: "forbidden")
         "404"(controller: "error", action: "notFound")
         "500"(controller: "error", action: "serverError")

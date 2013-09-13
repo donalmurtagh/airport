@@ -44,7 +44,7 @@
 
                         <form action="${request.contextPath}/j_spring_security_check" method="post">
                             <fieldset>
-                                <f:field bean="login" property="j_username" label="Email Address" required="true"/>
+                                <f:field bean="login" property="j_username" label="Email Address" required="true" />
                                 <f:field bean="login" property="j_password" label="Password">
                                     <g:passwordField name="${property}" class="text-input"/>
                                 </f:field>

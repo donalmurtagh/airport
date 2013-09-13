@@ -114,7 +114,7 @@ h6 {
     font-size: 13px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .title {
     font-weight: 700;
     line-height: normal;
     font-family: 'Oswald', sans-serif, arial;
@@ -502,8 +502,8 @@ ul.sf-menu li li li.sfHover ul {
 }
 
 /* dropdown mobile */
-.tinynav {
-    display: none
+.tinynav, .hide {
+    display: none;
 }
 
 /*============================================ SLIDER   =================================================*/

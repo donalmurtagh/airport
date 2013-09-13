@@ -6,7 +6,7 @@
         }
 
         #maincontent ol > li {
-            padding-bottom: 10px;
+            padding-bottom: 5px;
         }
     </style>
 </head>

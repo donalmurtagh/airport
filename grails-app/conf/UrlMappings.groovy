@@ -13,6 +13,7 @@ class UrlMappings {
         "/otherCustomers"(view: "/otherCustomers")
         "/googleAdwords"(view: "/googleAdwords")
         "/reports"(view: "/reports")
+        "/pilot"(view: "/pilot")
 
 
         "403"(controller: "error", action: "forbidden")

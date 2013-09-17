@@ -10,11 +10,12 @@ class UrlMappings {
 		}
 
         "/"(controller: 'home')
-        "/otherCustomers"(view: "/otherCustomers")
-        "/googleAdwords"(view: "/googleAdwords")
-        "/reports"(view: "/reports")
-        "/pilot"(view: "/pilot")
 
+        def staticPages = ['otherCustomers', 'googleAdwords', 'reports', 'pilot', 'media']
+
+        staticPages.each {page ->
+            "/$page"(view: "/$page")
+        }
 
         "403"(controller: "error", action: "forbidden")
         "404"(controller: "error", action: "notFound")

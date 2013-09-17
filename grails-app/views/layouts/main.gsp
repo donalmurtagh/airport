@@ -41,7 +41,7 @@
                                 <sec:ifLoggedIn>
                                     <li><g:link uri="/pilot">Pilot Project</g:link></li>
                                     <li><g:link uri="/reports">Output Reports</g:link></li>
-                                    <li><a href="javascript:void(0)">Media</a></li>
+                                    <li><g:link uri="/media">Media</g:link></li>
 
                                     <li><a href="javascript:void(0)">Airlines</a>
                                         <ul>

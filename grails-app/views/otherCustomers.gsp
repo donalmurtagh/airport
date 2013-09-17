@@ -96,7 +96,9 @@
                     </div>
                 </div>
 
-                <p class="double-top-spacer bottom-spacer clear">
+                <br class="clear">
+
+                <p class="double-top-spacer bottom-spacer">
                     IC Aviation therefore proposes that airports should host Airport Workshops for these customer groups. Public Workshops likes these can serve many functions:
                 </p>
 

@@ -153,6 +153,15 @@ h1, h2, h3, h4, h5, h6, .title {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
 }
 
+h1.pagetitle {
+    font-size: 55px;
+}
+
+h2.pagetitle {
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
+
 /* links */
 a, a:visited {
     text-decoration: none;

@@ -1,20 +1,38 @@
 <head>
     <title>Media</title>
     <style type="text/css">
-    #maincontent li {
+
+    .img-holder {
+        text-align: center;
+    }
+
+    .img-holder img {
+        border: 5px solid white;
+        padding: 3px;
+    }
+
+    .img-holder img:hover {
+        border-color: #E1E1E1;
+    }
+
+    .link-holder li {
         padding-bottom: 0;
     }
 
-    #maincontent ul {
-        margin-left: 15px;
-    }
-
-    .link-holder {
+    .link-holder ul {
+        padding: 10px;
         margin-bottom: 30px;
+        background-color: #E1E1E1;
+        list-style-position: inside;
+        border-radius: 5px;
     }
 
     .link-holder:last-child {
         margin-bottom: 0;
+    }
+
+    h1 {
+        text-align: center;
     }
     </style>
 </head>
@@ -23,13 +41,15 @@
 <div id="outermain">
     <div class="container">
         <section id="maincontent" class="twelve columns">
-            <h2>Media</h2>
 
             <div class="one_half firstcols">
                 <div class="link-holder">
-                    <a href="http://www.anna.aero">
-                        <r:img uri="/images/media/anna-aero-logo.jpg"/>
-                    </a>
+
+                    <div class="img-holder">
+                        <a title="Visit this site" href="http://www.anna.aero">
+                            <r:img uri="/images/media/anna-aero-logo.jpg"/>
+                        </a>
+                    </div>
                     <ul>
                         <li>Excellent, completely free, source of industry news</li>
                         <li>Check airline and airport passenger numbers</li>
@@ -39,9 +59,11 @@
                 </div>
 
                 <div class="link-holder">
-                    <a href="http://www.ch-aviation.ch">
-                        <r:img uri="/images/media/ch-aviation.png"/>
-                    </a>
+                    <div class="img-holder">
+                        <a title="Visit this site" href="http://www.ch-aviation.ch">
+                            <r:img uri="/images/media/ch-aviation.png"/>
+                        </a>
+                    </div>
                     <ul>
                         <li>Expensive, yet highly informative and excellent news source</li>
                         <li>Annual subscriptions cost around €700</li>
@@ -51,9 +73,11 @@
                 </div>
 
                 <div class="link-holder">
-                    <a href="http://www.atn.aero/">
-                        <r:img uri="/images/media/air-transport.jpg"/>
-                    </a>
+                    <div class="img-holder">
+                        <a title="Visit this site" href="http://www.atn.aero/">
+                            <r:img uri="/images/media/air-transport.jpg"/>
+                        </a>
+                    </div>
                     <ul>
                         <li>Free source of global aviation news</li>
                         <li>Useful summary news feeds, that they also circulate in email newsletters every day</li>
@@ -64,9 +88,11 @@
 
             <div class="one_half lastcols">
                 <div class="link-holder">
-                    <a href="http://www.airwise.com/">
-                        <r:img uri="/images/media/airwise-logo.gif"/>
-                    </a>
+                    <div class="img-holder">
+                        <a title="Visit this site" href="http://www.airwise.com/">
+                            <r:img uri="/images/media/airwise-logo.gif"/>
+                        </a>
+                    </div>
                     <ul>
                         <li>Free new source, quite focused on passengers</li>
                         <li>Lots of information about flights arrivals and airports</li>
@@ -75,9 +101,11 @@
                 </div>
 
                 <div class="link-holder">
-                    <a href="https://www.aci-europe.org/">
-                        <r:img uri="/images/media/aci.jpeg"/>
-                    </a>
+                    <div class="img-holder">
+                        <a title="Visit this site" href="https://www.aci-europe.org/">
+                            <r:img uri="/images/media/aci.jpeg"/>
+                        </a>
+                    </div>
                     <ul>
                         <li>Well known as the representative body for airports in Europe</li>
                         <li>There are fees associated with becoming a member</li>
@@ -87,9 +115,11 @@
                 </div>
 
                 <div class="link-holder">
-                    <a href="http://www.linkedin.com">
-                        <r:img uri="/images/media/linkedin.jpg"/>
-                    </a>
+                    <div class="img-holder">
+                        <a title="Visit this site" href="http://www.linkedin.com">
+                            <r:img uri="/images/media/linkedin.jpg"/>
+                        </a>
+                    </div>
                     <ul>
                         <li>Completely free, unless you choose to pay for a premium service, which is unnecessary in our view</li>
                         <li>If you choose the right groups or companies to follow, there can be very useful information presented</li>

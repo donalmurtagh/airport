@@ -26,21 +26,21 @@
         <div id="outerheader">
             <div class="container">
                 <header id="top" class="twelve columns">
-                    <div id="logo" class="two columns alpha">
+                    <div id="logo" class="three columns alpha">
                         <h1>
                             <g:link uri='/'>
                                 <r:img uri="/images/logo.jpg" class="scale-with-grid"/>
                             </g:link>
                         </h1>
                     </div>
-                    <section id="navigation" class="ten columns omega">
+                    <section id="navigation" class="nine columns omega">
                         <nav id="nav-wrap">
                             <ul id="topnav" class="sf-menu">
                                 <li><g:link uri='/'>Home</g:link></li>
 
                                 <sec:ifLoggedIn>
-                                    <li><g:link uri="/pilot">Pilot Project</g:link></li>
-                                    <li><g:link uri="/reports">Output Reports</g:link></li>
+                                    <li><g:link uri="/pilot">Pilot<br/>Project</g:link></li>
+                                    <li><g:link uri="/reports">Output<br/>Reports</g:link></li>
                                     <li><g:link uri="/media">Media</g:link></li>
 
                                     <li><a href="javascript:void(0)">Airlines</a>
@@ -65,7 +65,7 @@
                                         </ul>
                                     </li>
 
-                                    <li><g:link uri="/otherCustomers">Other Customers</g:link></li>
+                                    <li><g:link uri="/otherCustomers">Other<br/>Customers</g:link></li>
                                 </sec:ifLoggedIn>
 
                                 <sec:ifAllGranted roles="ROLE_ADMIN">

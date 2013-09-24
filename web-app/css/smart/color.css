@@ -77,6 +77,10 @@ h1, h2, h3, h4, h5, h6, .title {
     box-shadow: inset 0 1px 5px 0px #616161;
 }
 
+.sf-menu ul {
+    border-top: solid 1px #888888;
+}
+
 .sf-menu li li {
     border-bottom: solid 1px #888888;
 }

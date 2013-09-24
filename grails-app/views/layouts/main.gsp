@@ -39,33 +39,36 @@
                                 <li><g:link uri='/'>Home</g:link></li>
 
                                 <sec:ifLoggedIn>
-                                    <li><g:link uri="/pilot">Pilot<br/>Project</g:link></li>
-                                    <li><g:link uri="/reports">Output<br/>Reports</g:link></li>
+                                    <li><g:link uri="/pilot">Pilot Project</g:link></li>
+                                    <li><g:link uri="/reports">Output Reports</g:link></li>
                                     <li><g:link uri="/media">Media</g:link></li>
-
-                                    <li><a href="javascript:void(0)">Airlines</a>
+                                    <li><a href="javascript:void(0)">Marketing</a>
                                         <ul>
-                                            <g:each var="toolbox" in="${toolboxes}">
-                                                <li>
-                                                    <g:link controller="toolbox" action="show"
-                                                            id="${toolbox.id}">${toolbox.name.encodeAsHTML()}</g:link>
-                                                </li>
-                                            </g:each>
+                                            <li><a href="javascript:void(0)">Airlines</a>
+                                                <ul>
+                                                    <g:each var="toolbox" in="${toolboxes}">
+                                                        <li>
+                                                            <g:link controller="toolbox" action="show"
+                                                                    id="${toolbox.id}">${toolbox.name.encodeAsHTML()}</g:link>
+                                                        </li>
+                                                    </g:each>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="javascript:void(0)">Passengers</a>
+                                                <ul>
+                                                    <li><g:link uri="/googleAdwords">Google Adwords</g:link></li>
+                                                    <li><a href="javascript:void(0)">Other Digital</a></li>
+                                                    <li><a href="javascript:void(0)">Gorilla</a></li>
+                                                    <li><a href="javascript:void(0)">Best Practice</a></li>
+                                                    <li><a href="javascript:void(0)">TV/Radio</a></li>
+                                                    <li><a href="javascript:void(0)">Events</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><g:link uri="/otherCustomers">Other Customers</g:link></li>
                                         </ul>
                                     </li>
-
-                                    <li><a href="javascript:void(0)">Passengers</a>
-                                        <ul>
-                                            <li><g:link uri="/googleAdwords">Google Adwords</g:link></li>
-                                            <li><a href="javascript:void(0)">Other Digital</a></li>
-                                            <li><a href="javascript:void(0)">Gorilla</a></li>
-                                            <li><a href="javascript:void(0)">Best Practice</a></li>
-                                            <li><a href="javascript:void(0)">TV/Radio</a></li>
-                                            <li><a href="javascript:void(0)">Events</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><g:link uri="/otherCustomers">Other<br/>Customers</g:link></li>
                                 </sec:ifLoggedIn>
 
                                 <sec:ifAllGranted roles="ROLE_ADMIN">

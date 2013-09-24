@@ -46,7 +46,7 @@ grails.project.dependency.resolution = {
                 ":jquery:1.8.3",
                 ":fields:1.3",
                 ":flash-helper:0.9.5",
-                ":resources:1.1.6",
+                ":resources:1.2.1",
                 ":cached-resources:1.0"
 
         if (!Environment.isDevelopmentMode()) {

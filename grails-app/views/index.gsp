@@ -1,4 +1,9 @@
 <head>
+    <style type="text/css">
+        div.eight.columns ol, div.eight.columns p {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -59,7 +64,45 @@
                 </sec:ifNotLoggedIn>
             </div>
 
-            <div class="eight columns omega"></div>
+            <div class="eight columns omega">
+                <h1>Welcome to IC Aviation’s Airport Marketing Toolbox</h1>
+
+                <p>
+                    This marketing tool is truly unique in the industry. Please log in to enter Europe’s only website
+                    that gives a comprehensive, step by step marketing guide on how to market airports towards their
+                    various customer groups. Review detailed suggestions from IC Aviation’s team of highly experienced
+                    consultants about:
+                </p>
+
+                <ol>
+                    <li>
+                        How to market your airport towards airlines - understand what airlines are looking for in
+                        today’s competitive market place and learn how to make your airport stand out.
+                    </li>
+                    <li>
+                        Learn how to market your airport towards your passengers. Get on board with the latest digital
+                        media and look at using traditional marketing strategies more effectively. Build a new marketing
+                        plan that will revolutionise the image of your airport to new and existing passengers.
+                    </li>
+                    <li>
+                        Get thinking about other customers who you need to impress: politicians, owners, local residents,
+                        etc. Learn about novel marketing strategies that can bring together these diverse customer groups
+                        so that the airport has full support from everyone involved.
+                    </li>
+                </ol>
+
+                <p>
+                    Plus, find plenty of other useful industry information about how your airport can improve every
+                    aspect of its marketing strategy.
+                </p>
+
+                <sec:ifNotLoggedIn>
+                    <p>
+                        Please <a href="mailto:info@ic-aviation.com"><strong>contact us</strong></a> for a personalised login to
+                        IC Aviation’s Airport Marketing Toolbox.
+                    </p>
+                </sec:ifNotLoggedIn>
+            </div>
 
             <div class="clear"></div><!-- clear float -->
         </section>

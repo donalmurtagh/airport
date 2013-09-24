@@ -1,4 +1,6 @@
 <head>
+    <title>Admin</title>
+
     <style type="text/css">
     input.button {
         display: block;

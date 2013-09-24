@@ -91,7 +91,7 @@
             <div class="container">
                 <div id="afterheader" class="twelve columns pattern2">
                     <div id="pagetitle-container">
-                        <h1 class="pagetitle">Welcome</h1>
+                        <h1 class="pagetitle">${pageProperty(name: 'title') ?: 'Welcome'}</h1>
                         <h2 class="pagetitle">The Airport Marketing Toolbox</h2>
                     </div>
                 </div>

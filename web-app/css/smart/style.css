@@ -158,11 +158,6 @@ h1.pagetitle {
     text-align: left;
 }
 
-h2.pagetitle {
-    color: #422774;
-    text-shadow: 1px 1px 1px white;
-}
-
 /* links */
 a, a:visited {
     text-decoration: none;

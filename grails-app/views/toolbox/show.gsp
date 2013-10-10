@@ -1,4 +1,6 @@
 <head>
+    <g:set var="bannerImage" value="${toolbox.name.tokenize()[0].toLowerCase() + '.jpg'}"/>
+
     <style type="text/css">
         .toggle_container label {
             color: #676767;
@@ -17,6 +19,11 @@
 
         #charges td {
             text-align: center;
+        }
+
+        .pattern2 {
+            /* override the banner image based on the name of the toolbox */
+            background: url(${r.resource(uri: "/images/banners/$bannerImage")}) no-repeat !important;
         }
     </style>
 

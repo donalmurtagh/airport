@@ -20,6 +20,11 @@
     .title, input {
         cursor: pointer;
     }
+
+    .pattern2 {
+        /* override the banner image */
+        background: url(${r.resource(uri: "/images/banners/other-customers.jpg")}) no-repeat !important;
+    }
     </style>
 
     <r:script type="text/javascript">

@@ -124,7 +124,7 @@ class BootStrap {
             toolboxSection(
                     heading: 'Case Study',
                     text: '''\
-                            <p>So you have researched a lot and looked different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
+                            <p>So you have researched a lot and looked  at different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
                             <p><strong>ADD DIAGRAMS HERE</strong></p>
                             <p>Below is a fictitious example of a Business Case that could work for a large German Flag Carrier airline. The airport is a small regional airport in Finland called Kaiatsu looking for a connection to Frankfurt Main airport in Germany.</p>''') {
                 toolboxItem(
@@ -314,7 +314,7 @@ class BootStrap {
             toolboxSection(
                     heading: 'Case Study',
                     text: '''\
-                            <p>So you have researched a lot and looked different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
+                            <p>So you have researched a lot and looked at different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
                             <p><strong>ADD DIAGRAMS HERE</strong></p>
                             <p>Below is a fictitious example of a Business Case that could work for a European Low Cost Carrier. The airport is a regional airport in Sweden called Senäp and they are looking for a summer only connection to Barcelona airport in Spain.</p>''') {
                 toolboxItem(
@@ -413,6 +413,178 @@ class BootStrap {
                 )
             }
         }
+
+
+        allToolboxes << builder.toolbox(
+                name: 'Regional Airlines',
+                introHeading: 'Introduction',
+                introText: '<p>Some elements of a regional airline may coincide with those of a flag carrier. For example, they will sometimes offer a higher level of service than a low cost airline. In addition, some flag carrier airlines will operate regional type aircraft within their overall fleet. But regional airlines can be differentiated as companies that only operate small aircraft, generally connecting smaller airports to each other or to a larger airport. Small aircraft can generally be defined as anything from 20 to 100 seats. As their name suggests, in many markets around Europe, regional carriers are often the lifeblood of regional airports. Smaller aircraft means they don\'t have to rely on huge catchments and traffic flows to fill their aircraft, so small cities often fit their business model very well. Main traveller type is business.</p>') {
+
+            toolboxSection(
+                    heading: 'Research your Catchment',
+                    text: '<p>Understanding your catchment is an important first step in creating a Business Case for airlines. From understanding more of the detail about your catchment, you will probably be able to identify more accurately which carriers and more particularly, which destinations you should be focusing your Business Case towards. Take the following as a guide to build up a better picture of your catchment:</p>') {
+
+                toolboxItem(
+                        heading: 'What are the travel patterns of the people that live within the catchment of the airport?',
+                        text: '<p>Regional airlines are not necessarily as focused on the amount of people that live in particular catchment. Regional airlines, by definition, use smaller aircraft and pursue niche routes where the volume of passengers travelling is not always that high. Instead, regional airlines look to travel patterns, or where people want to travel. It may be to link small regional town or city to a bigger one. Or it may to bring people from a small town / airport to a large hub where onward connections can be taken. For this reason, it is essential to identify where people from the catchment want to go or where they are going already. There are various ways to do this, many airports carry out surveys in the local area for example. Or speak to some of the businesses operating in your area and ask them where they need their employees to travel to most often. There are also companies like MK Metrics that can carry out passenger demand analyses for particular destinations.</p>'
+                )
+                toolboxItem(
+                        heading: 'What is the economic situation of your catchment, high GDP, low unemployment?',
+                        text: '<p>Clearly, higher economic indicators can be very encouraging for a potential airline. This can have a particular interest for the potential of a business travel market for example. Gather as much information together as you can, you might not use it all in one Business Case, but it is always useful to have it to hand.</p>'
+                )
+                toolboxItem(
+                        heading: 'How many businesses are operating in your catchment and in what industries?',
+                        text: '<p>This can also be a very important factor in the establishment of business type routes. Try to identify to the greatest extent possible how many businesses, especially export type companies, are operating in your catchment. And try to pick out some major industry sectors that might be interesting for an airline in a particular country.</p>'
+                )
+                toolboxItem(
+                        heading: 'Do the businesses have links with the home country of a certain airline?',
+                        text: "<p>Linked to the above question, try to establish whether or not the businesses in the area are linked in any way with a particular country. For example, if there are companies who have head quarters or other strong links with Germany, then obviously a German carrier would be a more sensible option to target than a French one. This type of information, although potentially highly valuable for an airline, is not always readily available. So, try to speak to the chamber of commerce for your region to get as much information as possible.</p>"
+                )
+                toolboxItem(
+                        heading: 'Are there special tourism related activities that should be highlighted?',
+                        text: "<p>Regional airlines are not known as huge contributors to tourism, but ultimately any type of carrier has the potential to bring some level of tourists to a particular city of region. Therefore, be sure to contact local tourist boards and get them more involved with the discussions with the airline. Ask them to highlight areas of interest, historic links between other countries and any other attractions in the area that could be useful when marketing the airport towards a regional carrier.</p>"
+                )
+            }
+
+            toolboxSection(
+                    heading: 'Target a Carrier',
+                    text: '<p>As you start to build a better picture of the market surrounding your airport, you should also be able to start identifying new markets that could be served from your airport. When you have destinations in mind, then it is easier to start narrowing down the airlines that can operate such routes. When you have identified certain carrier(s), then you need to start researching their businesses also. Start with these questions:</p>') {
+
+                toolboxItem(
+                        heading: 'What countries are they flying to/from?',
+                        text: '<p>Regional airlines are usually based in one country or region. The first thing to do is to identify what other countries or regions they are operating in. There is no sense contacting a regional carrier to operate a new route in Spain if they only operate in Scandinavia. This may sound simple, but it is surprising how often people make these simple mistakes.</p>'
+                )
+                toolboxItem(
+                        heading: 'What sort of aircraft do they use and can those aircraft operate to your airport?',
+                        text: '<p>Regional airlines tend to operate fleets of small aircraft. You should have some idea what sort of aircraft would be suitable for serving a particular route to your airport and ensure that those type(s) of aircraft can physically land there. In addition, in relation to regional airlines, their small aircraft types may be unsuitable for long sectors.</p>'
+                )
+                toolboxItem(
+                        heading: 'Are they in a period of growth or consolidation?',
+                        text: '<p>Regional airlines in Europe, like many others, are still facing significant challenges in terms of maintaining financial stability. Regional airlines, by their nature, don\'t tend to engage in massive expansion, due to smaller aircraft and businesses generally, their growth tends to be more strategic. So, be sure that you have some understanding as to what phase your target airline is in - they may have decided to curtail all growth in certain markets for example.</p>'
+                )
+                toolboxItem(
+                        heading: 'Are they already flying to your airport?',
+                        text: '<p>In the case of smaller regional airports, Flag Carrier airlines usually only operate one or two routes to feed into one of their larger hubs. If they already have a route to your airport, are they likely to want to fly more? Think about which other of their destinations they might want to link with your airport? Or is there an opportunity to increase capacity on existing services as opposed to introducing new routes?</p>'
+                )
+                toolboxItem(
+                        heading: 'Are they flying to other airports near your airport?',
+                        text: '<p>If they are, then consider what new opportunities there might be for them at your airport. Or can they duplicate a service to your airport? Consider also, what your competitors are doing to attract the airline and could you be doing it too, or even offering something better?</p>'
+                )
+            }
+
+            toolboxSection(
+                    heading: 'Build the Case',
+                    text: "<p>Now you know which routes and which airlines you want to target, so it's time to consider how to build a Business Case that the airline cannot refuse. Start by following these simple steps:</p>") {
+
+                toolboxItem(
+                        heading: 'Are the Charges Competitive?',
+                        text: '<p>Are the charges themselves competitive with respect to other airports of a similar size whom you could be competing with? Airlines of all types are focusing more and more on costs these days and they may well simply choose a cheaper alternative if there is one available. If you end up reducing your airport charges to make them more competitive, advertise this fact by issuing press releases, or posting adverts via well known industry channels. Let people know you are in the market and that you are can be competitive on costs.</p>'
+                )
+                toolboxItem(
+                        heading: 'Are the Charges Unnecessarily Complex?',
+                        text: "<p>Simplify the charging structure. Traditionally airports maintain highly complex charging systems, with separate fees for landing, handling, passenger, security, CUTE, baggage, air bridges, etc. Airport fees don't need to be this complicated and airlines will be very relieved to receive a much more simplified (and preferably all inclusive) cost that they can understand straight away without having to get a team of financial analysts to figure them out.</p>"
+                )
+                toolboxItem(
+                        heading: 'Who Controls the Charges?',
+                        text: '<p>For cities and regions involved in Work Package 5.1 that do not have direct influence over the fees and charges at the airport they represent, then every effort should be made to lobby the people who do control the fees. Meet with them, present to them the issues, the challenges and make them understand that airports need to be competitive or they will continue to struggle to grow traffic.</p>'
+                )
+                toolboxItem(
+                        heading: 'Incentivise, Incentivise, Incentivise!',
+                        text: '''\
+                            <p>If you are a small regional airport with little or no traffic, then you should be looking at every possible way to incentivise airlines to fly to your airport. Look at innovative ways of lowering charges for new routes and passengers. And keep in mind that the traditional model of airport revenues is changing. Look at these examples:</p>
+                            <p><strong>ADD DIAGRAMS HERE</strong></p>
+                            <p>These diagrams show that historically, airports relied upon receiving revenues from airlines as the main source of their income. However, airlines are becoming much more cost conscious and even Flag Carrier airlines who traditionally didn't use to attach such importance to low airport costs, are  seeking out the best airport deals. The new revenue model is the way of the future, especially for smaller regional airports. So when you are considering your published charges and introducing new incentives to attract airlines, remember that airports need to consider other methods of generating revenues than simply relying on the airline. Some examples could be as follows:</p>
+                            <ul>
+                                <li>Undertake a complete review of all non-aeronautical activity at the airport. Assess whether certain areas can be improved - for example can you increase car parking charges?</li>
+                                <li>Visit other airports and look around at what they are doing, take inspiration.</li>
+                                <li>Seek our new areas for which you can charge people to advertise at your airport.</li>
+                                <li>Think about using the airport for other reasons than just transporting passengers, for example charge people host birthday parties or other events at the airport.</li>
+                                <li>Employ third party experts to guide you through a process of improving your non-aeronautical offering.</li>
+                            </ul>'''
+                )
+                toolboxItem(
+                        heading: 'Enlist the Support of Private Businesses',
+                        text: 'In relation to regional airlines, one potentially very important step in the Business Case process, is to get local companies to guarantee that their employees will use the airline in question for all of the business flights that they need to take. Get an estimate as to how many seats per year that would amount to and then get Letters of Intent signed by each company that you can incorporate into your Business Case.'
+                )
+                toolboxItem(
+                        heading: 'Tourism Authority Involvement',
+                        text: '<p>Contact the local tourism authorities and ask them to contribute towards a marketing fund that can be used to enhance the business case for the target airline. Don\'t forget that, even though regional airlines don\'t necessarily generate as much tourism traffic as bigger airlines, even a small increase in tourist numbers can be hugely beneficial to local economy. Consider asking the tourist boards to join your meetings with the airline so that they can present the attractions that may exist in the vicinity of the airport - and let them see how hard it can be to attract new traffic to an airport.</p>'
+                )
+                toolboxItem(
+                        heading: 'Tour Operator Involvement',
+                        text: '<p>Contact local tour operator companies and ask them if they can guarantee to book a certain amount of seats per annum. Their ability to do this will obviously depend a little bit on the destination in question but meet with as many tour operator companies as possible and encourage them get on board in some way.</p>'
+                )
+            }
+
+            toolboxSection(
+                    heading: 'Case Study',
+                    text: '''\
+                            <p>So you have researched a lot and looked different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
+                            <p><strong>ADD DIAGRAMS HERE</strong></p>
+                            <p>Below is a fictitious example of a Business Case that could work for a regional airline. The airport is a small regional airport in Poland looking for a connection to one of the major Polish cities.</p>''') {
+                toolboxItem(
+                        heading: 'The Catchment',
+                        text: '<p>We have a catchment of 300,000 people living within 45 minutes of the airport. It is a highly wealthy catchment area, with unemployment levels of less than 4%, the lowest in Poland. There are also a number of growing small to medium enterprises that are involved a variety of industries. We know from surveys that in order to grow their businesses, these companies need a connection to a larger airport both for carrying out business in the bigger cities but also for flight connections to other destinations outside Poland.</p>'
+                )
+                toolboxItem(
+                        heading: 'Private Businesses Involvement',
+                        text: '<p>We attach to our proposal 15 signed Letters of Intent guaranteeing that the private companies near our airport will book 15,000 thousand tickets each year on your airline. They are also willing to take on the risk of these seats for a pre-agreed sum of money, which can be subject to negotiation.</p>'
+                )
+                toolboxItem(
+                        heading: 'Competitive Charges',
+                        text: '<p>The airport charge, shall be €8 per departing passenger, fixed for three years, it will be inclusive of all charges (landing/takeoff, PSC, ramp and passenger handling and security).</p>'
+                )
+            }
+
+            toolboxSection(
+                    heading: 'Deliver and Communicate',
+                    text: 'So when you have created a strong Business Case, what do you do next?  Making contact with airlines can sometimes be quite a daunting task, Flag Carrier airlines in particular are often very large companies with thousands of staff, so where do you start? There are some general principles to follow when approaching airlines whether that is by phone, by letter or in a direct face to face meeting:') {
+
+                toolboxItem(
+                        heading: 'Be Clear and Concise',
+                        text: "Keep the message clear and concise - busy people don't want to be wasting their time listening to lot of superfluous information. Stick to the facts that you have gathered while creating your Business Case and avoid unnecessary information."
+                )
+                toolboxItem(
+                        heading: 'Do Your Research',
+                        text: "As mentioned in the Target a Carrier section, you need to understand the airline you are contacting by doing as much research as possible about them. There is nothing worse than airport managers who ask an airline to perform an operation that they clearly cannot do. This may be because the carrier does not have a base at the other end of the route, or its aircraft may be unsuitable, or it may have said publicly that they are not focusing on that market - there could be many reasons. But understanding about the airlines' business model and strategy will make you stand out."
+                )
+                toolboxItem(
+                        heading: 'Use the Appropriate Language',
+                        text: "If you can speak and write in the local language of the airline, then obviously use it. But if you are not familiar with the language, get assistance with translations so that you can present something that looks good and can be clearly understood."
+                )
+                toolboxItem(
+                        heading: 'Timing',
+                        text: "Remember the IATA schedule periods for summer operations (April - October) and winter (November - March) respectively. If the route you are targeting will clearly only be a summer production, then make sure the airline has enough time to plan for that."
+                )
+                toolboxItem(
+                        heading: 'Have Patience',
+                        text: "If you send a letter or a leave a phone message, don't start to bombard them until you get a response - they will not appreciate this. Give them time and send gentle non-invasive reminders every so often."
+                )
+                toolboxItem(
+                        heading: "If you don't have any contacts at the airline you want to target, what should you do?",
+                        text: """\
+                            <p>There are various industry events that take place all over the world. Many of these either have official meetings with airlines that you pay for or informal networking events. Consider attending and make contact with as many airlines as possible. There are also a few other tricks worth considering, as set out below:</p>
+                            <ol>
+                                <li>The Routes Company organises international and regional aviation events, whereby airline delegates can pay to attend meetings with airlines. There are also informal networking events. These events can be expensive, but an excellent forum for meeting airlines.</li>
+                                <li>French Connect in France is a smaller version of the Routes events and quite focused on the French market - but a good forum if this region is on your radar for route development.</li>
+                                <li>IATA runs regular slot conferences and these are always attended by representatives from the main airlines. So if the slot coordinator from your airport is attending, why not tag along and you never know who you might get to meet.</li>
+                                <li>For more informal networking opportunities, look at some specific events taking places in various countries like:
+                                    <ul>
+                                        <li>The Internationale Tourismus-Börse (ITB) in Berlin</li>
+                                        <li>The World Travel Market, London</li>
+                                        <li>Borsa Internazionale Del Turismo (BIT) in Milan</li>
+                                        <li>International Tourism Trade Fair (FITUR) in Madrid</li>
+                                    </ul>
+                                </li>
+                                <li>Writing unsolicited letters to airlines can sometimes seem like a pointless task. And if you write a letter that begins with "Dear Airline.....", you can probably forget about making any progress. Try to find out the name of a key person within the company and then DO NOT send them pages and pages of waffle. This could be your one chance to make an impression - again this all comes back to presenting a solid Business Case so they cannot ignore your offer.</li>
+                                <li>There are many aviation specialists and consultants who have a network of contacts at different airlines, consider using one of them to get some ideas about who is best to contact.</li>
+                                <li>Contact colleagues at other airport to get a name and contact details for the airline you wish to approach.</li>
+                            </ol>
+                            """
+                )
+            }
+        }
+
 
         allToolboxes.each {
             it.save(failOnError: true)

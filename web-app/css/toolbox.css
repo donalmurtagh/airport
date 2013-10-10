@@ -6,8 +6,9 @@
     padding-bottom: 0;
 }
 
-.toggle_container ol ul {
+.toggle_container ul {
     margin-left: 15px;
+    margin-top: 10px;
 }
 
 .toggle_container ol {

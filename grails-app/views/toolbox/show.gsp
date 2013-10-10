@@ -31,6 +31,14 @@
 
             <h2>${toolbox.name}</h2>
 
+            <g:if test="${toolbox.introHeading}">
+                <h3>${toolbox.introHeading.encodeAsHTML()}</h3>
+            </g:if>
+
+            <g:if test="${toolbox.introText}">
+                ${toolbox.introText}
+            </g:if>
+
             <g:each in="${toolbox.toolboxSections}" var="section">
                 <h3 class="double-top-spacer">${section.heading.encodeAsHTML()}</h3>
 

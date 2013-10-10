@@ -9,16 +9,6 @@ CHANGE COLOR STYLE
 /*============================================== CHOOSE COLOR ==============================================*/
 @import url('color/default.css');
 
-/*@import url('color/celadon.css');*/
-/*@import url('color/cyan.css');*/
-/*@import url('color/grey.css');*/
-/*@import url('color/navy.css');*/
-/*@import url('color/green.css');*/
-/*@import url('color/olive.css');*/
-/*@import url('color/orange.css');*/
-/*@import url('color/red.css');*/
-/*@import url('color/yellow.css');*/
-
 body {
     color: #676767;
     background-color: #e1e1e1;

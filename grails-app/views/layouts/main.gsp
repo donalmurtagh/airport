@@ -39,9 +39,6 @@
                                 <li><g:link uri='/'>Home</g:link></li>
 
                                 <sec:ifLoggedIn>
-                                    <li><g:link uri="/pilot">Pilot Project</g:link></li>
-                                    <li><g:link uri="/reports">Output Reports</g:link></li>
-                                    <li><g:link uri="/media">Media</g:link></li>
                                     <li><a href="javascript:void(0)">Marketing</a>
                                         <ul>
                                             <li><a href="javascript:void(0)">Airlines</a>
@@ -69,15 +66,19 @@
                                             <li><g:link uri="/otherCustomers">Other Customers</g:link></li>
                                         </ul>
                                     </li>
+
+                                    <li><g:link uri="/media">Media Page</g:link></li>
+                                    <li><g:link uri="/pilot">Pilot Project</g:link></li>
+                                    <li><g:link uri="/reports">Output Reports</g:link></li>
+                                </sec:ifLoggedIn>
+
+                                <sec:ifLoggedIn>
+                                    <li><g:link controller="logout">Logout</g:link></li>
                                 </sec:ifLoggedIn>
 
                                 <sec:ifAllGranted roles="ROLE_ADMIN">
                                     <li><g:link controller="user" action="listUsers">Admin</g:link></li>
                                 </sec:ifAllGranted>
-
-                                <sec:ifLoggedIn>
-                                    <li><g:link controller="logout">Logout</g:link></li>
-                                </sec:ifLoggedIn>
                             </ul><!-- topnav -->
                         </nav><!-- nav -->
                         <div class="clear"></div>

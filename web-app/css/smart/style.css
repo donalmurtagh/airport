@@ -247,20 +247,14 @@ ol ul {
 }
 
 blockquote {
-    background-image: url("../../images/quote.png"), url("../../images/pattern.png");
-    background-position: 28px 25px, 0 0;
-    background-repeat: no-repeat, repeat;
+    background-image: url("../../images/quote.png");
+    background-repeat: no-repeat;
+    background-position: 28px 25px;
     background-color: #f5f5f5;
     clear: both;
     margin: 0 0 20px 0;
     padding: 33px 41px 38px 61px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-blockquote {
-    background-image: url("../../images/quote.png") \0/;
-    background-repeat: no-repeat\0/;
-    background-position: 28px 25 px\0/;
 }
 
 /* IE-8 ONLY  */

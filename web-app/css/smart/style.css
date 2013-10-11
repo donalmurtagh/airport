@@ -790,8 +790,6 @@ img.scale-with-grid {
 }
 
 .frame680 {
-    -moz-background-clip: padding; /* Firefox 3.6 */
-    -webkit-background-clip: padding; /* Safari 4? Chrome 6? */
     background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
     position: absolute;
     border: 5px solid rgba(255, 255, 255, 0.5);
@@ -800,8 +798,6 @@ img.scale-with-grid {
 }
 
 .frame67 {
-    -moz-background-clip: padding; /* Firefox 3.6 */
-    -webkit-background-clip: padding; /* Safari 4? Chrome 6? */
     background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
     position: absolute;
     border: 6px solid rgba(255, 255, 255, 0.5);
@@ -814,8 +810,6 @@ img.scale-with-grid {
 }
 
 .frame220 {
-    -moz-background-clip: padding; /* Firefox 3.6 */
-    -webkit-background-clip: padding; /* Safari 4? Chrome 6? */
     background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
     position: absolute;
     display: block;
@@ -825,8 +819,7 @@ img.scale-with-grid {
 }
 
 .frame300 {
-    -moz-background-clip: padding; /* Firefox 3.6 */
-    -webkit-background-clip: padding; /* Safari 4? Chrome 6? */
+
     background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
     position: absolute;
     display: block;
@@ -836,8 +829,6 @@ img.scale-with-grid {
 }
 
 .frame460 {
-    -moz-background-clip: padding; /* Firefox 3.6 */
-    -webkit-background-clip: padding; /* Safari 4? Chrome 6? */
     background-clip: padding-box; /* Firefox 4, Safari 5, Opera 10, IE 9 */
     position: absolute;
     display: block;

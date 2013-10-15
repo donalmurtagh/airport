@@ -54,12 +54,8 @@
 
                                             <li><a href="javascript:void(0)">Passengers</a>
                                                 <ul>
-                                                    <li><g:link uri="/googleAdwords">Google Adwords</g:link></li>
-                                                    <li><a href="javascript:void(0)">Other Digital</a></li>
-                                                    <li><a href="javascript:void(0)">Gorilla</a></li>
-                                                    <li><a href="javascript:void(0)">Best Practice</a></li>
-                                                    <li><a href="javascript:void(0)">TV/Radio</a></li>
-                                                    <li><a href="javascript:void(0)">Events</a></li>
+                                                    <li><g:link uri="/digital">Digital</g:link></li>
+                                                    <li><a href="javascript:void(0)">Other</a></li>
                                                 </ul>
                                             </li>
 

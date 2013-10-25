@@ -1,4 +1,7 @@
-import com.icaviation.ToolboxItem
+import com.icaviation.User
+import com.icaviation.UserRole
+import com.icaviation.Role
+
 import grails.util.Environment
 
 // create files SecretConfig-DEVELOPMENT.properties, SecretConfig-PRODUCTION.properties, etc. in the current (conf)
@@ -120,11 +123,19 @@ log4j = {
 }
 
 // Added by the Spring Security Core plugin:
-grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.icaviation.User'
-grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.icaviation.UserRole'
-grails.plugins.springsecurity.authority.className = 'com.icaviation.Role'
+grails.plugins.springsecurity.userLookup.userDomainClassName = User.name
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = UserRole.name
+grails.plugins.springsecurity.authority.className = Role.name
 
 grails.plugins.springsecurity.useSecurityEventListener = true
+
+grails.plugins.springsecurity.controllerAnnotations.staticRules = [
+        '/otherCustomers/**': ['ROLE_ADMIN', 'ROLE_USER'],
+        '/digital/**': ['ROLE_ADMIN', 'ROLE_USER'],
+        '/reports/**': ['ROLE_ADMIN', 'ROLE_USER'],
+        '/pilot/**': ['ROLE_ADMIN', 'ROLE_USER'],
+        '/media/**': ['ROLE_ADMIN', 'ROLE_USER']
+]
 
 airport {
     userRoleName = 'ROLE_USER'

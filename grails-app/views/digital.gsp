@@ -17,6 +17,26 @@
         padding-top: 33px;
     }
 
+    #maincontent ul {
+        margin-left: 15px;
+    }
+
+    #maincontent li {
+        padding-bottom: 0;
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .social-media a {
+        padding-right: 20px;
+    }
+
+    .social-media a:last-child {
+        padding-right: 0;
+    }
+
     </style>
 
     <r:require module="toolbox"/>
@@ -26,9 +46,90 @@
 <div id="outermain">
     <div class="container">
         <section id="maincontent" class="twelve columns">
-            <h2>Introduction and General Information about the Marketing Tool</h2>
+            <h2>Introduction</h2>
 
-            <p>The proliferation of passengers booking their flight tickets on the internet means that digital marketing or marketing involving the internet is becoming an increasingly powerful tool with which airports can market themselves towards their potential passengers. IC Aviation has observed some good practices at some of airports involved in WP 5.1 in relation to digital marketing, but still more could be done. We will review below a very clever example of a Google Adwords campaign that was carried out by Karsltad airport in Sweden. However, let's first begin by reviewing what Google Adwords, how it works and why it can be such a potent marketing tool for an airport.</p>
+            <p>There can be no doubt that digital marketing and media solutions will form a key part of how businesses market their products and services in the future. In particular, the birth of the internet has led to a global phenomenon of more and more businesses using the World Wide Web to market their services, meaning that the internet (and internet based products) are now a major component of digital marketing generally. And yet, while web based digital marketing is undoubtedly on the increase, and a highly valuable marketing tool, it is also remarkable how uncommon it is for airports around Europe to use this medium effectively to target additional passengers to the airport.</p>
+
+            <p>There are very good reasons why there is currently such a boom in the online digital marketing industry:</p>
+
+            <ul>
+                <li>More and more people are getting access to high quality internet</li>
+                <li>More and more people are doing more on the internet, booking holidays, grocery shopping, etc.</li>
+                <li>People are also spending more and more time on the internet, indeed time spent online for many people is starting to eclipse the amount of time spent watching TV</li>
+                <li>It is generally a very effective means of advertising, in that you can often target your potential customers in a much more specific way than using traditional media channels</li>
+                <li>It can be a very cost effective way of reaching millions of potential customers</li>
+                <li>It is a very measurable means of marketing, so you can often analyse how many people looked at your ad, from which countries viewers originate, how they got to see your ad, etc.</li>
+                <li>It is possible to measure how many extra visitors your website receives after running an ad campaign</li>
+                <li>It is possible to monitor (primarily using Social Media) what people are saying about your airport – so you can really listen to what potential passengers like or dislike.</li>
+            </ul>
+
+            <p>Before moving forward, let’s just consider what we mean by digital marketing. In the wider sense, digital marketing can refer to any advertising carried out using technology, so by some definitions this can mean television and radio, but we will focus on the web based marketing services that are available:</p>
+
+            <ul>
+                <li>Mobile marketing – refers to marketing towards users of smartphones, tablets and other mobile devices</li>
+                <li>Social media – websites like Facebook, Twitter, LinkedIn, etc., make up this rapidly growing media channel</li>
+                <li>Email advertising – often reviled as Spam, email advertising is still a growth area in the digital marketing sector and can, if done correctly, be an effective advertising tool</li>
+                <li>Quick Response Codes / Snap Tags – these are the bar codes you see on many advertisements these days. Using a smartphone to scan the bar code, brings the user directly to a particular website or product</li>
+                <li>Interactive TV sets – although the proliferation of Smart TV’s is still in it’s infancy, there are strong indications that internet style advertising will become highly prevalent on these Smart TV’s</li>
+            </ul>
+
+            <p>There is no doubt that digital marketing is the way of the future and it can represent a really clever way for airports to improve their marketing towards passengers. Just look at projected global online ad spending, which is estimated to increase by 65% from 2011 to 2015, to a staggering €132bn per annum.</p>
+
+            <figure class="centered">
+                <r:img uri="/images/digital/spend.png"/>
+                <figcaption>Source: <a href="http://www.go-gulf.com">www.go-gulf.com</a></figcaption>
+            </figure>
+
+            <p>So what suggestions do we have for Digital Marketing plans for Airports? First let’s look at some general guidelines to follow when starting out a new digital strategy:</p>
+
+            <ol>
+                <li>Don’t neglect or ignore traditional media advertising, like newspapers, magazines, etc. This form of advertising still plays an important role and ultimately, print media still makes up the largest section of overall advertising globally. A digital marketing strategy should go hand in hand with your existing marketing strategies</li>
+                <li>If you engage a third party to carry out your digital marketing for you, ensure that you are engaging the services of a professional company, so that you can be sure that you are getting measurable results that will allow you to see if the campaigns are delivering what you want</li>
+                <li>For marketing campaigns that directly target bringing passengers to your website, then make sure your own content is up to date, relevant and easy to navigate</li>
+                <li>Segment your target audience, one of the best features of digital marketing, is that you can target your advertising very specifically. So look at what groups you want to target and what your airport has that will be attractive to these groups. For example, if you have a lot of families living in your catchment, then consider ads that focus on leisure destinations from your airport</li>
+                <li>Check out what your competitors are doing online and how they are using Social Media and copy them, if they are doing well or have clever ideas</li>
+                <li>Make sure your website is compatible with smartphones and other mobile devices, create a mobile site if necessary</li>
+            </ol>
+
+            <p>In terms of specific digital media channels for Airports to use, clearly there is abundance of choice out there. For the purposes of this Toolbox, IC Aviation will focus on 4 of the most popular digital marketing tools that can be used very effectively for airports and we explain a little more about each one below.</p>
+
+            <h2>Social Media</h2>
+
+            <p>The two key benefits of using Social Media sites, is that it is estimated that a staggering 1 in 4 persons globally will use social networking sites in the year 2013. But secondly, they are also free to use as advertisements for your airport! It is possible to set up clever company pages on various Social Media sites that advertise your airport and keep users informed about what is going on. These are some of the world’s most popular Digital Media sites:</p>
+
+            <div class="social-media centered bottom-spacer">
+                <a href="http://www.facebook.com">
+                    <r:img uri="/images/digital/facebook.png"/>
+                </a>
+
+                <a href="http://www.twitter.com">
+                    <r:img uri="/images/digital/twitter.png"/>
+                </a>
+
+                <a href="http://www.linkedin.com">
+                    <r:img uri="/images/digital/linkedin.png"/>
+                </a>
+
+                <a href="http://www.pintrest.com">
+                    <r:img uri="/images/digital/pintrest.png"/>
+                </a>
+
+                <a href="http://www.myspace.com">
+                    <r:img uri="/images/digital/myspace.png"/>
+                </a>
+
+                <a href="https://plus.google.com">
+                    <r:img uri="/images/digital/googleplus.png"/>
+                </a>
+            </div>
+
+            <h3>Case Study</h3>
+            <p>Check out <a href="https://www.facebook.com/Norrkopingflygplats">Norkkoping Airport's Facebook page</a>. Not only is this page clear and informative, Norkkoping has also succeeded in attracting some 20,000 friends that follow the developments at the Airport. Of course there was some man power needed to set this up and to continue to manage it, but the actual cost of creating a page like this is ZERO!</p>
+
+            <h3>Summary</h3>
+            <p>Social Media sites are becoming a powerful way to interact with new and existing passengers. With so many people using Social Media sites on a daily and in some cases, hourly basis, they are a fantastic way to engage with people. Not only can you directly market new routes, airlines, events – but you can develop brand loyalty by making them feel like they are "part" of the airport. It is crucial that time is dedicated to keeping Facebook (and other Social Media) pages up to date and live, so that people don't get bored.</p>
+
+            <h2>Google Adwords</h2>
 
             <p>Google AdWords is Google's main advertising product and main source of revenue. In very basic terms, the Adword programme allows you to get as much visibility for your airport as possible on Google search results. For example, customers who already know about your airport, will likely search for your airport by name, for example "Heathrow Airport". Therefore, the website for Heathrow specifically will most likely show up in the natural search results. However, potential customers who don't know about your airport might search something like “airports in London”, in which case the specific Heathrow website might not show up at all. So while your website or airport might already appear in some Google search results, with Adwords you make sure that your airport will be visible when other keyword searches are performed. This will most certainly help to increase your website's visibility and ultimately get more traffic to the site which will lead to more people understanding about your airport and what it has to offer.</p>
 
@@ -113,12 +214,15 @@
                 The campaign commenced in February 2011 and ended on the 30th of October of the same year. During the
                 period of the campaign, an advertisement  with the following text was shown:
             </p>
-            <blockquote>Barcelona cheap flights. Low cost flights from Karlstad. Simple and easy airport. <a href="http://www.ksdarprt.se">www.ksdarprt.se</a></blockquote>
+            <blockquote>Barcelona cheap flights. Low cost flights from Karlstad. Simple and easy airport. <a
+                    href="http://www.ksdarprt.se">www.ksdarprt.se</a></blockquote>
+
             <p>
                 The ad was connected to 90 search-words such as, "Barcelona", “Cheap flights”, etc. The ad was shown
                 6,796,284 times and had 3,766 clicks. According to a survey performed by Karlstad Airport, the route to
                 Barcelona had approximately 20% departing Norwegian passengers as a result of the Google Adwords campaign.
             </p>
+
             <p>
                 This campaign carried out by Karlstad airport, therefore clearly demonstrates that Google Adwords can add
                 tangible value to your airport. Expanding the catchment of an airport and reaching new potential customers

@@ -115,3 +115,7 @@ input[type="color"]:focus,
 .top-spacer {
     margin-top: 10px;
 }
+
+#outermain {
+    padding-top: 0 !important;
+}

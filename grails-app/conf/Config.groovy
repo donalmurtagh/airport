@@ -143,14 +143,13 @@ airport {
 }
 
 grails {
-    mail.default.from = "info@ic-aviation.com"
+    mail.default.from = "IC Aviation <info@ic-aviation.com>"
     mail {
         host = "send.one.com"
         port = 2525
         username = "info@ic-aviation.com"
         // password is in external file
-        props = ["mail.smtp.starttls.enable":"true",
-                "mail.smtp.port":"2525"]
+        props = ["mail.smtp.starttls.enable":"true", "mail.smtp.port":"2525"]
     }
 }
 

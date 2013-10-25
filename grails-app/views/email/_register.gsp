@@ -1,6 +1,6 @@
 <p style="margin-bottom: 10px;">Greetings,</p>
 
-<p>You have been registered as a user of the <a href="${grailsApplication.config.grails.serverURL}">Airport Management Toolbox</a>.
+<p>You have been registered as a user of the <a href="${grailsApplication.config.grails.serverURL}">Airport Marketing Toolbox</a>.
 You can login with the following information:</p>
 
 <ul>
@@ -13,4 +13,7 @@ You can login with the following information:</p>
 </p>
 
 <p>Best Wishes,</p>
-<p>The Airport Management Toolbox</p>
+<p>IC Aviation Ltd.</p>
+<p>
+    <a href="http://www.ic-aviation.com">www.ic-aviation.com</a>
+</p>

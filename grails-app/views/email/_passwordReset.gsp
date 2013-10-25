@@ -8,4 +8,7 @@
 <p style="margin-bottom: 20px;">${url}</p>
 
 <p>Best Wishes,</p>
-<p>The Airport Management Toolbox</p>
+<p>IC Aviation Ltd.</p>
+<p>
+    <a href="http://www.ic-aviation.com">www.ic-aviation.com</a>
+</p>

@@ -93,7 +93,7 @@
 
             <p>In terms of specific digital media channels for Airports to use, clearly there is abundance of choice out there. For the purposes of this Toolbox, IC Aviation will focus on 4 of the most popular digital marketing tools that can be used very effectively for airports and we explain a little more about each one below.</p>
 
-            <h2>Social Media</h2>
+            <h2>1. Social Media</h2>
 
             <p>The two key benefits of using Social Media sites, is that it is estimated that a staggering 1 in 4 persons globally will use social networking sites in the year 2013. But secondly, they are also free to use as advertisements for your airport! It is possible to set up clever company pages on various Social Media sites that advertise your airport and keep users informed about what is going on. These are some of the world’s most popular Digital Media sites:</p>
 
@@ -129,12 +129,43 @@
             <h3>Summary</h3>
             <p>Social Media sites are becoming a powerful way to interact with new and existing passengers. With so many people using Social Media sites on a daily and in some cases, hourly basis, they are a fantastic way to engage with people. Not only can you directly market new routes, airlines, events – but you can develop brand loyalty by making them feel like they are "part" of the airport. It is crucial that time is dedicated to keeping Facebook (and other Social Media) pages up to date and live, so that people don't get bored.</p>
 
-            <h2>Google Adwords</h2>
+            <h2>2. Airport Website</h2>
+            <p>It is critical that an Airport’s website is of a high quality, in particular when this medium is so important to attracting new and existing customers to use the website. Many marketing experts will argue, correctly in our view, that a website if often a direct reflection of the services and products that a company offers. So if passengers are out there searching on the internet for a particular route or holiday destination and they land on your page, they are likely to keep looking elsewhere if they have a bad experience on your website. Some of the common mistakes encountered on websites generally but unfortunately airport website specifically, is that they are a hard to navigate, lacking quality (or relevant) content and are visually poor. These problems, believe it nor not, are not actually hard to rectify.</p>
 
+            <p>These are some of the top tips IC Aviation offers to ensure that your website is a more appealing place for passengers to visit.</p>
+
+            <ol>
+                <li>Make it look good – this is not a hard thing to do. Use nice bright pictures and try rotating pictures through a sequence so that the site looks more interactive. Try to avoid an abundance of pure text, particularly on the homepage, as this will confuse people and it looks terrible.</li>
+                <li>Design a clear layout – have menu options clearly indicated and in order of importance. Keep less relevant menu buttons in smaller font or in less prevalent place. Avoid too much text on the start page, but keep the relevant information in nice clear and easily readable font and colours.</li>
+                <li>Get second, third, fourth, fifth, etc. opinions – let friends, colleagues, family members and whoever else to review and go through the website and take the feedback into account.</li>
+                <li>Use the space – if you are light on content for example, then consider getting affiliate marketing agreements in place. Using relevant, industry advertising can make a website look more professional – but will also act as a revenue generator for the airport.</li>
+                <li>It is also very important to think about what passengers want to look at. Why would they be going to your site? Using Google Analytics and other web analytic tools (described in more detail below) you can actually look at where and for how long passengers are going to each section of your website. This should determine which sections of the site you should improve or make more prominent. But even without using web analytics, you should already be able to figure out what is important for your passengers. For example, maybe there are lots of business passengers travelling to your airport who use airport parking on a regular basis. Then ask yourself if you parking options are clearly advertised. Think about what your passengers are looking for and structure your website accordingly.</li>
+            </ol>
+
+            <h2>3. SEO / Google Adwords</h2>
             <p>Google AdWords is Google's main advertising product and main source of revenue. In very basic terms, the Adword programme allows you to get as much visibility for your airport as possible on Google search results. For example, customers who already know about your airport, will likely search for your airport by name, for example "Heathrow Airport". Therefore, the website for Heathrow specifically will most likely show up in the natural search results. However, potential customers who don't know about your airport might search something like “airports in London”, in which case the specific Heathrow website might not show up at all. So while your website or airport might already appear in some Google search results, with Adwords you make sure that your airport will be visible when other keyword searches are performed. This will most certainly help to increase your website's visibility and ultimately get more traffic to the site which will lead to more people understanding about your airport and what it has to offer.</p>
 
-            <h2>Implementation Steps of the Marketing Tool</h2>
+            <p>You should consider that improving your website is only one step on the road to improving your online presence generally; maximizing the amount of people that actually visit your website is an equally important step</p>
 
+            <p>SEO is the process whereby you improve your search engine ranking, but you do not pay to do so (also known as organic search results). It is therefore how relevant your website is to the term(s) being searched, that determines where in the rankings your website appears. For example, Google will “calculate” how relevant your website is, using some complicated and top secret algorithms. Some basic tips for optimising your results are as follows:</p>
+
+            <ol>
+                <li>You need to understand where your website is ranking to begin with, to identify what needs to be improved. The same applies for when you start trying to improve your SEO, you need to keep monitoring the results to see if what you are doing is working. There are many tools, for example, <a href="http://www.alexa.com">Alexa</a> and the <a href="http://toolbar.google.com">Google Toolbar</a> that can assist with this.</li>
+                <li>You need to place relevant keywords throughout every aspect of your website. In the various titles, general content, domains and image titles. Try to put yourself in the passengers’ shoes and think about what keywords they would be searching that are relevant to your airport and use these keywords throughout your website – and keep monitoring results because what you are doing might not be working!</li>
+                <li>Use obvious and relevant key words in the domain names themselves. For example, if your airport just got a new route to Barcelona, then create a news page like: <span class="fakelink">www.senapairport.com/newroutes/barcelona</span>. This will deliver much better results than for example: <span class="fakelink">www.senapairport.com/newroutes/1224=s</span> which may just lead to a general news page.</li>
+                <li>Keep updating and reviewing your content to make it relevant and new. Old and static content will soon become old news in search engine results.</li>
+            </ol>
+
+            <p>
+                However, Google also publish very comprehensive guidelines as to how to improve your organic search results, which should also be reviewed before embarking on a new SEO strategy.
+                Read <a href="https://static.googleusercontent.com/external_content/untrusted_dlcp/www.google.com/en//webmasters/docs/search-engine-optimization-starter-guide.pdf">this very informative document</a> for example.
+            </p>
+
+            <figure class="centered">
+                <r:img uri="/images/digital/googlesearch.png"/>
+            </figure>
+
+            <h3 class="top-spacer">Implementation Steps of the Marketing Tool</h3>
             <div class="toggle top-spacer">
 
                 <h2 class="trigger"><span>Step 1: Register for Google Adwords</span></h2>
@@ -202,7 +233,7 @@
                 </div>
             </div>
 
-            <h2 class="double-top-spacer">Best Practice Example: Google Adwords Campaign of Karlstad Airport</h2>
+            <h3 class="double-top-spacer">Best Practice Example: Google Adwords Campaign of Karlstad Airport</h3>
 
             <p>Karlstad is a small regional airport located in the south western part of Sweden, not far from the Norwegian border. The airport processed just over 100,000 passengers in 2012 and is on track to increase this by more than 30% percent in 2013 as a result of new airlines and routes being developed at the airport. The city of Karlstad has around 62,000 inhabitants with a further 800,000 people living with 1 or 2 hours of the airport. Oslo lies only 220km to the west of Karlstad, so there is potential to attract from this market also.</p>
 

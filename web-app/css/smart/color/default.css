@@ -1,5 +1,5 @@
 /* link color */
-a, a:visited, .colortext, .colortext a, .colortext a:visited{color:#2d6191}
+a, a:visited, .colortext, .colortext a, .colortext a:visited, .fakelink{color:#2d6191}
 
 /* dropcap */
 .dropcap1{text-shadow:1px 1px 0 #ededed; color:#2d6191}

@@ -165,6 +165,8 @@
                 <r:img uri="/images/digital/googlesearch.png"/>
             </figure>
 
+            <p>In addition to SEO, it is possible to improve the ranking of your website by using paid tools, like Google Adwords. This can be a highly effective means of helping your website or advertisement to reach a very prominent position in search results for certain keywords and phrases. Let’s look at this marketing tool in a bit more detail as well as a case study of a very clever Google Adwords campaign undertaken by Karlstad Airport.</p>
+
             <h3 class="top-spacer">Implementation Steps of the Marketing Tool</h3>
             <div class="toggle top-spacer">
 

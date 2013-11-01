@@ -1,10 +1,12 @@
 import grails.util.DomainBuilder
 import org.codehaus.groovy.grails.commons.GrailsApplication
 import com.icaviation.*
+import org.codehaus.groovy.grails.web.mapping.LinkGenerator
 
 class BootStrap {
 
     GrailsApplication grailsApplication
+    LinkGenerator grailsLinkGenerator
 
     /**
      * Create a user if they don't already exist.
@@ -27,6 +29,10 @@ class BootStrap {
     }
 
     def init = { servletContext ->
+
+        // get image paths
+        def oldAirportRevenuePath = grailsLinkGenerator.resource(dir: 'images/toolbox', file: 'old-airport-revenue.png')
+        def newAirportRevenuePath = grailsLinkGenerator.resource(dir: 'images/toolbox', file: 'new-airport-revenue.png')
 
         def airportConfig = grailsApplication.config.airport
 
@@ -118,9 +124,17 @@ class BootStrap {
                 )
                 toolboxItem(
                         heading: 'Incentivise, Incentivise, Incentivise!',
-                        text: '''\
+                        text: """\
                                 <p>If you are a small regional airport with little or no traffic, then you should be looking at every possible way to incentivise airlines to fly to your airport. Look at innovative ways of lowering charges for new routes and passengers. And keep in mind that the traditional model of airport revenues is changing. Look at these examples:</p>
-                                <p><strong>ADD DIAGRAMS HERE</strong></p>
+
+                                <div class="center bottom-spacer">
+                                    <h4 class="top-spacer">Old Airport Revenue Model</h4>
+                                    <img src='$oldAirportRevenuePath'/>
+
+                                    <h4 class="top-spacer">New Airport Revenue Model</h4>
+                                    <img src='$newAirportRevenuePath'/>
+                                </div>
+
                                 <p>These diagrams show that historically, airports relied upon receiving revenues from airlines as the main source of their income. However, airlines are becoming much more cost conscious and even Flag Carrier airlines who traditionally didn't use to attach such importance to low airport costs, are  seeking out the best airport deals. The new revenue model is the way of the future, especially for smaller regional airports. So when you are considering your published charges and introducing new incentives to attract airlines, remember that airports need to consider other methods of generating revenues than simply relying on the airline. Some examples could be as follows:</p>
                                 <ul>
                                     <li>Undertake a complete review of all non-aeronautical activity at the airport. Assess whether certain areas can be improved - for example can you increase car parking charges?</li>
@@ -128,7 +142,7 @@ class BootStrap {
                                     <li>Seek out new areas for which you can charge people to advertise at your airport.</li>
                                     <li>Think about using the airport for other reasons than just transporting passengers, for example charge people host birthday parties or other events at the airport.</li>
                                     <li>Employ third party experts to guide you through a process of improving your non-aeronautical offering.</li>
-                                </ul>'''
+                                </ul>"""
                 )
                 toolboxItem(
                         heading: 'Enlist the Support of Private Businesses',
@@ -297,9 +311,17 @@ class BootStrap {
                 )
                 toolboxItem(
                         heading: 'Incentivise, Incentivise, Incentivise!',
-                        text: '''\
+                        text: """\
                             <p>If you are a small regional airport with little or no traffic, then you in particular should be looking at every possible way to incentivise airlines to fly to your airport. Look at innovative ways of not only lowering charges for new routes and passengers but offering additional marketing, growth or other incentives. And keep in mind that the traditional model of airport revenues is changing. Look at these examples:</p>
-                            <p><strong>ADD DIAGRAMS HERE</strong></p>
+
+                            <div class="center bottom-spacer">
+                                <h4 class="top-spacer">Old Airport Revenue Model</h4>
+                                <img src='$oldAirportRevenuePath'/>
+
+                                <h4 class="top-spacer">New Airport Revenue Model</h4>
+                                <img src='$newAirportRevenuePath'/>
+                            </div>
+
                             <p>These diagrams show that historically, airports relied upon receiving revenues from airlines as the main source of their income. However, LCC airlines have a lot of flexibility about where they will deliver traffic and they won't fly to expensive airports - that is clear. The new airport revenue model is the way of the future, especially for smaller regional airports. So when you are considering your published charges and introducing new incentives to attract airlines, remember that airports need to consider other methods of generating revenues than simply relying on the airline. Some examples could be as follows:</p>
                             <ul>
                                 <li>Undertake a complete review of all non-aeronautical activity at the airport. Assess whether certain areas can be improved - for example can you increase car parking charges? </li>
@@ -307,7 +329,7 @@ class BootStrap {
                                 <li>Seek out new areas for which you can charge people to advertise at your airport.</li>
                                 <li>Think about using the airport for other reasons than just transporting passengers, for example charge people to host birthday parties or other events at the airport.</li>
                                 <li>Employ third party experts to guide you through a process of improving your non-aeronautical offering.</li>
-                            </ul>'''
+                            </ul>"""
                 )
                 toolboxItem(
                         heading: 'Tourism Authority Involvement',
@@ -513,7 +535,13 @@ class BootStrap {
                         heading: 'Incentivise, Incentivise, Incentivise!',
                         text: '''\
                             <p>If you are a small regional airport with little or no traffic, then you should be looking at every possible way to incentivise airlines to fly to your airport. Look at innovative ways of lowering charges for new routes and passengers. And keep in mind that the traditional model of airport revenues is changing. Look at these examples:</p>
-                            <p><strong>ADD DIAGRAMS HERE</strong></p>
+
+                            <h3>Old Airport Revenue Model</h3>
+                            <r:img uri="/images/toolbox/old-airport-revenue.png"/>
+
+                            <h3>New Airport Revenue Model</h3>
+                            <r:img uri="/images/toolbox/new-airport-revenue.png"/>
+
                             <p>These diagrams show that historically, airports relied upon receiving revenues from airlines as the main source of their income. However, all airlines are becoming much more cost conscious and even regional airlines who traditionally didn't use to attach such importance to low airport costs, are  seeking out the best airport deals. The new revenue model is the way of the future, especially for smaller regional airports. So when you are considering your published charges and introducing new incentives to attract airlines, remember that airports need to consider other methods of generating revenues than simply relying on the airline. Some examples could be as follows:</p>
                             <ul>
                                 <li>Undertake a complete review of all non-aeronautical activity at the airport. Assess whether certain areas can be improved - for example can you improve the car parking offer and charge more as a result, or offer special pre-booking discounts that will encourage more people to use the service?</li>

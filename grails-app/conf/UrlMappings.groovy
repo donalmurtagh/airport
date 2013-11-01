@@ -11,7 +11,7 @@ class UrlMappings {
 
         "/"(controller: 'home')
 
-        def staticPages = ['otherCustomers', 'digital', 'reports', 'pilot', 'media']
+        def staticPages = ['otherCustomers', 'digital', 'reports', 'pilot', 'media', 'otherPassengers']
 
         staticPages.each {page ->
             "/$page"(view: "/$page")

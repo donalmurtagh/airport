@@ -55,7 +55,7 @@
                                             <li><a href="javascript:void(0)">Passengers</a>
                                                 <ul>
                                                     <li><g:link uri="/digital">Digital</g:link></li>
-                                                    <li><a href="javascript:void(0)">Other</a></li>
+                                                    <li><g:link uri="/otherPassengers">Other</g:link></li>
                                                 </ul>
                                             </li>
 

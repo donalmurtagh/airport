@@ -28,17 +28,17 @@ class BootStrap {
         user
     }
 
-    private getToolboxImagePath(fileName) {
-        grailsLinkGenerator.resource(dir: 'images/toolbox', file: fileName)
+    private getImagePath(file, dir = 'images/toolbox') {
+        grailsLinkGenerator.resource(dir: dir, file: file)
     }
 
     def init = { servletContext ->
 
         // get image paths
-        def oldAirportRevenuePath = getToolboxImagePath('old-airport-revenue.png')
-        def newAirportRevenuePath = getToolboxImagePath('new-airport-revenue.png')
-        def jigsawPath = getToolboxImagePath('jigsaw.jpg')
-        def strategicPath = getToolboxImagePath('strategic.png')
+        def oldAirportRevenuePath = getImagePath('old-airport-revenue.png')
+        def newAirportRevenuePath = getImagePath('new-airport-revenue.png')
+        def jigsawPath = getImagePath('jigsaw.jpg')
+        def strategicPath = getImagePath('strategic.png')
 
         def airportConfig = grailsApplication.config.airport
 

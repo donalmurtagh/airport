@@ -33,6 +33,7 @@ class BootStrap {
         // get image paths
         def oldAirportRevenuePath = grailsLinkGenerator.resource(dir: 'images/toolbox', file: 'old-airport-revenue.png')
         def newAirportRevenuePath = grailsLinkGenerator.resource(dir: 'images/toolbox', file: 'new-airport-revenue.png')
+        def jigsawPath = grailsLinkGenerator.resource(dir: 'images/toolbox', file: 'jigsaw.jpg')
 
         def airportConfig = grailsApplication.config.airport
 
@@ -159,10 +160,17 @@ class BootStrap {
             }
             toolboxSection(
                     heading: 'Case Study',
-                    text: '''\
-                            <p>So you have researched a lot and looked  at different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
-                            <p><strong>ADD DIAGRAMS HERE</strong></p>
-                            <p>Below is a fictitious example of a Business Case that could work for a large German Flag Carrier airline. The airport is a small regional airport in Finland called Kaiatsu looking for a connection to Frankfurt Main airport in Germany.</p>''') {
+                    text: """
+                            <div class="two_third firstcols">
+                                <p>So you have researched a lot and looked  at different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
+                                <p class="top-spacer">Below is a fictitious example of a Business Case that could work for a large German Flag Carrier airline. The airport is a small regional airport in Finland called Kaiatsu looking for a connection to Frankfurt Main airport in Germany.</p>
+                            </div>
+
+                            <div class="one_third lastcols">
+                                <img src="${jigsawPath}"/>
+                            </div>
+
+                            <br class="clear"/>""") {
                 toolboxItem(
                         heading: 'The Catchment',
                         text: '<p>We have a large catchment of 1.5m people living within 1 hour of the airport. We also have several high tech export companies operating in our market, employing overall 4,500 people. Approximately, 15 of these companies have subsidiaries and/or headquarters in the region around Frankfurt.</p>'
@@ -357,10 +365,17 @@ class BootStrap {
             }
             toolboxSection(
                     heading: 'Case Study',
-                    text: '''\
-                            <p>So you have researched a lot and looked at different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
-                            <p><strong>ADD DIAGRAMS HERE</strong></p>
-                            <p>Below is a fictitious example of a Business Case that could work for a European Low Cost Carrier. The airport is a regional airport in Sweden called Senäp and they are looking for a summer only connection to Barcelona airport in Spain.</p>''') {
+                    text: """
+                            <div class="two_third firstcols">
+                                <p>So you have researched a lot and looked at different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
+                                <p class="top-spacer">Below is a fictitious example of a Business Case that could work for a European Low Cost Carrier. The airport is a regional airport in Sweden called Senäp and they are looking for a summer only connection to Barcelona airport in Spain.</p>
+                            </div>
+
+                            <div class="one_third lastcols">
+                                <img src="${jigsawPath}"/>
+                            </div>
+
+                            <br class="clear"/>""") {
                 toolboxItem(
                         heading: 'Airport Charges',
                         text: """\
@@ -567,9 +582,17 @@ class BootStrap {
 
             toolboxSection(
                     heading: 'Case Study',
-                    text: '''\
-                            <p>So you have researched a lot and looked different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
-                            <p>Below is a fictitious example of a Business Case that could work for a regional airline. The airport is a small regional airport in Poland looking for a connection to one of the major Polish cities.</p>''') {
+                    text: """
+                            <div class="two_third firstcols">
+                                <p>So you have researched a lot and looked different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
+                                <p>Below is a fictitious example of a Business Case that could work for a regional airline. The airport is a small regional airport in Poland looking for a connection to one of the major Polish cities.</p>
+                            </div>
+
+                            <div class="one_third lastcols">
+                                <img src="${jigsawPath}"/>
+                            </div>
+
+                            <br class="clear"/>""") {
                 toolboxItem(
                         heading: 'The Catchment',
                         text: '<p>We have a catchment of 300,000 people living within 45 minutes of the airport. It is a highly wealthy catchment area, with unemployment levels of less than 4%, the lowest in Poland. There are also a number of growing small to medium enterprises that are involved a variety of industries. We know from surveys that in order to grow their businesses, these companies need a connection to a larger airport both for carrying out business in the bigger cities but also for flight connections to other destinations outside Poland.</p>'

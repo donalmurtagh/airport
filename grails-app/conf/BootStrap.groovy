@@ -585,7 +585,7 @@ class BootStrap {
                     text: """
                             <div class="two_third firstcols">
                                 <p>So you have researched a lot and looked different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
-                                <p>Below is a fictitious example of a Business Case that could work for a regional airline. The airport is a small regional airport in Poland looking for a connection to one of the major Polish cities.</p>
+                                <p class="top-spacer">Below is a fictitious example of a Business Case that could work for a regional airline. The airport is a small regional airport in Poland looking for a connection to one of the major Polish cities.</p>
                             </div>
 
                             <div class="one_third lastcols">

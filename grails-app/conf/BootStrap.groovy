@@ -28,12 +28,17 @@ class BootStrap {
         user
     }
 
+    private getToolboxImagePath(fileName) {
+        grailsLinkGenerator.resource(dir: 'images/toolbox', file: fileName)
+    }
+
     def init = { servletContext ->
 
         // get image paths
-        def oldAirportRevenuePath = grailsLinkGenerator.resource(dir: 'images/toolbox', file: 'old-airport-revenue.png')
-        def newAirportRevenuePath = grailsLinkGenerator.resource(dir: 'images/toolbox', file: 'new-airport-revenue.png')
-        def jigsawPath = grailsLinkGenerator.resource(dir: 'images/toolbox', file: 'jigsaw.jpg')
+        def oldAirportRevenuePath = getToolboxImagePath('old-airport-revenue.png')
+        def newAirportRevenuePath = getToolboxImagePath('new-airport-revenue.png')
+        def jigsawPath = getToolboxImagePath('jigsaw.jpg')
+        def strategicPath = getToolboxImagePath('strategic.png')
 
         def airportConfig = grailsApplication.config.airport
 
@@ -349,9 +354,13 @@ class BootStrap {
                 )
                 toolboxItem(
                         heading: 'Strategic Alliances',
-                        text: '''\
+                        text: """
                                 <p>As part of the Pilot Project, we learned that two airports can actually work together to make a business case more attractive:</p>
-                                <p><strong>ADD DIAGRAMS HERE</strong></p>
+
+                                <div class="center top-spacer bottom-spacer">
+                                    <img src="${strategicPath}"/>
+                                </div>
+
                                 <p>This sort of production requires that only light capacity would be offered as the airline flies from one large airport and splits the service between two airports in the destination market. In order for this to fit neatly into an airlines' scheduling system, keep in mind that the two smaller airports, should be a similar flight distance away from the big airport.</p>
                                 <p>The two key advantages of this strategy are that it reduces the carriers' risk, because it won't have to worry about oversupplying one market. Secondly, two airports or regions can collectively make a better overall offer to the airline. The challenge with this strategy is that it is focused almost exclusively on the tourism market. The light frequency and split production would not suit business travellers. This potentially limits the amount of airlines that would go for it, but LCC would be certainly be one type of carrier that would be well suited for it. There are two key requirements to fulfill before embarking on this process:</p>
 
@@ -360,7 +369,7 @@ class BootStrap {
 
                                 <h3>2. Is there a Common Objective?</h3>
                                 <p>Even if you can find two airports that work from a Geographic perspective, do they have the same objectives as your airport? Both airports who are involved need t o be able to commit the same level of resources and support, so there needs to be a strong and common objective in order for this to succeed.</p>
-                                '''
+                                """
                 )
             }
             toolboxSection(

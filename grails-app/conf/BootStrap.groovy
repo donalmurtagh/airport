@@ -6,6 +6,26 @@ class BootStrap {
 
     GrailsApplication grailsApplication
 
+    /**
+     * Create a user if they don't already exist.
+     * @param username
+     * @param role
+     * @param password
+     * @return
+     */
+    private User createUser(username, password, role) {
+
+        User user = User.findByUsername(username) ?: new User(
+                username: username,
+                password: password,
+                enabled: true).save(failOnError: true)
+
+        if (!user.authorities.contains(role)) {
+            UserRole.create user, role
+        }
+        user
+    }
+
     def init = { servletContext ->
 
         def airportConfig = grailsApplication.config.airport
@@ -18,9 +38,11 @@ class BootStrap {
         def userRole = createRole(airportConfig.userRoleName)
         def adminRole = createRole(airportConfig.adminRoleName)
 
+        def defaultAdminPassword = grailsApplication.config.admin.defaultPassword
+
         // create some admins
-        ['tshearer@ic-aviation.com', 'domurtag@yahoo.co.uk'].each {
-            createUser it, adminRole
+        ['tshearer@ic-aviation.com', 'domurtag@yahoo.co.uk', 'ofalt@ic-aviation.com'].each {
+            createUser it, defaultAdminPassword, adminRole
         }
 
         // create the toolboxes and their items
@@ -589,27 +611,6 @@ class BootStrap {
         allToolboxes.each {
             it.save(failOnError: true)
         }
-    }
-
-    /**
-     * Create a user if they don't already exist.
-     * @param username
-     * @param role
-     * @return
-     */
-    private User createUser(username, role) {
-
-        def defaultPassword = 'password'
-
-        User user = User.findByUsername(username) ?: new User(
-                username: username,
-                password: defaultPassword,
-                enabled: true).save(failOnError: true)
-
-        if (!user.authorities.contains(role)) {
-            UserRole.create user, role
-        }
-        user
     }
 
     def destroy = {

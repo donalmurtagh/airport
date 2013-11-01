@@ -121,6 +121,7 @@
 <div id="contact">
     <a href="mailto:info@ic-aviation.com">
         <r:img uri="/images/icons/icon-s3.png" class="scale-with-grid" title="Click here to contact us"/>
+        <span>We're here to help</span>
     </a>
 </div>
 

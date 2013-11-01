@@ -94,7 +94,7 @@
                         </a>
                     </div>
                     <ul>
-                        <li>Free new source, quite focused on passengers</li>
+                        <li>Free news source, quite focused on passengers</li>
                         <li>Lots of information about flights arrivals and airports</li>
                         <li>They also have quite a good news feed about aviation industry news</li>
                     </ul>

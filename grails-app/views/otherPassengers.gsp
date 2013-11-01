@@ -1,5 +1,5 @@
 <head>
-    <title>Passengers Marketing</title>
+    <title>Passenger Marketing</title>
 
     <style type="text/css">
         #maincontent p, #maincontent ol {

@@ -209,9 +209,9 @@ class BootStrap {
                 toolboxItem(
                         heading: "If you don't have any contacts at the airline you want to target, what should you do?",
                         text: '''\
-                                <p>There are various industry events that take place all over the world. Many of these either have official meetings with airlines that you pay for or informal networking events. Consider attending and make contact with as many airlines as possible. There are also a few other tricks worth considering, as set out below:</p>
+                                <p>There are various industry events that take place all over the world. Many of these either have official meetings with airlines that you pay for or informal networking events. Consider attending and make contact with as many airlines as possible. See some examples as follows:</p>
                                 <ol>
-                                    <li>The Routes Company organises international and regional aviation events, whereby airline delegates can pay to attend meetings with airlines. There are also informal networking events. These events can be expensive, but an excellent forum for meeting airlines.</li>
+                                    <li>The Routes Company organises international and regional aviation events, whereby airline delegates can pay to attend meetings with airlines. There are also many informal networking opportunities at these events. These events can be expensive, but an excellent forum for meeting airlines.</li>
                                     <li>French Connect in France is a smaller version of the Routes events and quite focused on the French market - but a good forum if this region is on your radar for route development.</li>
                                     <li>IATA runs regular slot conferences and these are always attended by representatives from the main airlines. So if the slot coordinator from your airport is attending, why not tag along and you never know who you might get to meet.</li>
                                     <li>For more informal networking opportunities, look at some specific events taking places in various countries like:
@@ -412,14 +412,13 @@ class BootStrap {
                 toolboxItem(
                         heading: 'If you don\'t have any contacts at the airline you want to target, what should you do?',
                         text: """\
-                            <p>There are various industry events that take place all over the world. Many of these either have official meetings with airlines that you pay for or informal networking events. Consider attending and make contact with as many airlines as possible. There are also a few other tricks worth considering, as set out below:</p>
+                            <p>There are various industry events that take place all over the world. Many of these either have official meetings with airlines that you pay for or informal networking events. Consider attending and make contact with as many airlines as possible. See some examples as follows:</p>
                             <ol>
                                 <li>There is a <a href='http://www.terrapinn.com/conference/world-low-cost-airlines/index.stm'>World Low Cost Conference</a> that takes place each year, which as well as having interesting speakers, will also have many low cost airline representatives present.</li>
-                                <li>The Routes Company organises international and regional aviation events, whereby airline delegates can pay to attend meetings with airlines. There are also informal networking events. These events can be expensive, but an excellent forum for meeting airlines.</li>
+                                <li>The Routes Company organises international and regional aviation events, whereby airline delegates can pay to attend meetings with airlines. There are also many informal networking opportunities at these events. These events can be expensive, but an excellent forum for meeting airlines.</li>
                                 <li>French Connect in France is a smaller version of the Routes events and quite focused on the French market - but a good forum if this region is on your radar for route development.</li>
                                 <li>IATA runs regular slot conferences and these are always attended by the main airline representatives. So if the slot coordinator from your airport is attending, why not tag along and you never know who you might get to meet.</li>
                                 <li>For more informal networking opportunities, look at some specific events taking place in various countries like:
-
                                     <ul>
                                         <li>The Internationale Tourismus-Börse (ITB) in Berlin</li>
                                         <li>The World Travel Market, London</li>
@@ -440,15 +439,15 @@ class BootStrap {
         allToolboxes << builder.toolbox(
                 name: 'Regional Airlines',
                 introHeading: 'Introduction',
-                introText: '<p>Some elements of a regional airline may coincide with those of a flag carrier. For example, they will sometimes offer a higher level of service than a low cost airline. In addition, some flag carrier airlines will operate regional type aircraft within their overall fleet. But regional airlines can be differentiated as companies that only operate small aircraft, generally connecting smaller airports to each other or to a larger airport. Small aircraft can generally be defined as anything from 20 to 100 seats. As their name suggests, in many markets around Europe, regional carriers are often the lifeblood of regional airports. Smaller aircraft means they don\'t have to rely on huge catchments and traffic flows to fill their aircraft, so small cities often fit their business model very well. Main traveller type is business.</p>') {
+                introText: '<p>Some elements of a regional airline may coincide with those of a flag carrier. For example, they will sometimes offer a higher level of service than a low cost airline. In addition, some flag carrier airlines will operate regional type aircraft within their overall fleet. But regional airlines can be differentiated as companies that only operate small aircraft, generally connecting smaller airports to each other or to a larger airport. Small aircraft can generally be defined as anything from 20 to 100 seats. As their name suggests, in many markets around Europe, regional carriers are often the lifeblood of regional airports. Smaller aircraft means they don\'t have to rely on huge catchments and traffic flows to fill their aircraft, so small cities often fit their business model very well.</p>') {
 
             toolboxSection(
                     heading: 'Research your Catchment',
-                    text: '<p>Understanding your catchment is an important first step in creating a Business Case for airlines. From understanding more of the detail about your catchment, you will probably be able to identify more accurately which carriers and more particularly, which destinations you should be focusing your Business Case towards. Take the following as a guide to build up a better picture of your catchment:</p>') {
+                    text: '<p>Understanding your catchment is an important first step in creating a Business Case for any airline. From understanding more of the detail about your catchment, you will probably be able to identify more accurately which carriers and more particularly, which destinations you should be focusing your Business Case towards. Take the following as a guide to build up a better picture of your catchment:</p>') {
 
                 toolboxItem(
                         heading: 'What are the travel patterns of the people that live within the catchment of the airport?',
-                        text: '<p>Regional airlines are not necessarily as focused on the amount of people that live in particular catchment. Regional airlines, by definition, use smaller aircraft and pursue niche routes where the volume of passengers travelling is not always that high. Instead, regional airlines look to travel patterns, or where people want to travel. It may be to link small regional town or city to a bigger one. Or it may to bring people from a small town / airport to a large hub where onward connections can be taken. For this reason, it is essential to identify where people from the catchment want to go or where they are going already. There are various ways to do this, many airports carry out surveys in the local area for example. Or speak to some of the businesses operating in your area and ask them where they need their employees to travel to most often. There are also companies like MK Metrics that can carry out passenger demand analyses for particular destinations.</p>'
+                        text: '<p>Regional airlines are not necessarily as focused on the amount of people that live in a particular catchment. Regional airlines, by definition, use smaller aircraft and pursue niche routes where the volume of passengers travelling is not always that high. Instead, regional airlines look to existing travel patterns, or where people want to travel. It may be to link small regional town or city to a bigger one. Or it may to bring people from a small town / airport to a large hub where onward connections can be taken. For this reason, it is essential to identify where people from the catchment want to go or where they are going already. There are various ways to do this, many airports carry out surveys in the local area for example. Or speak to some of the businesses operating in your area and ask them where they need their employees to travel to most often. There are also companies like MK Metrics that can carry out passenger demand analyses for particular destinations.</p>'
                 )
                 toolboxItem(
                         heading: 'What is the economic situation of your catchment, high GDP, low unemployment?',
@@ -486,7 +485,7 @@ class BootStrap {
                 )
                 toolboxItem(
                         heading: 'Are they already flying to your airport?',
-                        text: '<p>In the case of smaller regional airports, Flag Carrier airlines usually only operate one or two routes to feed into one of their larger hubs. If they already have a route to your airport, are they likely to want to fly more? Think about which other of their destinations they might want to link with your airport? Or is there an opportunity to increase capacity on existing services as opposed to introducing new routes?</p>'
+                        text: '<p>In the case of smaller regional airports, regional airlines usually only operate one or two routes due to for example the more limited catchment. If they already have a route to your airport, are they likely to want to fly more? Think about which other of their destinations they might want to link with your airport? Or is there an opportunity to increase capacity on existing services as opposed to introducing new routes?</p>'
                 )
                 toolboxItem(
                         heading: 'Are they flying to other airports near your airport?',
@@ -508,16 +507,16 @@ class BootStrap {
                 )
                 toolboxItem(
                         heading: 'Who Controls the Charges?',
-                        text: '<p>For cities and regions involved in Work Package 5.1 that do not have direct influence over the fees and charges at the airport they represent, then every effort should be made to lobby the people who do control the fees. Meet with them, present to them the issues, the challenges and make them understand that airports need to be competitive or they will continue to struggle to grow traffic.</p>'
+                        text: '<p>For cities and regions involved in Work Package 5.1 that do not have direct influence over the fees and charges at the airport they represent, then every effort should be made to lobby the people who do control the fees. Meet with them, present to them the issues, the challenges and make them understand that airports need to be competitive or they will continue to struggle to attract traffic.</p>'
                 )
                 toolboxItem(
                         heading: 'Incentivise, Incentivise, Incentivise!',
                         text: '''\
                             <p>If you are a small regional airport with little or no traffic, then you should be looking at every possible way to incentivise airlines to fly to your airport. Look at innovative ways of lowering charges for new routes and passengers. And keep in mind that the traditional model of airport revenues is changing. Look at these examples:</p>
                             <p><strong>ADD DIAGRAMS HERE</strong></p>
-                            <p>These diagrams show that historically, airports relied upon receiving revenues from airlines as the main source of their income. However, airlines are becoming much more cost conscious and even Flag Carrier airlines who traditionally didn't use to attach such importance to low airport costs, are  seeking out the best airport deals. The new revenue model is the way of the future, especially for smaller regional airports. So when you are considering your published charges and introducing new incentives to attract airlines, remember that airports need to consider other methods of generating revenues than simply relying on the airline. Some examples could be as follows:</p>
+                            <p>These diagrams show that historically, airports relied upon receiving revenues from airlines as the main source of their income. However, all airlines are becoming much more cost conscious and even regional airlines who traditionally didn't use to attach such importance to low airport costs, are  seeking out the best airport deals. The new revenue model is the way of the future, especially for smaller regional airports. So when you are considering your published charges and introducing new incentives to attract airlines, remember that airports need to consider other methods of generating revenues than simply relying on the airline. Some examples could be as follows:</p>
                             <ul>
-                                <li>Undertake a complete review of all non-aeronautical activity at the airport. Assess whether certain areas can be improved - for example can you increase car parking charges?</li>
+                                <li>Undertake a complete review of all non-aeronautical activity at the airport. Assess whether certain areas can be improved - for example can you improve the car parking offer and charge more as a result, or offer special pre-booking discounts that will encourage more people to use the service?</li>
                                 <li>Visit other airports and look around at what they are doing, take inspiration.</li>
                                 <li>Seek our new areas for which you can charge people to advertise at your airport.</li>
                                 <li>Think about using the airport for other reasons than just transporting passengers, for example charge people host birthday parties or other events at the airport.</li>
@@ -530,7 +529,7 @@ class BootStrap {
                 )
                 toolboxItem(
                         heading: 'Tourism Authority Involvement',
-                        text: '<p>Contact the local tourism authorities and ask them to contribute towards a marketing fund that can be used to enhance the business case for the target airline. Don\'t forget that, even though regional airlines don\'t necessarily generate as much tourism traffic as bigger airlines, even a small increase in tourist numbers can be hugely beneficial to local economy. Consider asking the tourist boards to join your meetings with the airline so that they can present the attractions that may exist in the vicinity of the airport - and let them see how hard it can be to attract new traffic to an airport.</p>'
+                        text: '<p>Contact the local tourism authorities and ask them to contribute towards a marketing fund that can be used to enhance the business case for the target airline. Don\'t forget that, even though regional airlines don\'t necessarily generate as much tourism traffic as bigger airlines, even a small increase in tourist numbers can be hugely beneficial to a local economy. Consider asking the tourist boards to join your meetings with the airline so that they can present the attractions that may exist in the vicinity of the airport - and let them see how hard it can be to attract new traffic to an airport.</p>'
                 )
                 toolboxItem(
                         heading: 'Tour Operator Involvement',
@@ -542,7 +541,6 @@ class BootStrap {
                     heading: 'Case Study',
                     text: '''\
                             <p>So you have researched a lot and looked different ways to create a Business case, but how do you put it all together? Treat all the components of the Business Case like pieces of a puzzle. There are various different - but related - components that all must fit together neatly to create a clear and concise plan for the airline. It is also important to note at this stage, that no two Business Cases will ever (or should ever) be the same. Each market, carrier, destination and airport will all have their own unique set of circumstances that will dictate what sort of Business Case should be presented. Situations also change so rapidly in the aviation industry that even a Business Case that works for an airline this year, won't automatically work next year.</p>
-                            <p><strong>ADD DIAGRAMS HERE</strong></p>
                             <p>Below is a fictitious example of a Business Case that could work for a regional airline. The airport is a small regional airport in Poland looking for a connection to one of the major Polish cities.</p>''') {
                 toolboxItem(
                         heading: 'The Catchment',
@@ -560,7 +558,7 @@ class BootStrap {
 
             toolboxSection(
                     heading: 'Deliver and Communicate',
-                    text: 'So when you have created a strong Business Case, what do you do next?  Making contact with airlines can sometimes be quite a daunting task, Flag Carrier airlines in particular are often very large companies with thousands of staff, so where do you start? There are some general principles to follow when approaching airlines whether that is by phone, by letter or in a direct face to face meeting:') {
+                    text: 'So when you have created a strong Business Case, what do you do next?  Making contact with airlines can sometimes be quite a daunting task and airlines are not always known for responding very quickly. There are some general principles to follow when approaching airlines whether that is by phone, by letter or in a direct face to face meeting:') {
 
                 toolboxItem(
                         heading: 'Be Clear and Concise',
@@ -568,7 +566,7 @@ class BootStrap {
                 )
                 toolboxItem(
                         heading: 'Do Your Research',
-                        text: "As mentioned in the Target a Carrier section, you need to understand the airline you are contacting by doing as much research as possible about them. There is nothing worse than airport managers who ask an airline to perform an operation that they clearly cannot do. This may be because the carrier does not have a base at the other end of the route, or its aircraft may be unsuitable, or it may have said publicly that they are not focusing on that market - there could be many reasons. But understanding about the airlines' business model and strategy will make you stand out."
+                        text: "As mentioned in the Target a Carrier section, you need to understand the airline you are contacting by doing as much research as possible about them. There is nothing worse than airport managers who ask an airline to perform an operation that the airline clearly cannot do. This may be because the carrier does not have a base at the other end of the route, or its aircraft may be unsuitable, or it may have said publicly that they are not focusing on that market - there could be many reasons. But understanding about the airlines' business model and strategy will make you stand out."
                 )
                 toolboxItem(
                         heading: 'Use the Appropriate Language',
@@ -585,9 +583,9 @@ class BootStrap {
                 toolboxItem(
                         heading: "If you don't have any contacts at the airline you want to target, what should you do?",
                         text: """\
-                            <p>There are various industry events that take place all over the world. Many of these either have official meetings with airlines that you pay for or informal networking events. Consider attending and make contact with as many airlines as possible. There are also a few other tricks worth considering, as set out below:</p>
+                            <p>There are various industry events that take place all over the world. Many of these either have official meetings with airlines that you pay for or informal networking events. Consider attending and make contact with as many airlines as possible. See some examples as follows:</p>
                             <ol>
-                                <li>The Routes Company organises international and regional aviation events, whereby airline delegates can pay to attend meetings with airlines. There are also informal networking events. These events can be expensive, but an excellent forum for meeting airlines.</li>
+                                <li>The Routes Company organises international and regional aviation events, whereby airline delegates can pay to attend meetings with airlines. There are also many informal networking opportunities at these events. These events can be expensive, but an excellent forum for meeting airlines.</li>
                                 <li>French Connect in France is a smaller version of the Routes events and quite focused on the French market - but a good forum if this region is on your radar for route development.</li>
                                 <li>IATA runs regular slot conferences and these are always attended by representatives from the main airlines. So if the slot coordinator from your airport is attending, why not tag along and you never know who you might get to meet.</li>
                                 <li>For more informal networking opportunities, look at some specific events taking places in various countries like:

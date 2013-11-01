@@ -1,5 +1,5 @@
 <head>
-    <title>Digital</title>
+    <title>Digital Media</title>
 
     <style type="text/css">
     .toggle_container ul ul {
@@ -35,6 +35,11 @@
 
     .social-media a:last-child {
         padding-right: 0;
+    }
+
+    .pattern2 {
+        /* override the banner image */
+        background: url(${r.resource(uri: "/images/banners/digital.jpg")}) no-repeat !important;
     }
 
     </style>
@@ -238,9 +243,7 @@
 
             <p>Karlstad is a small regional airport located in the south western part of Sweden, not far from the Norwegian border. The airport processed just over 100,000 passengers in 2012 and is on track to increase this by more than 30% percent in 2013 as a result of new airlines and routes being developed at the airport. The city of Karlstad has around 62,000 inhabitants with a further 800,000 people living with 1 or 2 hours of the airport. Oslo lies only 220km to the west of Karlstad, so there is potential to attract from this market also.</p>
 
-            <p>In December 2010 it was announced that Karlstad Airport had successfully managed to negotiate a route to Barcelona with a leading low cost European airline. The route would commence operation in April 2011. Among the many other marketing activities that were planned, a very specific Google Adwords campaign was initiated. A part of that campaign would be pointed at the geographical areas of Östfold and Akershus in Norway, seen as blue in the picture below.</p>
-
-            <p><strong>ADD DIAGRAM HERE</strong></p>
+            <p>In December 2010 it was announced that Karlstad Airport had successfully managed to negotiate a route to Barcelona with a leading low cost European airline. The route would commence operation in April 2011. Among the many other marketing activities that were planned, a very specific Google Adwords campaign was initiated. A part of that campaign would be pointed at the geographical areas of Östfold and Akershus in Norway.</p>
 
             <p>
                 The campaign commenced in February 2011 and ended on the 30th of October of the same year. During the

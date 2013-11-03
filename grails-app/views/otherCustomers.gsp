@@ -25,6 +25,12 @@
         /* override the banner image */
         background: url(${r.resource(uri: "/images/banners/other-customers.jpg")}) no-repeat !important;
     }
+
+    .inline-paragraph {
+        display: block;
+        padding-top: 10px;
+        clear: both;
+    }
     </style>
 
     <r:script type="text/javascript">
@@ -129,8 +135,20 @@
                                 market and request that they prepare a detailed (but interesting!) presentation about European
                                 aviation generally but specifically about the benefits that airports can deliver to local
                                 economies. There is some very useful data and diagrams that can be used to show how important
-                                an airport can be to its local area. For example: <strong>ADD DIAGRAMS HERE</strong>
-                                <br/> Or just look at some of these statistics prepared by ACI Europe on the economic benefits of airports: <strong>ADD DIAGRAMS HERE</strong>
+                                an airport can be to its local area. For example:
+
+                                <span class="inline-paragraph center">
+                                    <r:img uri="/images/otherCustomers/bubbles.png"/>
+                                </span>
+
+                                <span class="inline-paragraph">
+                                    Or just look at some of these statistics prepared by ACI Europe on the economic benefits of airports:
+                                </span>
+
+                                <span class="inline-paragraph center">
+                                    <r:img uri="/images/otherCustomers/aci-logo.jpg"/>
+                                    <r:img uri="/images/otherCustomers/airport-contribs.png"/>
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -141,7 +159,7 @@
                 <div class="toggle_container">
                     <div class="block">
                         <ul>
-                            <li>Start the work shop by giving the group an overview of the airport:
+                            <li>Start the workshop by giving the group an overview of the airport:
                                 <ul>
                                     <li>The destinations served</li>
                                     <li>The airlines that operate there</li>

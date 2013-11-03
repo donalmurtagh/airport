@@ -28,7 +28,7 @@
 
     .inline-paragraph {
         display: block;
-        padding-top: 10px;
+        padding-top: 15px;
         clear: both;
     }
     </style>

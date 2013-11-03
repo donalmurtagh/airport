@@ -1,4 +1,5 @@
 import grails.util.DomainBuilder
+import grails.util.Environment
 import org.codehaus.groovy.grails.commons.GrailsApplication
 import com.icaviation.*
 import org.codehaus.groovy.grails.web.mapping.LinkGenerator
@@ -34,19 +35,12 @@ class BootStrap {
 
     def init = { servletContext ->
 
-        // get image paths
-        def oldAirportRevenuePath = getImagePath('old-airport-revenue.png')
-        def newAirportRevenuePath = getImagePath('new-airport-revenue.png')
-        def jigsawPath = getImagePath('jigsaw.jpg')
-        def strategicPath = getImagePath('strategic.png')
-
-        def airportConfig = grailsApplication.config.airport
-
         def createRole = { roleName ->
             Role.findByAuthority(roleName) ?: new Role(authority: roleName).save(failOnError: true)
         }
 
         // create some roles
+        def airportConfig = grailsApplication.config.airport
         def userRole = createRole(airportConfig.userRoleName)
         def adminRole = createRole(airportConfig.adminRoleName)
 
@@ -57,9 +51,20 @@ class BootStrap {
             createUser it, defaultAdminPassword, adminRole
         }
 
+        // get image paths
+        def oldAirportRevenuePath = getImagePath('old-airport-revenue.png')
+        def newAirportRevenuePath = getImagePath('new-airport-revenue.png')
+        def jigsawPath = getImagePath('jigsaw.jpg')
+        def strategicPath = getImagePath('strategic.png')
+
         // create the toolboxes and their items
         def builder = new DomainBuilder()
         builder.classNameResolver = 'com.icaviation'
+
+        // don't create the toolboxes each time the app starts in prod
+        if (Environment.current == Environment.PRODUCTION) {
+            return
+        }
 
         def allToolboxes = []
         allToolboxes << builder.toolbox(name: 'Full Service Airlines') {

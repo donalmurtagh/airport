@@ -35,7 +35,7 @@ hibernate {
 
 environments {
 
-//    production {
-//        dbCreate = "update"
-//    }
+    production {
+        dbCreate = "update"
+    }
 }

@@ -148,7 +148,7 @@
             </ol>
 
             <h2>3. Search Engine Optimisation (SEO) &amp; Google Adwords</h2>
-            <p>You should consider that improving your website is only one step on the road to improving your online presence generally; maximizing the amount of people that actually visit your website is an equally important step</p>
+            <p>You should consider that improving your website is only one step on the road to improving your online presence generally; maximizing the amount of people that actually visit your website is an equally important step.</p>
 
             <p>SEO is the process whereby you improve your search engine ranking, but you do not pay to do so (also known as organic search results). It is therefore how relevant your website is to the term(s) being searched, that determines where in the rankings your website appears. For example, Google will “calculate” how relevant your website is, using some complicated and top secret algorithms. Some basic tips for optimising your results are as follows:</p>
 

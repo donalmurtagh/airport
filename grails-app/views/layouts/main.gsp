@@ -36,9 +36,9 @@
                     <section id="navigation" class="nine columns omega">
                         <nav id="nav-wrap">
                             <ul id="topnav" class="sf-menu">
-                                <li><g:link uri='/'>Home</g:link></li>
 
                                 <sec:ifLoggedIn>
+                                    <li><g:link uri='/'>Home</g:link></li>
                                     <li><a href="javascript:void(0)">Marketing</a>
                                         <ul>
                                             <li><a href="javascript:void(0)">Airlines</a>
@@ -63,7 +63,7 @@
                                         </ul>
                                     </li>
 
-                                    <li><g:link uri="/media">Media</g:link></li>
+                                    <li><g:link uri="/media">Media Page</g:link></li>
                                     <li><g:link uri="/pilot">Pilot Project</g:link></li>
                                     <li><g:link uri="/reports">Output Reports</g:link></li>
                                 </sec:ifLoggedIn>
@@ -118,14 +118,18 @@
 %{--Show flash messages in the top message bar--}%
 <g:render template="/common/notificationBar"/>
 
-<div id="contact">
-    <div>
-        <a href="mailto:info@ic-aviation.com">
-            <r:img uri="/images/icons/icon-s3.png" class="scale-with-grid" title="Click here to contact us"/>
+<sec:ifLoggedIn>
+    <div id="contact">
+        <a href="mailto:info@ic-aviation.com" title="Click here to contact us">
+            <span>
+                <r:img uri="/images/icons/icon-s3.png" class="scale-with-grid"/>
+            </span>
+            <span id="contact-label">
+                Need<br/>Assistance?
+            </span>
         </a>
     </div>
-    <div><a href="mailto:info@ic-aviation.com">We're here to help</a></div>
-</div>
+</sec:ifLoggedIn>
 
 <r:layoutResources/>
 </body>

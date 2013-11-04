@@ -51,6 +51,14 @@ class BootStrap {
             createUser it, defaultAdminPassword, adminRole
         }
 
+        // don't create the toolboxes each time the app starts in prod
+        if (Environment.current == Environment.DEVELOPMENT) {
+            createToolboxes()
+        }
+    }
+
+    private createToolboxes() {
+
         // get image paths
         def oldAirportRevenuePath = getImagePath('old-airport-revenue.png')
         def newAirportRevenuePath = getImagePath('new-airport-revenue.png')
@@ -60,11 +68,6 @@ class BootStrap {
         // create the toolboxes and their items
         def builder = new DomainBuilder()
         builder.classNameResolver = 'com.icaviation'
-
-        // don't create the toolboxes each time the app starts in prod
-        if (Environment.current == Environment.PRODUCTION) {
-            return
-        }
 
         def allToolboxes = []
         allToolboxes << builder.toolbox(name: 'Full Service Airlines') {
@@ -675,6 +678,8 @@ class BootStrap {
             it.save(failOnError: true)
         }
     }
+
+
 
     def destroy = {
     }

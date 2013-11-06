@@ -27,6 +27,11 @@
         border-radius: 5px;
     }
 
+    .pattern2 {
+        /* override the banner image */
+        background: url(${r.resource(uri: "/images/banners/media.jpg")}) no-repeat !important;
+    }
+
     .link-holder:last-child {
         margin-bottom: 0;
     }

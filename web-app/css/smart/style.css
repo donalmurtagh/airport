@@ -314,43 +314,17 @@ code {
 
 /*** HEADER ***/
 
-#logo {
-    float: left;
-    height: auto;
-    margin-right: 0;
+#buttons {
+    float: right;
+    padding-top: 5px;
 }
 
-#logo h1 {
-    margin: 0;
-    font-size: 25px;
-    line-height: 25px;
-}
-
-#logo .circle {
+#buttons img {
     display: block;
-    line-height: normal;
-    width: 34px;
-    height: 34px;
-    -moz-border-radius: 34px;
-    -webkit-border-radius: 34px;
-    -khtml-border-radius: 34px;
-    border-radius: 34px;
-    text-align: center;
-    margin: 0 10px 0 0;
-    float: left;
 }
 
-#logo .circle img {
-    padding: 10px 0 0 10px
-}
-
-#logo img {
-    display: block;
-    text-align: center
-}
-
-#logo span {
-    line-height: 32px;
+#buttons img:first-child {
+    padding-bottom: 3px;
 }
 
 /* TOP MENU */
@@ -370,7 +344,7 @@ code {
     overflow: visible;
     position: relative;
     float: right;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 18px;
     font-family: 'Oswald', sans-serif, arial;
 }
@@ -379,7 +353,7 @@ code {
     text-decoration: none;
     display: block;
     position: relative;
-    padding: 0 14px !important;
+    padding: 0 10px !important;
     text-decoration: none;
     font-weight: normal;
     text-transform: uppercase;

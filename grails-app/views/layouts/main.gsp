@@ -26,14 +26,19 @@
         <div id="outerheader">
             <div class="container">
                 <header id="top" class="twelve columns">
-                    <div id="logo" class="three columns alpha">
-                        <h1>
+                    <div id="logo" class="four columns alpha">
+                        <span style="float: left;">
                             <g:link uri='/'>
                                 <r:img uri="/images/logo.jpg" class="scale-with-grid"/>
                             </g:link>
-                        </h1>
+                        </span>
+
+                        <span id="buttons">
+                            <r:img uri="/images/eu/baltic-bird.jpg" class="scale-with-grid"/>
+                            <r:img uri="/images/eu/flag.jpg" class="scale-with-grid"/>
+                        </span>
                     </div>
-                    <section id="navigation" class="nine columns omega">
+                    <section id="navigation" class="eight columns omega">
                         <nav id="nav-wrap">
                             <ul id="topnav" class="sf-menu">
 

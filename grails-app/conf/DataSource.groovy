@@ -9,21 +9,25 @@ dataSource {
     dbCreate = "create" // one of 'create', 'create-drop', 'update', 'validate'
     username = 'root'
 
-    // http://grails.1312388.n4.nabble.com/MySQL-datasource-best-practice-setup-for-production-app-td4344921.html
     properties {
-        maxActive = 100
-        maxIdle = 25
+        // See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
+        jmxEnabled = false
+        initialSize = 5
+        maxActive = 50
         minIdle = 5
-        initialSize = 10
-        minEvictableIdleTimeMillis = 60000
-        timeBetweenEvictionRunsMillis = 60000
+        maxIdle = 25
         maxWait = 10000
-
+        maxAge = 10 * 60000
+        timeBetweenEvictionRunsMillis = 5000
+        minEvictableIdleTimeMillis = 60000
+        validationQuery = "SELECT 1"
+        validationQueryTimeout = 3
+        validationInterval = 15000
         testOnBorrow = true
         testWhileIdle = true
         testOnReturn = false
-
-        validationQuery = "select 1"
+        jdbcInterceptors = "ConnectionState;StatementCache(max=200)"
+        defaultTransactionIsolation = java.sql.Connection.TRANSACTION_READ_COMMITTED
     }
 }
 

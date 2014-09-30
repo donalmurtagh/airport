@@ -37,28 +37,28 @@ grails.project.dependency.resolution = {
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-
-        runtime 'mysql:mysql-connector-java:5.1.22'
+        runtime 'mysql:mysql-connector-java:5.1.33'
     }
 
     plugins {
-        runtime ":hibernate:$grailsVersion",
-                ":jquery:1.8.3",
-                ":fields:1.3",
-                ":flash-helper:0.9.5",
-                ":resources:1.1.6",
-                ":cached-resources:1.0"
+        build ':tomcat:7.0.52.1'
+        runtime ':hibernate:3.6.10.10'
 
-        if (!Environment.isDevelopmentMode()) {
-            // don't include in dev, because it prevents static resources from reloading
-            runtime ":zipped-resources:1.0"
-        }
+        runtime ":console:1.5.0",
+                ":cached-resources:1.0",
+                ":jquery:1.11.1",
+                ":resources:1.2.8",
+                ":zipped-resources:1.0"
 
-        build ":tomcat:$grailsVersion",
-                ":yui-war-minify:1.3"
+        compile ":cache-headers:1.1.7",
+                ":yui-war-minify:1.5",
+                ":spring-security-core:1.2.7.4",
+                ":fields:1.4",
+                ":flash-helper:0.9.9",
+                ":mail:1.0.1"
 
-        compile ":spring-security-core:1.2.7.3",
-                ":mail:1.0.1",
-                ":cache-headers:1.1.5"
+        // a transitive dependency of the spring security plugin that should be installed automatically, but wasn't
+        // http://grails.1312388.n4.nabble.com/No-thread-bound-request-found-error-td4631072.html
+        compile ":webxml:1.4.1"
     }
 }

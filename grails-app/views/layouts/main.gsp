@@ -71,9 +71,6 @@
                                     <li><g:link uri="/media">Media Page</g:link></li>
                                     <li><g:link uri="/pilot">Pilot Project</g:link></li>
                                     <li><g:link uri="/reports">Output Reports</g:link></li>
-                                </sec:ifLoggedIn>
-
-                                <sec:ifLoggedIn>
                                     <li><g:link controller="logout">Logout</g:link></li>
                                 </sec:ifLoggedIn>
 

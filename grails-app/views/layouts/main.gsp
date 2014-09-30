@@ -22,27 +22,27 @@
 
 <div id="bodychild">
     <div id="outercontainer">
-        <!-- HEADER -->
         <div id="outerheader">
             <div class="container">
                 <header id="top" class="twelve columns">
-                    <div id="logo" class="four columns alpha">
+                    <div id="logo" class="three columns alpha">
                         <span style="float: left;">
                             <g:link uri='/'>
                                 <r:img uri="/images/logo.jpg" class="scale-with-grid"/>
                             </g:link>
                         </span>
-
-                        <span id="buttons">
-                            <r:img uri="/images/eu/baltic-bird.jpg" class="scale-with-grid"/>
-                            <r:img uri="/images/eu/flag.jpg" class="scale-with-grid"/>
-                        </span>
                     </div>
-                    <section id="navigation" class="eight columns omega">
-                        <nav id="nav-wrap">
-                            <ul id="topnav" class="sf-menu">
 
-                                <sec:ifLoggedIn>
+                    <section id="navigation" class="nine columns omega baltic">
+                        <sec:ifNotLoggedIn>
+                            <r:img uri="/images/eu/baltic-bird-big.png" style="padding-right: 20px;"/>
+                            <r:img uri="/images/eu/baltic-sea-region.png"/>
+                        </sec:ifNotLoggedIn>
+
+                        <sec:ifLoggedIn>
+                            <nav id="nav-wrap">
+                                <ul id="topnav" class="sf-menu">
+
                                     <li><g:link uri='/'>Home</g:link></li>
                                     <li><a href="javascript:void(0)">Marketing</a>
                                         <ul>
@@ -72,13 +72,13 @@
                                     <li><g:link uri="/pilot">Pilot Project</g:link></li>
                                     <li><g:link uri="/reports">Output Reports</g:link></li>
                                     <li><g:link controller="logout">Logout</g:link></li>
-                                </sec:ifLoggedIn>
 
-                                <sec:ifAllGranted roles="ROLE_ADMIN">
-                                    <li><g:link controller="user" action="listUsers">Admin</g:link></li>
-                                </sec:ifAllGranted>
-                            </ul><!-- topnav -->
-                        </nav><!-- nav -->
+                                    <sec:ifAllGranted roles="ROLE_ADMIN">
+                                        <li><g:link controller="user" action="listUsers">Admin</g:link></li>
+                                    </sec:ifAllGranted>
+                                </ul>
+                            </nav>
+                        </sec:ifLoggedIn>
                         <div class="clear"></div>
                     </section>
 
@@ -86,20 +86,18 @@
                 </header>
             </div>
         </div>
-        <!-- END HEADER -->
 
-        <!-- AFTER HEADER -->
         <div id="outerafterheader">
             <div class="container">
                 <div id="afterheader" class="twelve columns pattern2">
                     <div id="pagetitle-container">
                         <h1 class="pagetitle">${pageProperty(name: 'title') ?: 'Welcome'}</h1>
+
                         <h2 class="pagetitle">The Airport Marketing Toolbox</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- END AFTER HEADER -->
 
         <g:layoutBody/>
 
@@ -113,7 +111,6 @@
                 </div>
             </div>
         </div>
-        <!-- END FOOTER -->
     </div>
 </div>
 

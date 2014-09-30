@@ -9,6 +9,7 @@ import grails.util.Environment
 //
 // grails.mail.password=
 // dataSource.password=
+// admin.defaultPassword
 //
 grails.config.locations = ["classpath:SecretConfig-${Environment.current}.properties"]
 

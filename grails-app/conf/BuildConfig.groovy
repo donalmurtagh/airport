@@ -19,8 +19,6 @@ grails.project.dependency.resolution = {
     legacyResolve true // whether to do a secondary resolve on plugin installation, not advised but here for backwards compatibility
 
     repositories {
-        inherits true // Whether to inherit repository definitions from plugins
-
         grailsPlugins()
         grailsHome()
         grailsCentral()
@@ -41,14 +39,12 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        build ':tomcat:7.0.52.1'
-        runtime ':hibernate:3.6.10.10'
-
-        runtime ":console:1.5.0",
+        build   ":tomcat:7.0.52.1"
+        runtime ":hibernate:3.6.10.10",
+                ":console:1.5.0",
                 ":cached-resources:1.0",
-                ":jquery:1.11.1",
-                ":resources:1.2.8",
-                ":zipped-resources:1.0"
+                ":jquery:1.8.3",
+                ":resources:1.2.8"
 
         compile ":cache-headers:1.1.7",
                 ":yui-war-minify:1.5",
@@ -60,5 +56,11 @@ grails.project.dependency.resolution = {
         // a transitive dependency of the spring security plugin that should be installed automatically, but wasn't
         // http://grails.1312388.n4.nabble.com/No-thread-bound-request-found-error-td4631072.html
         compile ":webxml:1.4.1"
+
+        if (Environment.current == Environment.PRODUCTION) {
+            // don't include in dev, because it prevents static resources from reloading
+            // don't include in test, because it will be installed every time tests are run
+            runtime ":zipped-resources:1.0"
+        }
     }
 }

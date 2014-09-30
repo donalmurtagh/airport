@@ -529,11 +529,11 @@ ul.sf-menu li li li.sfHover ul {
 
 /*============================================ CONTENT  =================================================*/
 #outermain {
-    padding: 31px 0 60px 0;
+    padding: 31px 0 30px 0;
 }
 
 #outermain.homepage {
-    padding: 25px 0 60px 0;
+    padding: 25px 0 30px 0;
 }
 
 #maincontent {

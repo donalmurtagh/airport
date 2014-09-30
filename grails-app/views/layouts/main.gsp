@@ -110,7 +110,7 @@
         <div id="outerfooter">
             <div class="container">
                 <div id="footercontainer" class="twelve columns">
-                    <footer id="footer">&copy; 2013 All Rights Reserved</footer>
+                    <footer id="footer">&copy; ${new Date()[Calendar.YEAR]} All Rights Reserved</footer>
 
                     <div id="toTop"></div>
                 </div>

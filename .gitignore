@@ -24,4 +24,4 @@ stacktrace.log
 *.iml
 
 # secret config files
-/grails-app/conf/SecretConfig.*
+grails-app/conf/SecretConfig-*.properties

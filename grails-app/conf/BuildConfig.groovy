@@ -39,19 +39,19 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        build   ":tomcat:7.0.52.1"
-        runtime ":hibernate:3.6.10.10",
-                ":console:1.5.0",
+        build   ':tomcat:7.0.54'
+        runtime ':hibernate:3.6.10.16',
+                ":console:1.5.4",
                 ":cached-resources:1.0",
-                ":jquery:1.8.3",
-                ":resources:1.2.8"
+                ":jquery:1.9.1",
+		        ':resources:1.2.8'
 
         compile ":cache-headers:1.1.7",
                 ":yui-war-minify:1.5",
                 ":spring-security-core:1.2.7.4",
                 ":fields:1.4",
                 ":flash-helper:0.9.9",
-                ":mail:1.0.1"
+                ":mail:1.0.7"
 
         // a transitive dependency of the spring security plugin that should be installed automatically, but wasn't
         // http://grails.1312388.n4.nabble.com/No-thread-bound-request-found-error-td4631072.html

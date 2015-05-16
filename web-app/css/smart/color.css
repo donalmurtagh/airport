@@ -574,7 +574,7 @@ h2.accordion-title.active {
 
 /*============================================== FOOTER SECTION ==============================================*/
 #outerfooter {
-    background: #383838;
+    border-top: 2px solid #e1e1e1;
 }
 
 #footer {

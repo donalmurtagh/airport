@@ -22,6 +22,7 @@
             <h2>Output Reports - Work Package 5.1</h2>
 
             <ol>
+                <li><a href="${g.resource(dir: 'reports', file: '0-final-report.pdf')}">WP5.1 Final Report December '13</a></li>
                 <li><a href="${g.resource(dir: 'reports', file: '1-final-output.pdf')}">Output Report - Pilot Project</a></li>
                 <li><a href="${g.resource(dir: 'reports', file: '2-taskB-data-collection.pdf')}">Output Report - Task B</a>
                     <ul>

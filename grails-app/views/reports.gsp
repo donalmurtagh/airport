@@ -31,8 +31,7 @@
                 </li>
                 <li><a href="${g.resource(dir: 'reports', file: '5-taskC-toolbox.pdf')}">Output Report - Task C</a></li>
                 <li><a href="${g.resource(dir: 'reports', file: '6-minutes.pdf')}">Minutes of Airport Marketing Toolbox Workshop - Norrkoping 24th April, 2013</a>
-                <li><a href="${g.resource(dir: 'reports', file: '7-baltic-bird.pdf')}">Baltic Bird Presentation</a></li>
-
+                <li><a href="${g.resource(dir: 'reports', file: '7-baltic-bird.pdf')}">W.P. 5.1 – Results Presentation</a></li>
             </ol>
         </section>
     </div>

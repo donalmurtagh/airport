@@ -108,8 +108,8 @@
                     <footer id="footer">
                         <div>&copy; ${new Date()[Calendar.YEAR]} All Rights Reserved</div>
                         <div class="center">
-                        <r:img uri="/images/eu/baltic-bird-big.png" style="padding-right: 20px;"/>
-                        <r:img uri="/images/eu/baltic-sea-region.png"/>
+                            <r:img uri="/images/eu/baltic-bird-big.png" style="padding-right: 20px;"/>
+                            <r:img uri="/images/eu/baltic-sea-region.png"/>
                         </div>
                     </footer>
                     <div id="toTop"></div>

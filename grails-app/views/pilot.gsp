@@ -35,7 +35,7 @@
                 <li>Flyswedish.com now bankrupt!</li>
             </ul>
 
-            <p>Please <a href="${g.resource(dir: 'reports', file: '1-final-output.pdf')}">click here</a> for a status
+            <p>Please <a href="${g.resource(dir: 'reports', file: 'pilot-project.pdf')}">click here</a> for a status
             update and a more detailed presentation about the approaches taken to complete the Pilot Project.</p>
         </section>
     </div>

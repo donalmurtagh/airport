@@ -39,15 +39,16 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        build   ':tomcat:7.0.54'
+        build   ":tomcat:7.0.54",
+        	":yui-war-minify:1.5"
+        	
         runtime ':hibernate:3.6.10.16',
                 ":console:1.5.4",
                 ":cached-resources:1.0",
                 ":jquery:1.8.3",
-		        ':resources:1.2.8'
+		":resources:1.2.8"
 
         compile ":cache-headers:1.1.7",
-                ":yui-war-minify:1.5",
                 ":spring-security-core:1.2.7.4",
                 ":fields:1.4",
                 ":flash-helper:0.9.9",

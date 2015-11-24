@@ -39,8 +39,7 @@ grails.project.dependency.resolution = {
     }
 
     plugins {
-        build   ":tomcat:7.0.54",
-        	":yui-war-minify:1.5"
+        build   ":tomcat:7.0.54"
         	
         runtime ':hibernate:3.6.10.16',
                 ":console:1.5.4",
@@ -52,7 +51,8 @@ grails.project.dependency.resolution = {
                 ":spring-security-core:1.2.7.4",
                 ":fields:1.4",
                 ":flash-helper:0.9.9",
-                ":mail:1.0.7"
+                ":mail:1.0.7",
+                ":yui-war-minify:1.5"
 
         // a transitive dependency of the spring security plugin that should be installed automatically, but wasn't
         // http://grails.1312388.n4.nabble.com/No-thread-bound-request-found-error-td4631072.html
